@@ -18,6 +18,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",
     "sass": "^1.77.8",
-    "vite": "^6.3.5"
+    "terser": "^5.31.6",
+    "vite": "^6.3.5",
+    "vite-plugin-compression": "^0.5.1"
   }
 }
