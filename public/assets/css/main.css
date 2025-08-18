@@ -304,7 +304,6 @@ input, select, textarea {
 .sub-nav .bd {
 	width:100%;
 	overflow:hidden;
-	_zoom:1
 }
 .sub-nav .ft {
 	margin-top:0
@@ -355,8 +354,6 @@ input, select, textarea {
 	border-radius: 0px;
 	outline: 0;
 	display:inline-block;
-	*zoom:1;
-	*display:inline;
 	border: 0;
 	padding:0;
 	margin:0;

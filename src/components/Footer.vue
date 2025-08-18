@@ -24,6 +24,7 @@
               <li v-html="cfg.footer.copyright"></li>
               <li><a :href="switchLangUrl" @click.prevent="switchLanguage">{{ cfg.footer.switchLang.text }}</a></li>
               <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              <li><a href="https://github.com/InnovationLeap/website" target="_blank">{{ props.lang === 'cn' ? '网站源码' : 'Source code' }}</a></li>
             </ul>
           </div>
         </div>
