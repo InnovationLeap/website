@@ -6,10 +6,11 @@
           <section :class="section.title === 'Social media' ? 'widget contact' : 'widget links'">
             <h3>{{ section.title }}</h3>
             <ul :class="section.title === 'Social media' ? '' : 'style2'">
-              <li v-for="link in section.links" :key="link.href">
+              <li v-for="(link, idx) in section.links" :key="idx">
                 <a v-if="link.icon" :href="link.href" :target="link.target || null" :class="`icon brands ${link.icon}`">
                   <span class="label">{{ link.icon.includes('x-twitter') ? 'X' : link.icon.replace('fa-', '') }}</span>
                 </a>
+                <span v-else-if="!link.href">{{ link.text }}</span>
                 <a v-else :href="link.href" :target="link.target || null">{{ link.text }}</a>
               </li>
             </ul>
