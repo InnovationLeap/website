@@ -44,17 +44,17 @@ title: 关于 INL
 <div><img src="/images/avatars/zqh.jpg" class="avatar-right"></div>
 <div class="text-right">
   <h3>zqh——123</h3>
-  <p class="flow-text">测试人员</p>
+  <p class="flow-text">制作人员，测试人员</p>
   <br>
-  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试工作。曾任百度永远的玛丽吧吧主。</p>
+  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试工作，制作了 Legend World 重制的附加挑战关卡。曾任百度永远的玛丽吧吧主。</p>
   <br>
 </div>
 <div><img src="/images/avatars/koopa4.jpg" class="avatar-left"></div>
 <div class="text-left">
   <h3>koopa4</h3>
-  <p class="flow-text">测试人员</p>
+  <p class="flow-text">制作人员，测试人员</p>
   <br>
-  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试和部分优化工作。</p>
+  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试和部分优化工作，制作了 Legend World 重制的结局场景。</p>
   <br>
 </div>
 <div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
@@ -129,6 +129,14 @@ title: 关于 INL
   <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作。</p>
   <br>
 </div>
+<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
+<div class="text-left">
+  <h3>大爷</h3>
+  <p class="flow-text">制作人员，测试人员</p>
+  <br>
+  <p class="flow-text">参与了 Legend World 重制早期版本的关卡优化工作，并制作了早期版本的部分大地图；参与了 Legend World 重制 v2.0 的测试工作。</p>
+  <br>
+</div>
 
 ### 前成员
 
@@ -136,7 +144,6 @@ title: 关于 INL
 
 - **dasasdhba**：参与过 Legend World 重制和 Super Mario Worker Project 的制作，并提供了一些素材。
 - **gaere54**：Legend World 重制组前成员，参与过 Legend World 重制的关卡复刻、大地图制作、优化和测试工作。
-- **大爷**：Legend World 重制组前成员，参与过 Legend World 重制的关卡优化工作，并制作了部分大地图。
 - **冥の归**：Legend World 重制组早期成员，参与过 Legend World 重制的部分关卡的复刻。
 - **w1194600239**：Legend World 重制组前成员，参与过 Legend World 重制的测试工作。
 - **123568024**：Legend World 重制组早期成员，参与过早期 Legend World 重制的部分关卡复刻工作。

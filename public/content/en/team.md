@@ -44,17 +44,17 @@ title: About
 <div><img src="/images/avatars/zqh.jpg" class="avatar-right"></div>
 <div class="text-right">
   <h3>zqh——123</h3>
-  <p class="flow-text">Tester</p>
+  <p class="flow-text">Programmer, tester</p>
   <br>
-  <p class="flow-text">He is the creator of Mario Forever Dream Escape and Mario Forever Save ZQH. He is a tester for Legend World Remake and Super Mario Worker Project.</p>
+  <p class="flow-text">He is the creator of Mario Forever Dream Escape and Mario Forever Save ZQH. He is a tester for Legend World Remake and Super Mario Worker Project, and has made an extra challenge level for Legend World Remake.</p>
   <br>
 </div>
 <div><img src="/images/avatars/koopa4.jpg" class="avatar-left"></div>
 <div class="text-left">
   <h3>koopa4</h3>
-  <p class="flow-text">Tester</p>
+  <p class="flow-text">Programmer, tester</p>
   <br>
-  <p class="flow-text">He is a tester for Legend World Remake and Super Mario Worker Project.</p>
+  <p class="flow-text">He is a tester for Legend World Remake and Super Mario Worker Project, and has made the ending scene for Legend World Remake.</p>
   <br>
 </div>
 <div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
@@ -124,9 +124,17 @@ title: About
 <div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>
 <div class="text-right">
   <h3>2333ty</h3>
-  <p class="flow-text">Programmer, tester</p>
+  <p class="flow-text">Tester</p>
   <br>
   <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
+  <br>
+</div>
+<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
+<div class="text-left">
+  <h3>Daye</h3>
+  <p class="flow-text">Programmer, tester</p>
+  <br>
+  <p class="flow-text">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
   <br>
 </div>
 
@@ -134,7 +142,6 @@ title: About
 
 - **dasasdhba**: He had been involved in the production of Legend World Remake and Super Mario Worker Project, and had provided some graphics.
 - **gaere54**: He was mainly involved in level remaking, World Map making, improvement and testing of Legend World remake.
-- **Daye**: He is the creator of Mario Forever Magic Land. He participated in the level improvements of Legend World Remake and made some World Maps.
 - **835743384**: He had remade some levels in Legend World Remake.
 - **w1194600239**: He is the creator of Mysterious Islands. He was a tester for Legend World Remake.
 - **123568024**: He had remade a few levels in Legend World Remake.
