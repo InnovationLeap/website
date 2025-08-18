@@ -65,12 +65,12 @@ title: About
   <p class="flow-text">He is a tester for Legend World Remake.</p>
   <br>
 </div>
-<div><img src="/images/avatars/xfx.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
 <div class="text-left">
-  <h3>xfx</h3>
-  <p class="flow-text">Tester</p>
+  <h3>Daye</h3>
+  <p class="flow-text">Programmer, tester</p>
   <br>
-  <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
+  <p class="flow-text">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
   <br>
 </div>
 <div><img src="/images/avatars/sfds.jpg" class="avatar-right"></div>
@@ -84,9 +84,9 @@ title: About
 <div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>
 <div class="text-left">
   <h3>Bluesun</h3>
-  <p class="flow-text">Programmer</p>
+  <p class="flow-text">Tester</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.10.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the testing of Super Mario Worker Project since v1.7.10.</p>
   <br>
 </div>
 <div><img src="/images/avatars/116.jpg" class="avatar-right"></div>
@@ -129,12 +129,12 @@ title: About
   <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
   <br>
 </div>
-<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/xfx.jpg" class="avatar-left"></div>
 <div class="text-left">
-  <h3>Daye</h3>
-  <p class="flow-text">Programmer, tester</p>
+  <h3>xfx</h3>
+  <p class="flow-text">Tester</p>
   <br>
-  <p class="flow-text">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
+  <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
   <br>
 </div>
 

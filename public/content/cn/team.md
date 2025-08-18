@@ -65,12 +65,12 @@ title: 关于 INL
   <p class="flow-text">参与了 Legend World 重制的测试工作。</p>
   <br>
 </div>
-<div><img src="/images/avatars/xfx.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
 <div class="text-left">
-  <h3>s小s飞s侠s</h3>
-  <p class="flow-text">测试人员</p>
+  <h3>大爷</h3>
+  <p class="flow-text">制作人员，测试人员</p>
   <br>
-  <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作，也是 Super Mario Worker Project 制作组成员。</p>
+  <p class="flow-text">参与了 Legend World 重制早期版本的关卡优化工作，并制作了早期版本的部分大地图；参与了 Legend World 重制 v2.0 的测试工作。</p>
   <br>
 </div>
 <div><img src="/images/avatars/sfds.jpg" class="avatar-right"></div>
@@ -84,9 +84,9 @@ title: 关于 INL
 <div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>
 <div class="text-left">
   <h3>蓝太阳</h3>
-  <p class="flow-text">制作人员</p>
+  <p class="flow-text">测试人员</p>
   <br>
-  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.10 之后版本的开发工作。</p>
+  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.10 之后版本的测试工作。</p>
   <br>
 </div>
 <div><img src="/images/avatars/116.jpg" class="avatar-right"></div>
@@ -129,12 +129,12 @@ title: 关于 INL
   <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作。</p>
   <br>
 </div>
-<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/xfx.jpg" class="avatar-left"></div>
 <div class="text-left">
-  <h3>大爷</h3>
-  <p class="flow-text">制作人员，测试人员</p>
+  <h3>s小s飞s侠s</h3>
+  <p class="flow-text">测试人员</p>
   <br>
-  <p class="flow-text">参与了 Legend World 重制早期版本的关卡优化工作，并制作了早期版本的部分大地图；参与了 Legend World 重制 v2.0 的测试工作。</p>
+  <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作，也是 Super Mario Worker Project 制作组成员。</p>
   <br>
 </div>
 
