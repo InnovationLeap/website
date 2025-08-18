@@ -15,7 +15,7 @@ title: 关于 INL
   <h3>nmnmoooh</h3>
   <p class="flow-text">联合创始人，Super Mario Worker Project 组组长</p>
   <br>
-  <p class="flow-text">于 2016 年 6 月推动创立 INNOVATION LEAP，现主要负责 Super Mario Worker Project 制作和 Legend World 重制的优化工作。曾任百度 Marioworker 吧和永远的玛丽吧吧主。</p>
+  <p class="flow-text">于 2016 年 6 月推动创立 INNOVATION LEAP，现主要负责 Legend World 重制 v2.0 的制作，同时也负责 Super Mario Worker Project 的制作。曾任百度 Marioworker 吧和永远的玛丽吧吧主。</p>
   <br>
 </div>
 <div><img src="/images/avatars/wsw.jpg" class="avatar-left"></div>
