@@ -23,7 +23,7 @@ title: 关于 INL
   <h3>无视我233</h3>
   <p class="flow-text">联合创始人，制作人员</p>
   <br>
-  <p class="flow-text">目前主要参与 Legend World 重制的优化工作，曾参与 Super Mario Worker Project v1.6 及之前版本的制作。曾任百度永远的玛丽吧吧主。</p>
+  <p class="flow-text">曾参与 Super Mario Worker Project v1.6 及之前版本的制作和 Legend World 重制早期版本的制作。曾任百度永远的玛丽吧吧主。</p>
 </div>
 <div><img src="/images/avatars/yuyangmiau.jpg" class="avatar-right"></div>
 <div class="text-right">
@@ -38,7 +38,7 @@ title: 关于 INL
   <h3>巃嵸巋巚</h3>
   <p class="flow-text">制作人员，测试人员，素材制作</p>
   <br>
-  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的制作和测试，并提供了一些素材。其同时也是 Mario Forever Remake Group (China) 主要成员。</p>
+  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的制作和测试。其同时也是 Mario Forever Remake Group (China) 主要成员。</p>
   <br>
 </div>
 <div><img src="/images/avatars/zqh.jpg" class="avatar-right"></div>
