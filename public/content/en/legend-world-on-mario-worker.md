@@ -1,5 +1,5 @@
 ---
-title: Legend World on Mario Worker
+title: Legend World (MW 1.1)
 ---
 
 Legend World is a Mario Worker 1.1 episode made by nmnmoooh, released on August 21, 2013.

@@ -46,6 +46,7 @@ export default defineConfig({
       include: ['vue', 'vue-router', 'markdown-it']
     },
   server: {
-    open: true
+    hmr: true,
+    host: '0.0.0.0'
   }
 })

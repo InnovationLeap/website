@@ -1,5 +1,5 @@
 ---
-title: Mario Worker 上的 Legend World
+title: Legend World (MW 4.4)
 ---
 
 Legend World 是 nmnmoooh 自 2012 年 9 月开始制作的 Mario Worker 作品，于 2013 年 8 月 21 日发布 v1.1 版本。
