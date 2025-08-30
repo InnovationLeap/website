@@ -118,7 +118,7 @@ title: About
   <h3>Green Sweet</h3>
   <p class="flow-text">Programmer</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11. He also provided some graphics for Legend World Remake v2.0.</p>
   <br>
 </div>
 <div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>

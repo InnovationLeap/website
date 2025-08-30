@@ -118,7 +118,7 @@ title: 关于 INL
   <h3>绿色的糖果</h3>
   <p class="flow-text">制作人员</p>
   <br>
-  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.11 之后版本的开发工作。</p>
+  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.11 之后版本的开发工作。他还为 Legend World 重制 v2.0 提供了部分素材和技术支持。</p>
   <br>
 </div>
 <div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>
