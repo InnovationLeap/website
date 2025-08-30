@@ -31,6 +31,7 @@
             </template>
           </span>
           <a v-if="downloadUrl" class="btn btn-small btn-primary" target="_blank" :href="downloadUrl">{{ downloadText || 'Download' }}</a>
+          <span v-else-if="downloadText" class="btn btn-small btn-gray">{{ downloadText }}</span>
         </div>
       </div>
     </div>

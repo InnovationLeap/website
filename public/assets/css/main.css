@@ -175,6 +175,7 @@ input, select, textarea {
 
 	h4 {
 		font-size: 1.1em;
+		margin: 12px 0 8px 0;
 	}
 
 	b, strong {
@@ -2173,6 +2174,7 @@ input.btn-biglarge,button.btn-biglarge {
 	ul {
 		list-style: disc;
 		padding-left: 1.25em;
+		margin-bottom: 8px;
 	}
 
 		ul li {

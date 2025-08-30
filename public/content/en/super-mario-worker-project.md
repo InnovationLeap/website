@@ -49,13 +49,13 @@ Only [Chinese version](https://smwp.marioforever.net/downloads/#%E6%9B%B4%E6%96%
 ### Gallery
 
 <div class="image-gallery">
-<img src="/images/smwp-title.webp" alt="SMWP Title" />
-<img src="/images/smwp-editor.webp" alt="SMWP Editor" />
-<img src="/images/smwp-blocks.webp" alt="SMWP Blocks" />
-<img src="/images/smwp-musicselector.webp" alt="SMWP Music Selector" />
-<img src="/images/smwp-additional.webp" alt="SMWP Additional" />
-<img src="/images/smwp-decade.webp" alt="SMWP Decade" />
-<img src="/images/smwp-nightsand.webp" alt="SMWP Night Sand" />
-<img src="/images/smwp-classicepic.webp" alt="SMWP Classic Epic" />
-<img src="/images/smwp-muitfaceted.webp" alt="SMWP Multi-faceted" />
+   <img src="/img/smwp-title.webp" />
+   <img src="/img/smwp-editor.webp" />
+   <img src="/img/smwp-blocks.webp" />
+   <img src="/img/smwp-musicselector.webp" />
+   <img src="/img/smwp-additional.webp" />
+   <img src="/img/smwp-decade.webp" />
+   <img src="/img/smwp-nightsand.webp" />
+   <img src="/img/smwp-classicepic.webp" />
+   <img src="/img/smwp-muitfaceted.webp" />
 </div>

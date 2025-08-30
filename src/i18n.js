@@ -3,13 +3,13 @@ export default {
     logoAlt: "INNOVATION LEAP",
     nav: [
       { text: "首页", href: "/cn/" },
-      { text: "Legend World 重制", href: "/cn/legend-world-remake/" },
+      { text: "Legend World 重制 v2.0", href: "/cn/legend-world-remake/" },
       { text: "Super Mario Worker Project", href: "https://smwp.marioforever.net/", target: "_blank" },
       { text: "关于 INL", href: "/cn/about/" }
     ],
     legendWorldRemake: {
-      downloadUrl: "https://file.marioforever.net/Mario%20Forever/%E5%9B%BD%E5%86%85%E4%BD%9C%E5%93%81/2019/LegendWorldRemake_v1.5.1.7z",
-      downloadText: "下载 v1.5.1"
+      downloadUrl: "",
+      downloadText: "9 月 5 日发布"
     },
     legendWorldMW: {
       downloadUrl: "http://nmnmoooh888.ys168.com/",
@@ -24,7 +24,7 @@ export default {
         {
           title: "了解",
           links: [
-            { text: "Legend World 重制", href: "/cn/legend-world-remake/" },
+            { text: "Legend World 重制 v2.0", href: "/cn/legend-world-remake/" },
             { text: "Mario Worker 上的 Legend World", href: "/cn/legend-world-remake/legend-world-on-mario-worker" },
             { text: "Super Mario Worker Project", href: "https://smwp.marioforever.net/" }
           ]
@@ -63,13 +63,13 @@ export default {
     logoAlt: "INNOVATION LEAP",
     nav: [
       { text: "Home", href: "/en/" },
-      { text: "Legend World Remake", href: "/en/legend-world-remake/" },
+      { text: "Legend World Remake v2.0", href: "/en/legend-world-remake/" },
       { text: "Super Mario Worker Project", href: "/en/super-mario-worker-project/" },
       { text: "About", href: "/en/about/" }
     ],
     legendWorldRemake: {
-      downloadUrl: "http://www.mediafire.com/file/listjwj3zkr3adm/LegendWorldRemake_v1.5.1.7z/file",
-      downloadText: "Download v1.5.1"
+      downloadUrl: "",
+      downloadText: "Available Sep 5"
     },
     legendWorldMW: {
       downloadUrl: "http://www.mediafire.com/file/mk6y96b0zxh8imz/%255BNmnmoooh_Works%255D_Legend_World_V1.1.rar/file",
@@ -84,7 +84,7 @@ export default {
         {
           title: "Explore",
           links: [
-            { text: "Legend World Remake", href: "/en/legend-world-remake/" },
+            { text: "Legend World Remake v2.0", href: "/en/legend-world-remake/" },
             { text: "Legend World on Mario Worker", href: "/en/legend-world-remake/legend-world-on-mario-worker" },
             { text: "Super Mario Worker Project", href: "/en/super-mario-worker-project/" }
           ]
