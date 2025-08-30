@@ -86,7 +86,7 @@ title: About
   <h3>Bluesun</h3>
   <p class="flow-text">Tester</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the testing of Super Mario Worker Project since v1.7.10.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the testing of Super Mario Worker Project since v1.7.10. He also composed 6 tracks for Super Mario Worker Project.</p>
   <br>
 </div>
 <div><img src="/images/avatars/116.jpg" class="avatar-right"></div>
@@ -94,7 +94,7 @@ title: About
   <h3>1168438795</h3>
   <p class="flow-text">Member</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member, and he composed 7 tracks for Super Mario Worker Project.</p>
   <br>
 </div>
 <div><img src="/images/avatars/fahlee.jpg" class="avatar-left"></div>
