@@ -86,7 +86,7 @@ title: 关于 INL
   <h3>蓝太阳</h3>
   <p class="flow-text">测试人员</p>
   <br>
-  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.10 之后版本的测试工作，还为 Super Mario Worker Project 创作了 6 首音乐。</p>
+  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.10 之后版本的测试工作，还为 Super Mario Worker Project 创作了 6 首曲目。</p>
   <br>
 </div>
 <div><img src="/images/avatars/116.jpg" class="avatar-right"></div>
@@ -94,7 +94,7 @@ title: 关于 INL
   <h3>1168438795</h3>
   <p class="flow-text">成员</p>
   <br>
-  <p class="flow-text">Super Mario Worker Project 制作组成员，为 Super Mario Worker Project 创作了 7 首音乐。</p>
+  <p class="flow-text">Super Mario Worker Project 制作组成员，为 Super Mario Worker Project 创作了 7 首曲目。</p>
   <br>
 </div>
 <div><img src="/images/avatars/fahlee.jpg" class="avatar-left"></div>
