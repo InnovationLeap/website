@@ -72,7 +72,7 @@ Through both reinterpretation and original design, it delivers the definitive "f
 <img src="/images/lwr2.0/lwr2.0-ex.webp" />
 </div>
 
-### Videos
+### Video
 
 <iframe style="width: 100%;" src="https://www.youtube.com/embed/FYHPBzcPc9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
