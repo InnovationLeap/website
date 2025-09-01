@@ -2,7 +2,7 @@
 title: Legend World Remake v2.0
 ---
 
-**Legend World Remake (LWR, LGR)** is a fan game created by **INNOVATION LEAP**, based on *Mario Forever* (Rainbow Engine) and the [original *Legend World* on Mario Worker 1.1](/en/legend-world-remake/legend-world-on-mario-worker) by Nmnmoooh.
+**Legend World Remake (LWR, LGR)** is a fan game created by **INNOVATION LEAP**, based on *Mario Forever* (Rainbow Engine) and the [original *Legend World* on Mario Worker 1.1](/en/legend-world-remake/legend-world-on-mario-worker) by Nmnmoooh, made with Clickteam Fusion 2.5+.
 
 ### Overview
 Legend World Remake v2.0 features three layers of content:
@@ -35,6 +35,21 @@ The game also supports auto-saving whenever the player returns to the map after 
 #### The Final Chapter: World 8
 World 8 is more than a continuation: it is the conclusion of the entire remake.  
 Through both reinterpretation and original design, it delivers the definitive "final world, final level, and final boss" experience.
+
+### Story
+The Princess holds the power to create black holes.  
+Inside each black hole lies another world.  
+If our world is a sheet of paper, then a black hole is the tear upon it.  
+Beneath the tear lies another sheet.  
+Bowser covets the Princess's mighty power.  
+He kidnapped her, and with the power of black holes, created world after world.  
+These became known as Legend Worlds.  
+The Princess is imprisoned atop a clock tower in the innermost world.  
+There also stand Bowser's palace and his lab.  
+Bowser plans to dig yet another hole.  
+But beneath this sheet, no paper remains.  
+Mario must prevent it from happening.  
+He steps into the first layer of paper.
 
 ### Gallery
 
@@ -81,3 +96,5 @@ Through both reinterpretation and original design, it delivers the definitive "f
 Mario and its related copyrights belong to Nintendo. Mario Forever, Legend World Remake and INNOVATION LEAP are not affiliated with Nintendo in any way. Legend World Remake is a non-profit fan project and generates no revenue.
 
 Legend World Remake is freeware and is completely free of charge. If you paid for this game, you were ripped off!
+
+Clickteam Fusion 2.5 is a Clickteam product. The main producers of LWR v2.0 own genuine licenses of Clickteam Fusion 2.5 Developer.

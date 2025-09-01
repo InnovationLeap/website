@@ -2,7 +2,7 @@
 title: Legend World 重制 v2.0
 ---
 
-「**Legend World 重制**」是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎）以及 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 进行再创作。
+「**Legend World 重制**」是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎）及 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 进行再创作。本作使用 Clickteam Fusion 2.5+ 开发。
 
 马力欧及其版权归属任天堂。Mario Forever、「Legend World 重制」以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。「Legend World 重制」是非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
 
@@ -36,6 +36,21 @@ Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：
 #### 最终章：第八世界
 第八世界不仅是对 Legend World 重制的补完，更是一次完整的收束。  
 通过融合与创新的设计，展现了「最终世界、最终关卡、最终 BOSS」的独特构想。
+
+### 游戏剧情
+公主拥有创造黑洞的力量。  
+黑洞之内，是另一个世界。  
+如果我们的世界是一张纸，那么黑洞就是纸上的破洞。  
+破洞之下，是另一张纸。  
+库巴觊觎公主的伟力。  
+它劫走了公主，用黑洞之力创造了一层又一层的世界。  
+这就是所谓的传说世界。  
+公主被囚在最里层世界的钟塔上。  
+在那里，还有库巴的宫殿和实验室。  
+库巴正打算再挖一个洞。  
+然而这层纸之下，已经没有纸了。  
+马里奥必须阻止一切的发生。  
+他进入了第一层纸。  
 
 ### 图集
 
