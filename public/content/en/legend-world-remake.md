@@ -2,7 +2,7 @@
 title: Legend World Remake v2.0
 ---
 
-**Legend World Remake (LWR, LGR)** is a fan game created by **INNOVATION LEAP**, based on *Mario Forever* (Rainbow Engine) and the [original *Legend World* on Mario Worker 1.1](/en/legend-world-remake/legend-world-on-mario-worker) by Nmnmoooh, made with Clickteam Fusion 2.5+.
+**Legend World Remake (LWR, LGR)** is a fan game created by **INNOVATION LEAP**, based on *Mario Forever* (Rainbow Engine) and the [original *Legend World* on Mario Worker 1.1](/en/legend-world-remake/legend-world-on-mario-worker) by Nmnmoooh, made with Clickteam Fusion Developer 2.5+.
 
 ### Overview
 Legend World Remake v2.0 features three layers of content:
@@ -29,12 +29,14 @@ These include both reimagined stages from other Mario Worker 1.1 episodes and en
 Achieving 100% completion requires finishing all three layers of content.
 
 #### Redesigned World Maps
-All world maps have been completely rebuilt. Levels can now be freely chosen and replayed.  
-The game also supports auto-saving whenever the player returns to the map after completing a level.
+All World Maps have been completely rebuilt. Levels can now be freely chosen and replayed, with auto-saving whenever the player return to the map after completing a level.
+The World Map also supports manual save/load from the menu bar, with the option to save to another slot (Note: saving will overwrite existing data in that slot, so make backups!).
+Click a challenge icon to enter Challenge Mode. Challenges with blue text and red text descriptions are both clickable, but red challenges only unlock after clearing their original level.
+Press Fire key to freely view the World Map, and while in this mode, press Jump key to select a world.
 
 #### The Final Chapter: World 8
 World 8 is more than a continuation: it is the conclusion of the entire remake.  
-Through both reinterpretation and original design, it delivers the definitive "final world, final level, and final boss" experience.
+Through both reinterpretation and original design, it delivers the definitive "Final World, Final Level, and Final Boss" experience.
 
 ### Story
 The Princess holds the power to create black holes.  
@@ -88,13 +90,13 @@ He steps into the first layer of paper.
 </div>
 
 ### Video
+The video shows in-development footage; the final game may differ.
 
 <iframe style="width: 100%;" src="https://www.youtube.com/embed/FYHPBzcPc9M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### Disclaimer
-
 Mario and its related copyrights belong to Nintendo. Mario Forever, Legend World Remake and INNOVATION LEAP are not affiliated with Nintendo in any way. Legend World Remake is a non-profit fan project and generates no revenue.
 
 Legend World Remake is freeware and is completely free of charge. If you paid for this game, you were ripped off!
 
-Clickteam Fusion 2.5 is a Clickteam product. The main producers of LWR v2.0 own genuine licenses of Clickteam Fusion 2.5 Developer.
+Clickteam Fusion 2.5 is a Clickteam product. The main producers of LWR v2.0 own genuine licenses of Clickteam Fusion Developer 2.5+.

@@ -2,9 +2,7 @@
 title: Legend World 重制 v2.0
 ---
 
-「**Legend World 重制**」是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎）及 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 进行再创作。本作使用 Clickteam Fusion 2.5+ 开发。
-
-马力欧及其版权归属任天堂。Mario Forever、「Legend World 重制」以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。「Legend World 重制」是非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
+「**Legend World 重制**」是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎），以 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 为蓝本进行再创作。本作使用 Clickteam Fusion Developer 2.5+ 开发。
 
 ### 作品介绍
 Legend World Remake v2.0 包含三层内容：
@@ -31,7 +29,9 @@ Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：
 
 #### 全新大地图系统
 所有世界的大地图全面重制，关卡可自由选择并重复游玩。  
-游戏支持即时存档，通关后返回大地图时会自动保存进度。
+游戏支持即时存档，也可在菜单栏中手动存档或读档，并可存至不同槽位（注意：会覆盖该槽位的原有数据，请务必备份！）。  
+用鼠标点击挑战图标即可进入对应的挑战模式。蓝字挑战和红字挑战的图标均可点击，但红字挑战需要先通过原关卡才能解锁。  
+按加速键可自由查看大地图，在自由查看模式下按跳跃键可选择其他世界。
 
 #### 最终章：第八世界
 第八世界不仅是对 Legend World 重制的补完，更是一次完整的收束。  
@@ -89,9 +89,17 @@ Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：
 </div>
 
 ### 视频
+视频中展示的部分内容为开发中画面，可能与最终游戏有所差异，请以实际体验为准。
 
 <iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=614547542&bvid=BV1ph4y1G7to&cid=1158903770&p=1&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 <iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=392439028&bvid=BV1Td4y1j7HD&cid=1604111040&p=1&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 <iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=213387499&bvid=BV1Ea411Y7nS&cid=583383663&p=1&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+
+### 免责声明
+马力欧及其版权归属任天堂。Mario Forever、「Legend World 重制」以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。「Legend World 重制」是非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
+
+「Legend World 重制」为免费游戏，严禁倒卖或用于营利，违者必究！
+
+「Legend World 重制」的主要制作人员拥有 Clickteam Fusion Developer 2.5+ 的正版副本。
