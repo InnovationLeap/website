@@ -29,9 +29,9 @@ These include both reimagined stages from other Mario Worker 1.1 episodes and en
 Achieving 100% completion requires finishing all three layers of content.
 
 #### Redesigned World Maps
-All World Maps have been completely rebuilt. Levels can now be freely chosen and replayed, with auto-saving whenever the player return to the map after completing a level.
-The World Map also supports manual save/load from the menu bar, with the option to save to another slot (Note: saving will overwrite existing data in that slot, so make backups!).
-Click a challenge icon to enter Challenge Mode. Challenges with blue text and red text descriptions are both clickable, but red challenges only unlock after clearing their original level.
+All World Maps have been completely rebuilt. Levels can now be freely chosen and replayed, with auto-saving whenever the player return to the map after completing a level.  
+The World Map also supports manual save/load from the menu bar, with the option to save to another slot (Note: saving will overwrite existing data in that slot, so make backups!).  
+Click a challenge icon to enter Challenge Mode. Challenges with blue text and red text descriptions are both clickable, but red challenges only unlock after clearing their original level.  
 Press Fire key to freely view the World Map, and while in this mode, press Jump key to select a world.
 
 #### The Final Chapter: World 8
