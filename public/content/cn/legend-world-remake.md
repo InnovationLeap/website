@@ -91,11 +91,7 @@ Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：
 ### 视频
 视频中展示的部分内容为开发中画面，可能与最终游戏有所差异，请以实际体验为准。
 
-<iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=614547542&bvid=BV1ph4y1G7to&cid=1158903770&p=1&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-<iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=392439028&bvid=BV1Td4y1j7HD&cid=1604111040&p=1&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
-<iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=213387499&bvid=BV1Ea411Y7nS&cid=583383663&p=1&autoplay=0" scrolling="no" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=115112488798956&bvid=BV1J7hRzEEPi&cid=32032951466&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ### 免责声明
 马力欧及其版权归属任天堂。Mario Forever、「Legend World 重制」以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。「Legend World 重制」是非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
