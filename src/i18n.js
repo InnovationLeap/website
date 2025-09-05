@@ -8,8 +8,8 @@ export default {
       { text: "关于 INL", href: "/cn/about/" }
     ],
     legendWorldRemake: {
-      downloadUrl: "",
-      downloadText: "9 月 5 日发布"
+      downloadUrl: "https://file.marioforever.net/Mario%20Forever/%E5%9B%BD%E5%86%85%E4%BD%9C%E5%93%81/2025/LegendWorldRemake_v2.0.7z",
+      downloadText: "下载"
     },
     legendWorldMW: {
       downloadUrl: "http://nmnmoooh888.ys168.com/",
@@ -68,8 +68,8 @@ export default {
       { text: "About", href: "/en/about/" }
     ],
     legendWorldRemake: {
-      downloadUrl: "",
-      downloadText: "Available Sep 5"
+      downloadUrl: "https://file.marioforever.net/mario-forever/games/chinese-fangames/2025/LegendWorldRemake_v2.0.7z",
+      downloadText: "Download"
     },
     legendWorldMW: {
       downloadUrl: "http://www.mediafire.com/file/mk6y96b0zxh8imz/%255BNmnmoooh_Works%255D_Legend_World_V1.1.rar/file",
