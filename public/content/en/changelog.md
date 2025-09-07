@@ -86,9 +86,6 @@ title: Legend World Remake v2.0
     - No music is playing in some World Map scenes
     - The energy tank of Boss #4 isn't shown correctly
     - The timer counts from 360 in 1-Mini Game 1 sometimes
-- Special Mini Games are added.
-
-- Bugfix.
 - Add Special Mini Games.
 
 #### v1.0.1 (September 7, 2015)
