@@ -47,35 +47,53 @@ title: Legend World Remake v2.0
 - Bugfix.
 
 #### v1.5.1 (February 27, 2019)
-- Bugfix.
+- Bugfix:
+    - Game crashes when pressing F3 in Save Game Room
+    - Mario jumps automatically in 6-Mini Game
 - 6-2 is revamped.
-- Improve some levels.
+- Improved some levels.
+- Graphics update.
 
 #### v1.5 (August 25, 2017)
 - Add World 6 & World 7 from the original Legend World.
 - World 1 to World 5 are simplified and greatly improved.
 - Bugfix.
+- Graphics update.
 
 #### v1.1.1 (September 24, 2016)
-- Bugfix.
+- Bugfix. 
+- Graphics update.
+- Levels simplify.
 
 #### v1.1.0.2 (February 21, 2016)
-- Bugfix.
+- Fixed a bug where some save mechanisms were not working.
+- Fixed a layer issue in 5-3.
 
 #### v1.1.0.1 (February 19, 2016)
-- Bugfix.
+- Fixed some BGM not playing issues.
 
 #### v1.1 (February 19, 2016)
 - Add World 5 from the original Legend World.
+- Shorten maps of World 3 & World 4 Part 1.
+- Add "A mini game is available. Would you like to have a try?" option.
 - Musics are now loaded externally.
 - Special Mini Games are removed.
 
 #### v1.0.2 (November 4, 2015)
+- Bugfix:
+    - 4-6's starting position issue
+    - No sound while hitting bricks in 2-5
+    - No music is playing in some World Map scenes
+    - The energy tank of Boss #4 isn't shown correctly
+    - The timer counts from 360 in 1-Mini Game 1 sometimes
+- Special Mini Games are added.
+
 - Bugfix.
 - Add Special Mini Games.
 
 #### v1.0.1 (September 7, 2015)
-- Bugfix.
+- Changed Boo's graphic in 1-B.
+- Fixed 4-3's starting position issue.
 
 #### v1.0 (September 4, 2015)
 - This version includes World 1 to World 4 from the original Legend World.
