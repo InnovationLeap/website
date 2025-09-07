@@ -66,7 +66,7 @@ title: Legend World Remake v2.0
 - Levels simplify.
 
 #### v1.1.0.2 (February 21, 2016)
-- Fixed a bug where some save mechanisms were not working.
+- Fixed a bug where save mechanisms were not working sometimes.
 - Fixed a layer issue in 5-3.
 
 #### v1.1.0.1 (February 19, 2016)
