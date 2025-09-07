@@ -99,7 +99,7 @@ export default {
         {
           title: "Links",
           links: [
-            { text: "Mario Forever Forum", href: "http://marioforeverforum.boards.net", target: "_blank" },
+            { text: "Mario Forever Space", href: "https://marioforever.space/", target: "_blank" },
             { text: "Mario Forever Wiki", href: "https://en.wiki.marioforever.net/", target: "_blank" }
           ]
         },
