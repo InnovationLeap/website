@@ -4,6 +4,8 @@ title: Legend World 重制 v2.0
 
 「**Legend World 重制**」是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎），以 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 为蓝本进行再创作。本作使用 Clickteam Fusion Developer 2.5+ 开发。
 
+**最新版本**：v2.0.3
+
 ### 作品介绍
 Legend World Remake v2.0 包含三层内容：
 
