@@ -3,6 +3,19 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.4 (September 10, 2025)
+- Fixed an issue where the Perfect Run Vol.EX achievement could be mistakenly activated under certain conditions.
+- Fixed an issue where some levels without a timer could still trigger a time countdown after being cleared.
+- Fixed a bug where touching the goal could incorrectly award only 200 points.
+- Fixed a color issue with ? blocks in the secret room of 2-5.
+- Fixed several issues at the hidden exit of 2-A's "Breakout!" challenge, including a moving 3-UP Mushroom and mislayered blocks.
+- Fixed a bug in World of Lens-4 where launching a leftward fireball while entering the goal pipe would cause the camera to scroll incorrectly, making the stage impossible to clear.
+- Fixed an incorrect goal sound effect when clearing 4-2 of MARII0 F0REEVER V4.44444... on the second playthrough.
+- Removed a misplaced off-screen autoscroll trigger in 3-B.
+- Adjusted the stomp detection for Cheep-Cheeps in Legend Voyage-1.
+- Fixed missing subtitle when completing MARII0 F0REEVER V4.44444... on the second playthrough.
+- (Hopefully) fixed an issue in MARII0 F0REEVER V4.44444... on the second playthrough where Bowser could get stuck floating in mid-air.
+
 #### v2.0.3 (September 7, 2025)
 - Fixed a bug where the camera would not scroll properly in the bonus room of 8-4.
 - Fixed a timer bug after clearing a level of World of Lens, with preventive adjustments to other extra levels.
