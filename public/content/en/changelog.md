@@ -9,7 +9,7 @@ title: Legend World Remake v2.0
 - Fixed a bug where touching the goal could incorrectly award only 200 points.
 - Fixed a color issue with ? blocks in the secret room of 2-5.
 - Fixed several issues at the hidden exit of 2-A's "Breakout!" challenge, including a moving 3-UP Mushroom and mislayered blocks.
-- Fixed a bug in World of Lens-4 where launching a leftward fireball while entering the goal pipe would cause the camera to scroll incorrectly, making the stage impossible to clear.
+- Fixed a bug in World of Lens-4 where launching a leftward fireball while entering the goal pipe would cause the camera to scroll incorrectly, making the game stuck.
 - Fixed an incorrect goal sound effect when clearing 4-2 of MARII0 F0REEVER V4.44444... on the second playthrough.
 - Removed a misplaced off-screen autoscroll trigger in 3-B.
 - Adjusted the stomp detection for Cheep-Cheeps in Legend Voyage-1.
