@@ -3,6 +3,21 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.5 (September 15, 2025)
+- Fixed minor background issue in 5-1.
+- Prevented Mario from facing left in all Dash Time challenges.
+- Fixed an issue in the King of Kings challenge (7-Boss) where dying during the Stage of Montage phase would cause the next life to retain the Montage effect.
+- Fixed a missing ViewChange controller at the checkpoint of 8-4 in MARII0 F0REEVER V4.44444...
+- Fixed an issue where the secret Toad that appears after collecting 120 Purple Coins could still appear prematurely before meeting the condition.
+- Fixed a missing path node before 5-B on the World 5 Map.
+- Standardized Extra Piece levels to have infinite lives.
+- Legend Voyage: when lives reach zero, the player now restarts with 10 lives instead of a Game Over.
+- Adjusted starting lives in extra levels: set to 5 (instead of 4) for Breezy Journey and World of Lens; Great Castle now starts with 8 lives.
+- Legend Minix will now occasionally provide red mushrooms once the game reaches later stages with increased difficulty, serving as a small relief.
+- Added an infinite Fire Flower to the third section of World of Lens-4.
+- Fixed a layer issue with the fade mask when clearing 8-!.
+- Fixed an issue where the invisible checkpoint before the Bowser battle in 8-! could not be activated outside the black hole.
+
 #### v2.0.4 (September 10, 2025)
 - Fixed an issue where the Perfect Run Vol.EX achievement could be mistakenly activated under certain conditions.
 - Fixed an issue where some levels without a timer could still trigger a time countdown after being cleared.

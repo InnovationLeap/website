@@ -3,6 +3,21 @@ title: Legend World 重制 v2.0
 ---
 
 ### 更新日志
+#### v2.0.5 (2025-09-15)
+- 修复了 5-1 背景地面的一些细节问题
+- 预防了 Dash Time 挑战中马里奥可能面朝左的问题
+- 修复了 7-Boss 的 King of Kings 挑战在 Stage of Montage 阶段死亡后，下一条命依然保留剪影效果的问题
+- 修复了《Mario Forever 4.4》8-4 Check Point 处缺少 ViewChange 控件的问题
+- 修复了在未达成 120 紫币条件时，集齐 120 紫币后出现的蘑菇人仍可能提前出现的问题
+- 修复了 World 5 大地图中 5-B 前路径的一个点消失的问题
+- 将 Extra Piece 的关卡统一为无限命数
+- 修改了 Legend Voyage 的命数机制：在 0 命死亡时，会恢复为 10 命重新开始，而不是 Game Over
+- 调整了附加关卡的起始命数：Breezy Journey 和 World of Lens 的起始命数由 4 改为 5；Great Castle 改为 8
+- Legend Minix 现在有机会随机出现红蘑菇
+- 为 World of Lens-4 的第三部分添加了无限火力花
+- 修复了 8-! 过关时渐变遮罩的图层问题
+- 修复了 8-! 在库巴战前的隐形 Check Point 无法在黑洞外被激活的问题
+
 #### v2.0.4 (2025-09-10)
 - 修复了 Perfect Run Vol.EX 成就在特定情况下被误触发而判定成就达成的问题
 - 修复了部分无时间的关卡过关后可能触发计时结算的问题

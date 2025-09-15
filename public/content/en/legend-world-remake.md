@@ -4,7 +4,7 @@ title: Legend World Remake v2.0
 
 **Legend World Remake (LWR, LGR)** is a fan game created by **INNOVATION LEAP**, based on *Mario Forever* (Rainbow Engine) and the [original *Legend World* on Mario Worker 1.1](/en/legend-world-remake/legend-world-on-mario-worker) by Nmnmoooh, made with Clickteam Fusion Developer 2.5+.
 
-**Latest version:** v2.0.4
+**Latest version:** v2.0.5
 
 ### Overview
 Legend World Remake v2.0 features three layers of content:
