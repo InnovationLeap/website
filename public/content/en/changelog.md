@@ -3,11 +3,20 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.5.1 (September 19, 2025)
+- Fixed a block layer issue in 7-6.
+- Fixed the golden pillar's layer issue in 2-A, which was introduced in v2.0.4.
+- Fixed magma marker layer issue in 6-2 of MARII0 F0REEVER V4.44444.
+- Fixed a bug in 7-M1's "No Regret" challenge where Mario could take damage while the minigame instructions were still being displayed.
+- Fixed an incorrect color for the hidden 1-UP mushroom ?-block in 5-5.
+- Set the Invincible Star in 5-M2 to stationary.
+- Set the BGM in Legend Voyage-6 to continue playing without interruption after death.
+
 #### v2.0.5 (September 15, 2025)
 - Fixed minor background issue in 5-1.
 - Prevented Mario from facing left in all Dash Time challenges.
 - Fixed an issue in the King of Kings challenge (7-Boss) where dying during the Stage of Montage phase would cause the next life to retain the Montage effect.
-- Fixed a missing ViewChange object at the checkpoint of 8-4 in MARII0 F0REEVER V4.44444...
+- Fixed a missing ViewChange object at the checkpoint of 8-4 in MARII0 F0REEVER V4.44444.
 - Fixed an issue where the secret Toad that appears after collecting 120 Purple Coins could still appear prematurely before meeting the condition.
 - Fixed a missing path node before 5-B on the World 5 Map.
 - Standardized Extra Piece levels to have infinite lives.
@@ -25,11 +34,11 @@ title: Legend World Remake v2.0
 - Fixed a color issue with ? blocks in the secret room of 2-5.
 - Fixed several issues at the hidden exit of 2-A's "Breakout!" challenge, including a moving 3-UP Mushroom and mislayered blocks.
 - Fixed a bug in World of Lens-4 where launching a leftward fireball while entering the goal pipe would cause the camera to scroll incorrectly, making the game stuck.
-- Fixed an incorrect goal sound effect when clearing 4-2 of MARII0 F0REEVER V4.44444... on the second playthrough.
+- Fixed an incorrect goal sound effect when clearing 4-2 of MARII0 F0REEVER V4.44444 on the second playthrough.
 - Removed a misplaced off-screen autoscroll trigger in 3-B.
 - Adjusted the stomp detection for Cheep-Cheeps in Legend Voyage-1.
-- Fixed missing subtitle when completing MARII0 F0REEVER V4.44444... on the second playthrough.
-- (Hopefully) fixed an issue in MARII0 F0REEVER V4.44444... on the second playthrough where Bowser could get stuck floating in mid-air.
+- Fixed missing subtitle when completing MARII0 F0REEVER V4.44444 on the second playthrough.
+- (Hopefully) fixed an issue in MARII0 F0REEVER V4.44444 on the second playthrough where Bowser could get stuck floating in mid-air.
 
 #### v2.0.3 (September 7, 2025)
 - Fixed a bug where the camera would not scroll properly in the bonus room of 8-4.
