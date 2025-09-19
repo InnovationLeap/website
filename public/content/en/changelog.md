@@ -3,6 +3,10 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.5.2 (September 19, 2025)
+- Fixed an issue in 5-M2 where the player couldn't obtain the Invincible Star, which was introduced in v2.0.5.1.
+- Fixed a color issue in 7-Boss's "King of Kings" challenge, which was introduced in v2.0.5.
+
 #### v2.0.5.1 (September 19, 2025)
 - Fixed a block layer issue in 7-6.
 - Fixed the golden pillar's layer issue in 2-A, which was introduced in v2.0.4.
