@@ -3,6 +3,14 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.5.3 (October 8, 2025)
+- Fixed layer issues in 7-3, 8-2, and Great Castle.
+- Fixed a minor pipe flaw in Breezy Journey-3.
+- Sealed the underside of the airships in 1-7 and Legend Voyage-1.
+- Fixed a bug where, after returning to Peach's Castle by pressing F3 during the Xscroll ON! challenge in 7-2, the Xscroll effect would persist in other levels.
+- Fixed an issue in MARII0 F0REEVER V4.44444 where the intro scene sometimes failed to jump to the Save Game Room.
+- Fixed a bug in 8-4 of MARII0 F0REEVER V4.44444 where, after reviving from a checkpoint and hitting a white switch block to change the BGM, entering a white warp pipe would cause the BGM to stop.
+
 #### v2.0.5.2 (September 19, 2025)
 - Fixed an issue in 5-M2 where the player couldn't obtain the Invincible Star, which was introduced in v2.0.5.1.
 - Fixed a color issue in 7-Boss's "King of Kings" challenge, which was introduced in v2.0.5.

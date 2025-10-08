@@ -3,6 +3,14 @@ title: Legend World 重制 v2.0
 ---
 
 ### 更新日志
+#### v2.0.5.3 (2025-10-08)
+- 修复了 7-3、8-2、Great Castle 的地形图层错误
+- 修复了 Breezy Journey-3 的一处水管细节瑕疵
+- 补上了 1-7、Legend Voyage-1 飞船的封底
+- 修复了 7-2 的 Xscroll ON! 挑战中按 F3 回到碧琪城堡后，其他关卡会保留 Xscroll 效果的 Bug
+- 修复了《Mario Forever 4.4》开始场景在个别情况下不跳转到选关界面的问题
+- 修复了《Mario Forever 4.4》8-4 的一个 Bug，该 Bug 导致在从 Check Point 复活时，顶一处白色开关砖切换 BGM，小个子状态进入白水管后 BGM 会停止
+
 #### v2.0.5.2 (2025-09-19)
 - 修复了 v2.0.5.1 引入的玩家无法吃到 5-M2 无敌星的 Bug
 - 修复了 v2.0.5 引入的 7-Boss 挑战的颜色异常问题
