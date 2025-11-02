@@ -2,7 +2,7 @@
 title: Super Mario Worker Project
 ---
 
-Super Mario Worker Project (SMWP) is an unofficial Mario level editor based on Softendo’s Mario Worker 1.1 (aka Game Maker ver.).  
+Super Mario Worker Project (SMWP) is an unofficial Mario level editor based on Softendo's Mario Worker 1.1 (aka Game Maker ver.).  
 It enhances and expands upon MW 1.1 by introducing new elements and fixing various bugs, while preserving its original physics behavior and level format structure.
 
 Mario and all relatives belong to Nintendo. Mario Worker, Super Mario Worker Project and INNOVATION LEAP are not affiliated with Nintendo in any way. Super Mario Worker Project is a non-profit game made by the fans, so no financial gain is made from the project.
@@ -33,7 +33,10 @@ You can also open .mfl levels created in Mario Worker 1.1, but SMWP cannot save 
 ### FAQ
 
 **Q: What is Super Mario Worker Project? Is this developed by Softendo?**  
-**A:** We have expected Softendo (aka Michał "Buziol" Gdaniec) to update Mario Worker 1.1 (aka Game Maker ver.), but all hopes have failed. Although there are multiple "Mario Workers" existing, MW (GM ver.) cannot be replaced by them in the Chinese Mario Worker community. In July 2015, INNOVATION LEAP began developing an unofficial heavily updated version of MW (GM ver.), which we call "Super Mario Worker Project".
+**A:** We once hoped that Softendo would release a new version of Mario Worker 1.1, but those hopes never came true.  
+Throughout MW's history, there have been several titles such as Mario Worker 1.0, Mario Worker 2, and Mario Worker Remake, which were either level editors from Mario Forever or fan-made remakes. However, none of them could replace Mario Worker 1.1 within the Chinese Mario Worker community.  
+Therefore, in July 2015, a small development group from this community began working on a new editor based on Mario Worker 1.1, naming the project Super Mario Worker Project (SMWP). The team was later officially established as INNOVATION LEAP (INL) in June 2016 to continue the development.
+Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and adding new features to meet players' expectations.
 
 **Q: Is SMWP developed from scratch?**  
 **A:** No. We obtained the source code of Mario Worker (GM ver.), the version bundled with Mario Forever 4.1 (which is basically the same as 4.4), and we have been improving it by fixing bugs and adding new features.
