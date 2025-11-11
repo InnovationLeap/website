@@ -3085,3 +3085,20 @@ input.btn-biglarge,button.btn-biglarge {
 			}
 
 	}
+
+/* Inline code styling */
+#content :not(pre) > code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  background-color: #f5f7fa;
+  color: #1f2937;
+  padding: 0.15em 0.4em;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+}
+
+/* Avoid double styling inside code blocks */
+#content pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
