@@ -5,7 +5,7 @@ title: Super Mario Worker Project
 ### Changelog
 #### v1.7.12-beta4 (2025-09-23)
 ##### Editor
-- When setting a new group of weather parameters in Scene Controllers after testing a level with F3/F4, the previous values will now be remembered.
+- When setting a new group of weather parameters in Scene Controllers after testing a level with `F3` / `F4`, the previous values will now be remembered.
 - After loading a level, the Scene Controler's stored weather parameters will be cleared; when selecting "Reset weather" in the Scene Controller submenu, the object's current weather parameters can now be reloaded.
 ##### Bug Fixes
 - Fixed an issue where passage exits could not be moved by 16 pixels using the R/F/D/G keys.
