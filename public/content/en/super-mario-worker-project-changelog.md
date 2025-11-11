@@ -8,7 +8,7 @@ title: Super Mario Worker Project
 - When setting a new group of weather parameters in Scene Controllers after testing a level with `F3` / `F4`, the previous values will now be remembered.
 - After loading a level, the Scene Controler's stored weather parameters will be cleared; when selecting "Reset weather" in the Scene Controller submenu, the object's current weather parameters can now be reloaded.
 ##### Bug Fixes
-- Fixed an issue where passage exits could not be moved by 16 pixels using the R/F/D/G keys.
+- Fixed an issue where passage exits could not be moved by 16 pixels using the `R`, `F`, `D`, and `G` keys.
 - Fixed a bug where the Luminate toggle for certain objects did not work.
 - Fixed an issue where Weather Settings in Scene Controller, which linked to View Controller or Bowser, were ineffective.
 - Fixed a bug where enemies could still be placed in the music/background/weather setting screens.
@@ -126,7 +126,7 @@ title: Super Mario Worker Project
 
 #### v1.7.7 (2021-05-03)
 ##### Editor
-- Added the ability to move objects by 16 pixels at once. Hold the Accurate Move key (default: Z), then use R, F, D, and G (corresponding to Up, Down, Left, and Right) to move the object by 16 pixels at a time.
+- Added the ability to move objects by 16 pixels at once. Hold the Accurate Move key (default: `Z`), then use `R`, `F`, `D`, and `G` (corresponding to Up, Down, Left, and Right) to move the object by 16 pixels at a time.
 - Allowed editing of objects with negative coordinates directly by stretching the window and clicking the black border area.
 - Added support for switching between Block and Imitator.
 ##### Level Features
