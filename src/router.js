@@ -19,7 +19,8 @@ const routes = [
   { path: '/:lang(en|cn)/legend-world-remake/legend-world-on-mario-worker', component: Page, props: r => ({ lang: r.params.lang, page: 'legend-world-on-mario-worker' }) },
   { path: '/:lang(en|cn)/legend-world-remake/changelog', component: Page, props: r => ({ lang: r.params.lang, page: 'changelog' }) },
   { path: '/en/super-mario-worker-project/', component: Page, props: r => ({ lang: 'en', page: 'super-mario-worker-project' }) },
-  { path: '/en/super-mario-worker-project/version-archive', component: Page, props: r => ({ lang: 'en', page: 'super-mario-worker-project-version-archive' }) }
+  { path: '/en/super-mario-worker-project/version-archive', component: Page, props: r => ({ lang: 'en', page: 'super-mario-worker-project-version-archive' }) },
+  { path: '/en/super-mario-worker-project/changelog', component: Page, props: r => ({ lang: 'en', page: 'super-mario-worker-project-changelog' }) }
 ]
 
 export default createRouter({ history: createWebHistory(), routes })

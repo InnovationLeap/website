@@ -48,10 +48,6 @@ Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and 
 **A:** Super Mario Worker Project is fundamentally different from the Mario Forever fangames. Our current version is still based on the original Mario Worker 1.1 code by Softendo, which was never well-structured or bug-free. Hastily modifying its internal systems, such as physics or object parameters, would easily break compatibility with existing levels.  
 We plan to rebuild the editor from the ground up in the next major version (v2.0), completely independent from the original code. Once that happens, adding more advanced features from Mario Forever fangames will become possible.
 
-### Changelog
-
-Only [Chinese version](https://smwp.marioforever.net/downloads/#%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97) is currently available.
-
 ### Gallery
 
 <div class="image-gallery">

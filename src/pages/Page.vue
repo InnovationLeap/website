@@ -84,10 +84,11 @@ const subnavItems = computed(() => {
       { text: props.lang === 'cn' ? '了解重制版' : 'Remake', href: `/${props.lang}/legend-world-remake/`, active: props.page === 'legend-world-remake' }
     ]
   }
-  if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive') {
+  if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') {
     return [
       { text: 'Overview', href: `/en/super-mario-worker-project/`, active: props.page === 'super-mario-worker-project' },
-      { text: 'Version archive', href: `/en/super-mario-worker-project/version-archive`, active: props.page === 'super-mario-worker-project-version-archive' }
+      { text: 'Version archive', href: `/en/super-mario-worker-project/version-archive`, active: props.page === 'super-mario-worker-project-version-archive' },
+      { text: 'Changelog', href: `/en/super-mario-worker-project/changelog`, active: props.page === 'super-mario-worker-project-changelog' }
     ]
   }
   return []
