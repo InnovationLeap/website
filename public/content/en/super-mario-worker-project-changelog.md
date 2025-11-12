@@ -435,7 +435,7 @@ title: Super Mario Worker Project
 
 #### v1.4.0 (2018-02-28)
 ##### Highlights
-- Added new enemies: Buzzy Beetle, Boo, Red Paratroopa, Blue Koopa, Blue Paratroopa, and Electro Coral. (2018-01-23)
+- Added new enemies: Buzzy Beetle, Boo, Red Paratroopa, Blue Koopa, Blue Paratroopa, and Electrified Coral. (2018-01-23)
 - Unlocked snowfield and desert backgrounds. (2018-01-25)
 - Unlocked new blocks including daytime snow grass. (2018-01-25)
 - Buzzy Beetle shells can now break bricks. (2018-01-25)
@@ -447,7 +447,7 @@ title: Super Mario Worker Project
 - Added All supported formats option to the level selection dialog. (2018-02-22)
 - Changed `F7` to resize the current level without clearing its contents (this feature may be unstable). The Create New Level function has been moved to `F5`, with revised warning text. (2018-02-22)
 ##### Editor
-- Added new enemies: Buzzy Beetle, Boo, Red Paratroopa, Blue Koopa, Blue Paratroopa, and Electro Coral. (2018-01-23)
+- Added new enemies: Buzzy Beetle, Boo, Red Paratroopa, Blue Koopa, Blue Paratroopa, and Electrified Coral. (2018-01-23)
 - Unlocked snowfield and desert backgrounds. (2018-01-25)
 - Unlocked new blocks including daytime snow grass. (2018-01-25)
 - Increased the maximum level size to 1920×1920. (2018-01-29)
@@ -468,7 +468,7 @@ title: Super Mario Worker Project
 - Buzzy Beetle shells can now break bricks. (2018-01-25)
 - Attempted to fix the stomp detection issue. (2018-01-25)
 - Fixed issues with Starman Mario and shells cause 1UP score cycling on some enemies. (2018-01-25)
-- Electro Coral now renders above other layers. (2018-01-25)
+- Electrified Corals now render above other layers. (2018-01-25)
 - Raised water surface layer above the block layer. (2018-01-29)
 - Increased Fire Bro.'s attack frequency. (2018-01-29)
 - Enlarged Bowser's portrait. (2018-01-29)
@@ -500,7 +500,7 @@ title: Super Mario Worker Project
 - Fixed an issue where fireballs or beetroots could destroy moving Buzzy Beetle shells. (2018-02-25)
 - Fixed an issue where water level didn't follow when panning levels with `F7`. (2018-02-27)
 - Fixed an issue where Red Koopa could walk into solids when falling too close to them. (2018-02-27)
-- Fixed hidden block collision issue with Buzzy Beetle. (2018-02-27)
+- Fixed hidden ?-block collision issue with Buzzy Beetle shell. (2018-02-27)
 ##### Other
 - Rewrote background rendering code. (2018-02-01)
 - Consolidated all background music into the `Data` folder. (2018-02-01)
