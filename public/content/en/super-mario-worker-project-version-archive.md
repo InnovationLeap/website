@@ -35,3 +35,13 @@ title: Super Mario Worker Project
 | v1.4.0 | 2018-02-28 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.4.0.zip) | [Download data](https://wwx.lanzoux.com/i2q9e2d) |
 | v1.3.1_Fix2 | 2018-02-05 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.3.1_Fix2.zip) | Included in game |
 | v1.3.1 | 2017-10-14 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.3.1.zip) | Included in game |
+| v1.3.0 | 2017-08-16 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.3.0.zip) | Included in game |
+| v1.2.7 | 2017-08-05 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.2.7.zip) | Included in game |
+| v1.2.2 | 2017-07-28 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.2.2.zip) | Included in game |
+| v1.2.0_Fix2 | 2017-06-28 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.2.0_Fix2.zip) | Included in game |
+| v1.2.0_Fix1 | 2017-06-27 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.2.0_Fix1.zip) | Included in game |
+| v1.2.0 | 2017-06-27 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.2.0.zip) | Included in game |
+| v1.1.0 | 2017-06-15 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v1.1.0.zip) | Require MW 1.1's data |
+| v0.2.4_Fix1 | 2016-07-07 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v0.2.4_Fix.rar) | Require MW 1.1's data |
+| v0.2.2 | 2016-07-02 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v0.2.2.rar) | Require MW 1.1's data |
+| v0.2.0 | 2016-06-27 | [Download game](https://file.marioforever.net/smwp/SuperMarioWorkerProject_v0.2.0.rar) | Require MW 1.1's data |

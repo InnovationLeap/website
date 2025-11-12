@@ -48,6 +48,21 @@ function enhanceGalleries() {
   })
 }
 
+function enhanceTables() {
+  const root = articleEl.value
+  if (!root) return
+  const tables = root.querySelectorAll('table')
+  if (!tables || !tables.length) return
+  tables.forEach(t => {
+    const p = t.parentElement
+    if (p && p.classList && p.classList.contains('table-responsive')) return
+    const wrap = document.createElement('div')
+    wrap.className = 'table-responsive'
+    t.parentNode.insertBefore(wrap, t)
+    wrap.appendChild(t)
+  })
+}
+
 function parseFrontMatter(text) {
   // Match YAML front matter starting and ending with ---
   const match = text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---\s*[\r\n]*/)
@@ -79,6 +94,7 @@ async function load() {
   content.value = md.render(body)
   await nextTick()
   enhanceGalleries()
+  enhanceTables()
   // 触发全局 iframe 自适应
   if (window.adjustMediaAspect) {
     nextTick(window.adjustMediaAspect)
