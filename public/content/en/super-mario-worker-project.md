@@ -9,7 +9,7 @@ Mario and all relatives belong to Nintendo. Mario Worker, Super Mario Worker Pro
 
 SMWP is freeware and is completely free of charge. If you paid for this game, you were ripped off!
 
-**Latest stable version:** v1.7.11
+**Latest stable version:** v1.7.11  
 **Latest pre-release version:** v1.7.12-beta4
 
 ### Video
