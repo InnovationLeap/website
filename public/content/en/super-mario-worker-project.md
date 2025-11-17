@@ -45,6 +45,10 @@ Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and 
 **Q: I encountered a grey screen when opening a level.**  
 **A:** Make sure .NET Framework 4.0 or newer is installed on your system.
 
+**Q: You should change the physics to be like Mario Forever.**  
+**A:** We will NEVER change SMWP's physics, not even in the upcoming v2.0, as they have become an essential part of SMWP's identity and design philosophy.  
+If you strongly prefer Mario Forever-style physics, we recommend using [Mario Worker Remake](https://www.themariovariable.org/mario-forever/mario-worker-remake/), or following the development of Meteo Dream's [Mario Worker: Community Edition](https://marioforever.space/topic/36/wip-mario-worker-community-edition) (currently in prototype stage), which aim to replicate the Mario Forever experience more closely.
+
 **Q: Why don't you add the features that Mario Forever fangames have?**  
 **A:** Super Mario Worker Project is fundamentally different from the Mario Forever fangames. Our current version is still based on the original Mario Worker 1.1 code by Softendo, which was never well-structured or bug-free. Hastily modifying its internal systems, such as physics or object parameters, would easily break compatibility with existing levels.  
 We plan to rebuild the editor from the ground up in the next major version (v2.0), completely independent from the original code. Once that happens, adding more advanced features from Mario Forever fangames will become possible.
