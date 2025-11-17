@@ -112,7 +112,7 @@ export default {
         }
       ],
       switchLang: { text: "Chinese", href: "/cn/" },
-      copyright: "&copy; 2016-2025 INNOVATION LEAP. Mario and all relatives belong to Nintendo."
+      copyright: "&copy; 2016-2025 INNOVATION LEAP. Mario and its related copyrights belong to Nintendo."
     }
   }
 }
