@@ -37,7 +37,7 @@ You can also open .mfl levels created in Mario Worker 1.1, but SMWP cannot save 
 **A:** We once hoped that Softendo would release a new version of Mario Worker 1.1, but those hopes never came true.  
 Throughout MW's history, there have been several titles such as Mario Worker 1.0, Mario Worker 2, and Mario Worker Remake, which were either level editors from Mario Forever or fan-made remakes. However, none of them could replace Mario Worker 1.1 within the Chinese Mario Worker community.  
 Therefore, in July 2015, a small development group from this community began working on a new editor based on Mario Worker 1.1, naming the project Super Mario Worker Project (SMWP). The team was later officially established as INNOVATION LEAP (INL) in June 2016 to continue the development.  
-Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and adding new features to meet players' expectations.
+Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and adding new features to meet the community's expectations.
 
 **Q: Is SMWP developed from scratch?**  
 **A:** No. We obtained the source code of Mario Worker (GM ver.), the version bundled with Mario Forever 4.1 (which is basically the same as 4.4), and we have been improving it by fixing bugs and adding new features.
