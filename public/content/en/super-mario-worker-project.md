@@ -46,7 +46,7 @@ Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and 
 **A:** Make sure .NET Framework 4.0 or newer is installed on your system.
 
 **Q: You should change the physics to be like Mario Forever.**  
-**A:** We will NEVER change SMWP's physics, not even in the upcoming v2.0, as they have become an essential part of SMWP's identity and design philosophy.  
+**A:** We will NEVER change SMWP's physics, not even in the upcoming v2.0, as they have become an essential part of SMWP's identity, design, and the level ecosystem.  
 If you strongly prefer Mario Forever-style physics, we recommend using [Mario Worker Remake](https://www.themariovariable.org/mario-forever/mario-worker-remake/), or following the development of Meteo Dream's [Mario Worker: Community Edition](https://marioforever.space/topic/36/wip-mario-worker-community-edition) (currently in prototype stage), which aim to replicate the Mario Forever experience more closely.
 
 **Q: Why don't you add the features that Mario Forever fangames have?**  
