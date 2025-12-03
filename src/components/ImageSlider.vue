@@ -1,29 +1,27 @@
 <template>
   <div class="image-slider">
-    <template v-if="currentImage.link.startsWith('http')">
-      <a :href="currentImage.link" class="slider-link" :target="currentImage.target || '_blank'">
-        <transition name="fade" mode="out-in">
-          <img 
-            :key="currentIndex"
-            :src="currentImage.src" 
-            :alt="currentImage.alt"
-            class="slider-image"
-          />
-        </transition>
-      </a>
-    </template>
-    <template v-else>
-      <router-link :to="currentImage.link" class="slider-link">
-        <transition name="fade" mode="out-in">
-          <img 
-            :key="currentIndex"
-            :src="currentImage.src" 
-            :alt="currentImage.alt"
-            class="slider-image"
-          />
-        </transition>
-      </router-link>
-    </template>
+    <transition name="fade" mode="out-in">
+      <div :key="currentIndex" class="slide-container">
+        <template v-if="currentImage.link.startsWith('http')">
+          <a :href="currentImage.link" class="slider-link" :target="currentImage.target || '_blank'">
+            <img 
+              :src="currentImage.src" 
+              :alt="currentImage.alt"
+              class="slider-image"
+            />
+          </a>
+        </template>
+        <template v-else>
+          <router-link :to="currentImage.link" class="slider-link">
+            <img 
+              :src="currentImage.src" 
+              :alt="currentImage.alt"
+              class="slider-image"
+            />
+          </router-link>
+        </template>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -103,6 +101,11 @@ onUnmounted(() => {
   height: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.slide-container {
+  width: 100%;
+  height: 100%;
 }
 
 .slider-link {
