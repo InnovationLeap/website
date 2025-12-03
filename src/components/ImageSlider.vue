@@ -1,15 +1,29 @@
 <template>
   <div class="image-slider">
-    <a :href="currentImage.link" class="slider-link" :target="currentImage.target || '_self'">
-      <transition name="fade" mode="out-in">
-        <img 
-          :key="currentIndex"
-          :src="currentImage.src" 
-          :alt="currentImage.alt"
-          class="slider-image"
-        />
-      </transition>
-    </a>
+    <template v-if="currentImage.link.startsWith('http')">
+      <a :href="currentImage.link" class="slider-link" :target="currentImage.target || '_blank'">
+        <transition name="fade" mode="out-in">
+          <img 
+            :key="currentIndex"
+            :src="currentImage.src" 
+            :alt="currentImage.alt"
+            class="slider-image"
+          />
+        </transition>
+      </a>
+    </template>
+    <template v-else>
+      <router-link :to="currentImage.link" class="slider-link">
+        <transition name="fade" mode="out-in">
+          <img 
+            :key="currentIndex"
+            :src="currentImage.src" 
+            :alt="currentImage.alt"
+            class="slider-image"
+          />
+        </transition>
+      </router-link>
+    </template>
   </div>
 </template>
 

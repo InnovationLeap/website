@@ -63,6 +63,31 @@ function enhanceTables() {
   })
 }
 
+function enhanceLinks() {
+  const root = articleEl.value
+  if (!root) return
+  
+  // 处理内部链接，使用 click 事件替代 a 标签的默认行为
+  const links = root.querySelectorAll('a[href]')
+  links.forEach(link => {
+    const href = link.getAttribute('href')
+    // 检查是否为内部链接（相对路径或站内绝对路径）
+    if (href && !href.startsWith('http') && !href.startsWith('//') && !link.hasAttribute('target')) {
+      // 添加点击事件监听器来使用 router 进行导航
+      link.addEventListener('click', (e) => {
+        e.preventDefault()
+        // 使用 Vue Router 进行导航
+        if (typeof window !== 'undefined' && window.router) {
+          window.router.push(href)
+        } else {
+          // 降级处理：如果 router 不可用，则使用 location.assign
+          window.location.assign(href)
+        }
+      })
+    }
+  })
+}
+
 function parseFrontMatter(text) {
   // Match YAML front matter starting and ending with ---
   const match = text.match(/^---\s*[\r\n]+([\s\S]*?)[\r\n]+---\s*[\r\n]*/)
@@ -95,6 +120,7 @@ async function load() {
   await nextTick()
   enhanceGalleries()
   enhanceTables()
+  enhanceLinks()
   // 触发全局 iframe 自适应
   if (window.adjustMediaAspect) {
     nextTick(window.adjustMediaAspect)

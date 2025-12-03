@@ -11,7 +11,12 @@
                   <span class="label">{{ link.icon.includes('x-twitter') ? 'X' : link.icon.replace('fa-', '') }}</span>
                 </a>
                 <span v-else-if="!link.href">{{ link.text }}</span>
-                <a v-else :href="link.href" :target="link.target || null">{{ link.text }}</a>
+                <template v-else-if="link.href.startsWith('http')">
+                  <a :href="link.href" :target="link.target || null">{{ link.text }}</a>
+                </template>
+                <template v-else>
+                  <router-link :to="link.href">{{ link.text }}</router-link>
+                </template>
               </li>
             </ul>
           </section>
@@ -63,8 +68,8 @@ const switchLanguage = () => {
   if (targetUrl.startsWith('http')) {
     window.location.href = targetUrl
   } else {
-    // 使用 window.location 替代 router.push，强制刷新页面
-    window.location.assign(targetUrl)
+    // 使用 router.push 进行页面切换，避免刷新页面
+    router.push(targetUrl)
   }
 }
 </script>

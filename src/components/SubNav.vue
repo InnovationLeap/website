@@ -19,14 +19,14 @@
           <!-- Mobile dropdown menu -->
           <ul v-if="mobileMenuOpen" class="mobile-nav-menu" role="menu" ref="menuRef">
             <li v-for="(item, idx) in items" :key="`m-${idx}-${item.text}`" role="menuitem">
-              <a :href="item.href" :class="{ active: !!item.active }" @click.prevent="navigate(item.href)">{{ item.text }}</a>
+              <router-link :to="item.href" :class="{ active: !!item.active }">{{ item.text }}</router-link>
             </li>
           </ul>
         </div>
         <div class="nav">
           <span class="nav-switch">
             <template v-for="(item, idx) in items" :key="item.text">
-              <a class="link" :class="{ active: !!item.active }" :href="item.href">{{ item.text }}</a>
+              <router-link class="link" :class="{ active: !!item.active }" :to="item.href">{{ item.text }}</router-link>
               <span v-if="idx < items.length - 1" class="sep">|</span>
             </template>
           </span>
@@ -94,10 +94,7 @@ const toggleMobileMenu = async () => {
   }
 }
 
-const navigate = (href) => {
-  mobileMenuOpen.value = false
-  window.location.assign(href)
-}
+// Removed navigate function as we're now using router-link instead of manual navigation
 
 const handleClickOutside = (e) => {
   const el = titleRef.value
