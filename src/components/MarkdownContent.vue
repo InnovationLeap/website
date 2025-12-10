@@ -2,7 +2,7 @@
   <article ref="articleEl" v-html="content" />
 </template>
 <script setup>
-import { ref, watch, nextTick, onBeforeUnmount } from 'vue'
+import { ref, watch, nextTick, onBeforeUnmount, onMounted } from 'vue'
 import MarkdownIt from 'markdown-it'
 import GallerySlider from './GallerySlider.vue'
 import { createApp } from 'vue'
@@ -13,6 +13,26 @@ const emit = defineEmits(['frontmatter'])
 const content = ref('')
 const articleEl = ref(null)
 
+// 内容缓存，避免重复请求和渲染
+const contentCache = new Map()
+// 所有markdown文件的路径，用于预加载
+const allMarkdownPaths = [
+  // Chinese files
+  '/content/cn/about.md',
+  '/content/cn/changelog.md',
+  '/content/cn/legend-world-on-mario-worker.md',
+  '/content/cn/legend-world-remake.md',
+  '/content/cn/team.md',
+  // English files
+  '/content/en/about.md',
+  '/content/en/changelog.md',
+  '/content/en/legend-world-on-mario-worker.md',
+  '/content/en/legend-world-remake.md',
+  '/content/en/super-mario-worker-project-changelog.md',
+  '/content/en/super-mario-worker-project-version-archive.md',
+  '/content/en/super-mario-worker-project.md',
+  '/content/en/team.md'
+]
 // Keep references to dynamically mounted slider apps to unmount on updates
 let mountedSliderApps = []
 
@@ -107,16 +127,56 @@ function parseFrontMatter(text) {
   return { body, fm: { title } }
 }
 
+// Preload all markdown files into cache
+async function preloadMarkdownFiles() {
+  for (const path of allMarkdownPaths) {
+    if (!contentCache.has(path)) {
+      try {
+        const res = await fetch(path)
+        const txt = await res.text()
+        const { body, fm } = parseFrontMatter(txt)
+        const rendered = md.render(body)
+        contentCache.set(path, { rendered, fm })
+      } catch (error) {
+        console.error(`Failed to preload ${path}:`, error)
+      }
+    }
+  }
+}
+
 async function load() {
   // Unmount any previously mounted sliders when source changes
   unmountSliders()
   if (!props.src) return
+  
+  // Check if content is already in cache
+  if (contentCache.has(props.src)) {
+    const cached = contentCache.get(props.src)
+    content.value = cached.rendered
+    try { emit('frontmatter', cached.fm) } catch {}
+    await nextTick()
+    enhanceGalleries()
+    enhanceTables()
+    enhanceLinks()
+    // 触发全局 iframe 自适应
+    if (window.adjustMediaAspect) {
+      nextTick(window.adjustMediaAspect)
+    }
+    return
+  }
+  
+  // If not in cache, fetch and process
   const res = await fetch(props.src)
   const txt = await res.text()
   const { body, fm } = parseFrontMatter(txt)
+  const rendered = md.render(body)
+  
+  // Cache the processed content
+  contentCache.set(props.src, { rendered, fm })
+  
   // Emit front matter to parent (for SubNav title override)
   try { emit('frontmatter', fm) } catch {}
-  content.value = md.render(body)
+  content.value = rendered
   await nextTick()
   enhanceGalleries()
   enhanceTables()
@@ -128,6 +188,11 @@ async function load() {
 }
 
 watch(() => props.src, load, { immediate: true })
+
+onMounted(() => {
+  // Preload all markdown files in background when component mounts
+  preloadMarkdownFiles()
+})
 
 onBeforeUnmount(() => {
   unmountSliders()
