@@ -3,6 +3,15 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.6 (December 20, 2025)
+- Fixed a bug where the progress percentage was not immediately hidden after deleting a save file on the save selection screen.
+- Fixed an issue in 5-2 where the music marker at the secret room exit was misplaced, causing the level BGM not to switch back when exiting as Small Mario.
+- Fixed an issue in 5-A where the area beyond the goal was not properly sealed, allowing the player to die after clearing the level by touching the pole from a high position.
+- Fixed the color issue of the hidden Green Mushroom "?" block in 5-7.
+- Fixed a bug in Rush Hour Challenges where collecting two clocks of the same color at the same time would only apply the time effect once.
+- Fixed a bug in Legend Voyage-6 where Bowser had no sound effect when being hit by beetroots.
+- Minor adjustments.
+
 #### v2.0.5.3 (October 8, 2025)
 - Fixed layer issues in 7-3, 8-2, and Great Castle.
 - Fixed a minor pipe flaw in Breezy Journey-3.

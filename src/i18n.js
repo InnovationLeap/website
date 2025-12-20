@@ -8,7 +8,7 @@ export default {
       { text: "关于 INL", href: "/cn/about/" }
     ],
     legendWorldRemake: {
-      downloadUrl: "https://file.marioforever.net/Mario%20Forever/%E5%9B%BD%E5%86%85%E4%BD%9C%E5%93%81/2025/LegendWorldRemake_v2.0.5.3.7z",
+      downloadUrl: "https://file.marioforever.net/Mario%20Forever/%E5%9B%BD%E5%86%85%E4%BD%9C%E5%93%81/2025/LegendWorldRemake_v2.0.6.7z",
       downloadText: "下载"
     },
     legendWorldMW: {
@@ -68,7 +68,7 @@ export default {
       { text: "About", href: "/en/about/" }
     ],
     legendWorldRemake: {
-      downloadUrl: "https://file.marioforever.net/mario-forever/games/chinese-fangames/2025/LegendWorldRemake_v2.0.5.3.7z",
+      downloadUrl: "https://file.marioforever.net/mario-forever/games/chinese-fangames/2025/LegendWorldRemake_v2.0.6.7z",
       downloadText: "Download"
     },
     legendWorldMW: {
