@@ -9,7 +9,7 @@ title: Super Mario Worker Project
 - After loading a level, the Scene Controler's stored weather parameters will be cleared; when selecting "Reset weather" in the Scene Controller submenu, the object's current weather parameters can now be reloaded.
 ##### Bug Fixes
 - Fixed an issue where passage exits could not be moved by 16 pixels using the `R`, `F`, `D`, and `G` keys.
-- Fixed a bug where the Luminate toggle for certain objects did not work.
+- Fixed a bug where the luminate toggle for certain objects did not work.
 - Fixed an issue where Weather Settings in Scene Controller, which linked to View Controller or Bowser, were ineffective.
 - Fixed a bug where enemies could still be placed in the music/background/weather setting screens.
 - Fixed a text alignment issue in the Custom Music settings.
