@@ -3,6 +3,24 @@ title: Super Mario Worker Project
 ---
 
 ### Changelog
+#### v1.7.12-beta5 (2026-01-14)
+##### Editor
+- The editor now supports loading levels with `Ctrl+L`.
+- Added a luminate toggle for global fluid lava.
+- The luminate toggle for Solid/Transparent Color Blocks has been separated from that of other blocks.
+##### Level Features
+- Spotlights are no longer rendered when Dark Level is set to 0.
+##### Bug Fixes
+- Fixed a bug where Mario could automatically perform a small hop when exiting a pipe.
+- Fixed a bug where hitting hidden ?-blocks would play a duplicate sound effect.
+- Fixed a bug where the level clear sound effect would play after returning to the title screen and waiting for a while.
+- Fixed an issue where enabling luminate on Goombas would also force most enemies to have luminate enabled.
+- Fixed a bug where, if the level music was set to No Music, the Starman music would never stop once it started playing.
+- Fixed an issue where Scene Controllers would override the invincibility music before the Starman state expired.
+##### Other
+- Updated main menu links: Home now points to the SMWP official website, Help points to SMWP's MF Wiki page, and Upload Download now links to `download.marioforever.net`.
+- Removed Softendo logo from the Title Screen.
+
 #### v1.7.12-beta4 (2025-09-23)
 ##### Editor
 - When setting a new group of weather parameters in Scene Controllers after testing a level with `F3` / `F4`, the previous values will now be remembered.

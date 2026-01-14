@@ -6,7 +6,7 @@ Super Mario Worker Project (SMWP) is an unofficial Mario level editor based on S
 It enhances and expands upon MW 1.1 by introducing new elements and fixing various bugs, while preserving its original physics behavior and level format structure.
 
 **Latest stable version:** v1.7.11  
-**Latest pre-release version:** v1.7.12-beta4
+**Latest pre-release version:** v1.7.12-beta5
 
 ### Video
 
@@ -65,6 +65,7 @@ We plan to rebuild the editor from the ground up in the next major version (v2.0
 
 ### Disclaimer
 
-Mario and its related copyrights belong to Nintendo. Mario Worker, Super Mario Worker Project and INNOVATION LEAP are not affiliated with Nintendo in any way. Super Mario Worker Project is a non-profit fan project and generates no revenue.
-
+Mario and its related copyrights belong to Nintendo.  
+Mario Worker, Super Mario Worker Project and INNOVATION LEAP are not affiliated with Nintendo in any way.  
+Super Mario Worker Project is a non-profit fan project and generates no revenue.  
 SMWP is freeware and is completely free of charge. If you paid for this game, you were ripped off!
