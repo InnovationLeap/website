@@ -1,3 +1,5 @@
+const currentYear = new Date().getFullYear()
+
 export default {
   cn: {
     logoAlt: "INNOVATION LEAP",
@@ -56,7 +58,7 @@ export default {
         }
       ],
       switchLang: { text: "English", href: "/en/" },
-      copyright: "&copy; 2016-2025 INNOVATION LEAP"
+      copyright: `&copy; 2016-${currentYear} INNOVATION LEAP`
     }
   },
   en: {
@@ -112,7 +114,7 @@ export default {
         }
       ],
       switchLang: { text: "Chinese", href: "/cn/" },
-      copyright: "&copy; 2016-2025 INNOVATION LEAP. Mario and its related copyrights belong to Nintendo."
+      copyright: `&copy; 2016-${currentYear} INNOVATION LEAP. Mario and its related copyrights belong to Nintendo.`
     }
   }
 }
