@@ -3,6 +3,12 @@ title: Legend World Remake v2.0
 ---
 
 ### Changelog
+#### v2.0.6.1 (January 25, 2026)
+- Fixed a layer issue with the Ground Piranhas in 2-2.
+- Adjusted the position of a falling platform in 5-7.
+- Improved the effect of a hidden Green Mushroom overlapping a Coin Brick in 8-1.
+- Fixed an issue in the final Bowser section of 8-! where the player could bypass the ceiling.
+
 #### v2.0.6 (December 20, 2025)
 - Fixed a bug where the progress percentage was not immediately hidden after deleting a save file on the save selection screen.
 - Fixed an issue in 5-2 where the music marker at the secret room exit was misplaced, causing the level BGM not to switch back when exiting as Small Mario.
