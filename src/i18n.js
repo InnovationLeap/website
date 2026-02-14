@@ -28,7 +28,8 @@ export default {
           links: [
             { text: "Legend World 重制 v2.0", href: "/cn/legend-world-remake/" },
             { text: "Mario Worker 上的 Legend World", href: "/cn/legend-world-remake/legend-world-on-mario-worker" },
-            { text: "Super Mario Worker Project", href: "https://smwp.marioforever.net/" }
+            { text: "Super Mario Worker Project", href: "https://smwp.marioforever.net/" },
+            { text: "SMWP 2", href: "https://smwp2.marioforever.net/" }
           ]
         },
         {
