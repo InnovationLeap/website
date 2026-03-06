@@ -1,6 +1,7 @@
 <template>
-  <div v-if="items && items.length" class="sub-nav">
-    <div class="hd nav-bar">
+  <div v-if="items && items.length" class="sub-nav" :class="{ 'is-sticky': isSticky }" ref="subNavRef">
+    <div v-if="isSticky" class="nav-bar-placeholder" :style="{ height: navBarHeight + 'px' }"></div>
+    <div class="hd nav-bar" ref="navBarRef">
       <div class="container">
         <div class="title" v-if="title" ref="titleRef">
           <h2>{{ title }}</h2>
@@ -38,7 +39,7 @@
   </div>
 </template>
 <script setup>
-import { ref, onMounted, onBeforeUnmount, nextTick } from 'vue'
+import { ref, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 
 const props = defineProps({ 
   items: { type: Array, default: () => [] }, 
@@ -51,6 +52,11 @@ const mobileMenuOpen = ref(false)
 const titleRef = ref(null)
 const menuRef = ref(null)
 const toggleRef = ref(null)
+const subNavRef = ref(null)
+const navBarRef = ref(null)
+const isSticky = ref(false)
+const navBarOffsetTop = ref(0)
+const navBarHeight = ref(0)
 
 const clamp = (val, min, max) => Math.min(Math.max(val, min), max)
 
@@ -108,19 +114,66 @@ const handleResize = () => {
   if (mobileMenuOpen.value) positionMenuWithinViewport()
 }
 
+const handleScroll = () => {
+  const navBar = navBarRef.value
+  if (!navBar) return
+  
+  const scrollTop = window.scrollY || document.documentElement.scrollTop
+  isSticky.value = scrollTop > navBarOffsetTop.value
+}
+
+watch(isSticky, (sticky) => {
+  if (sticky) {
+    document.body.classList.add('subnav-sticky')
+  } else {
+    document.body.classList.remove('subnav-sticky')
+  }
+})
+
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   window.addEventListener('resize', handleResize)
+  window.addEventListener('scroll', handleScroll, { passive: true })
+  
+  const navBar = navBarRef.value
+  if (navBar) {
+    navBarOffsetTop.value = navBar.offsetTop
+    navBarHeight.value = navBar.offsetHeight
+  }
 })
 
 onBeforeUnmount(() => {
   document.removeEventListener('click', handleClickOutside)
   window.removeEventListener('resize', handleResize)
+  window.removeEventListener('scroll', handleScroll)
 })
 </script>
 <style scoped>
 .sep {
   margin: 0 0.25em;
+}
+
+.sub-nav .nav-bar {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.sub-nav.is-sticky .nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.sub-nav.is-sticky .nav-bar .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sub-nav .nav-bar .btn {
+  border-radius: 20px;
 }
 
 /* Mobile dropdown styles */
@@ -212,5 +265,10 @@ onBeforeUnmount(() => {
   }
   .mobile-nav-menu a.active { font-weight: 700; }
   .mobile-nav-menu a:hover { background: #f5f5f5; color: #006eff; }
+}
+</style>
+<style>
+body.subnav-sticky #navToggle {
+  display: none !important;
 }
 </style>
