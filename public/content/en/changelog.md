@@ -1,5 +1,5 @@
 ---
-title: Legend World Remake v2.0
+title: Legend World Remake
 ---
 
 ### Changelog

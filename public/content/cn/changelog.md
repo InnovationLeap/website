@@ -1,5 +1,5 @@
 ---
-title: Legend World 重制 v2.0
+title: Legend World 重制
 ---
 
 ### 更新日志
