@@ -7,7 +7,7 @@ import MarkdownIt from 'markdown-it'
 import GallerySlider from './GallerySlider.vue'
 import { createApp } from 'vue'
 
-const md = new MarkdownIt({ html: true, linkify: true, breaks: false })
+const md = new MarkdownIt({ html: true, linkify: true, breaks: true })
 const props = defineProps({ src: String })
 const emit = defineEmits(['frontmatter'])
 const content = ref('')
