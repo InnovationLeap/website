@@ -24,6 +24,7 @@ title: 关于 INL
   <p class="flow-text">联合创始人，制作人员</p>
   <br>
   <p class="flow-text">曾参与 Super Mario Worker Project v1.6 及之前版本的制作和 Legend World 重制早期版本的制作。曾任百度永远的玛丽吧吧主。</p>
+  <br>
 </div>
 <div><img src="/images/avatars/yuyangmiau.jpg" class="avatar-right"></div>
 <div class="text-right">

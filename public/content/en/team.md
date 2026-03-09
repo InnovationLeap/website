@@ -24,6 +24,7 @@ title: About
   <p class="flow-text">Co-founder, programmer</p>
   <br>
   <p class="flow-text">He is mainly involved in the improvement of Legend World Remake, and has participated in the production of Super Mario Worker Project until v1.6.</p>
+  <br>
 </div>
 <div><img src="/images/avatars/yuyangmiau.jpg" class="avatar-right"></div>
 <div class="text-right">
