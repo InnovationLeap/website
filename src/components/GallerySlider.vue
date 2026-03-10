@@ -1,11 +1,11 @@
 <template>
   <div class="gallery-slider">
     <Carousel
-      :autoplay="2000"
-      :items-to-show="2.5"
+      :autoplay="3000"
+      :items-to-show="2"
       :wrap-around="true"
     >
-      <Slide v-for="(img, idx) in images" :key="idx" style="width: 40%; aspect-ratio: 4/3;">
+      <Slide v-for="(img, idx) in images" :key="idx" style="width: 50%; aspect-ratio: 4/3;">
         <img :src="img.src" :alt="img.alt" style="width: 100%; height: 100%;"/>
       </Slide>
       <template #addons>
