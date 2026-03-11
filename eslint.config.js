@@ -39,7 +39,7 @@ export default [
         flatTernaryExpressions: false,
         ignoredNodes: ['TemplateLiteral']
       }],
-      'linebreak-style': ['error', 'unix'],
+      'linebreak-style': 'off',
       'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
       'semi': ['error', 'never'],
       'comma-dangle': ['error', 'never'],
