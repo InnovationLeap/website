@@ -27,6 +27,6 @@ defineProps({
 
 <style scoped>
 .gallery-slider ol li {
-  padding-left: 0; 
+  padding-left: 0;
 }
 </style>

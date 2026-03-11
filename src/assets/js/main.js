@@ -1,12 +1,12 @@
 /*
-	Verti by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  Verti by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 (function($) {
 
-  var	$window = $(window),
+  const $window = $(window),
     $body = $('body')
 
   // Breakpoints.
@@ -36,18 +36,18 @@
   // Toggle.
   $(
     '<div id="navToggle">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
+          '<a href="#navPanel" class="toggle"></a>' +
+        '</div>'
   )
     .appendTo($body)
 
   // Panel.
   $(
     '<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
+          '<nav>' +
+            $('#nav').navList() +
+          '</nav>' +
+        '</div>'
   )
     .appendTo($body)
     .panel({
@@ -63,13 +63,13 @@
 
   // 16:9 aspect for iframe/embed: apply on load, resize, and DOM updates (for SPA content)
   function adjustMediaAspect() {
-    var ratio = 1.777777777777777 // 16:9
+    const ratio = 1.777777777777777 // 16:9
     $('iframe').each(function() {
-      var $el = $(this)
+      const $el = $(this)
       $el.height($el.width() / ratio)
     })
     $('embed').each(function() {
-      var $el = $(this)
+      const $el = $(this)
       $el.height($el.width() / ratio)
     })
   }
@@ -79,9 +79,9 @@
   $window.on('resize', adjustMediaAspect)
 
   // Observe dynamic content changes under #content (Vue renders markdown later)
-  var contentEl = document.getElementById('content')
+  const contentEl = document.getElementById('content')
   if (contentEl && 'MutationObserver' in window) {
-    var mo = new MutationObserver(function() { adjustMediaAspect() })
+    const mo = new MutationObserver(function() { adjustMediaAspect() })
     mo.observe(contentEl, { childList: true, subtree: true })
   }
 

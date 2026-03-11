@@ -48,6 +48,3 @@ onMounted(() => {
   document.body.classList.remove('is-preload')
 })
 </script>
-
-<style scoped>
-</style>

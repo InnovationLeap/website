@@ -4,8 +4,8 @@
       <div :key="currentIndex" class="slide-container">
         <template v-if="currentImage.link.startsWith('http')">
           <a :href="currentImage.link" class="slider-link" :target="currentImage.target || '_blank'">
-            <img 
-              :src="currentImage.src" 
+            <img
+              :src="currentImage.src"
               :alt="currentImage.alt"
               class="slider-image"
             >
@@ -13,8 +13,8 @@
         </template>
         <template v-else>
           <router-link :to="currentImage.link" class="slider-link">
-            <img 
-              :src="currentImage.src" 
+            <img
+              :src="currentImage.src"
               :alt="currentImage.alt"
               class="slider-image"
             >
@@ -77,7 +77,7 @@ const preloadImages = () => {
   images.value.forEach(image => {
     allImages.push(image.src, image.srcMobile)
   })
-  
+
   allImages.forEach(src => {
     const img = new Image()
     img.src = src

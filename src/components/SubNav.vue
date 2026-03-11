@@ -59,7 +59,7 @@
 import { ref, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 
 defineProps({
-  items: { type: Array, default: () => [] }, 
+  items: { type: Array, default: () => [] },
   title: { type: String, default: '' },
   downloadUrl: { type: String, default: '' },
   downloadText: { type: String, default: '' }
@@ -134,7 +134,7 @@ const handleResize = () => {
 const handleScroll = () => {
   const navBar = navBarRef.value
   if (!navBar) return
-  
+
   const scrollTop = window.scrollY || document.documentElement.scrollTop
   isSticky.value = scrollTop > navBarOffsetTop.value
 }
@@ -151,7 +151,7 @@ onMounted(() => {
   document.addEventListener('click', handleClickOutside)
   window.addEventListener('resize', handleResize)
   window.addEventListener('scroll', handleScroll, { passive: true })
-  
+
   const navBar = navBarRef.value
   if (navBar) {
     navBarOffsetTop.value = navBar.offsetTop

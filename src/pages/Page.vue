@@ -26,9 +26,9 @@ import MarkdownContent from '../components/MarkdownContent.vue'
 import ImageSlider from '../components/ImageSlider.vue'
 import i18n from '../i18n.js'
 
-const props = defineProps({ 
-  lang: { type: String, default: 'en' }, 
-  page: { type: String, default: 'home' } 
+const props = defineProps({
+  lang: { type: String, default: 'en' },
+  page: { type: String, default: 'home' }
 })
 const markdownSrc = computed(() => `/content/${props.lang}/${props.page}.md`)
 

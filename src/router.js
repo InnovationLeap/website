@@ -3,8 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 const Page = () => import('./pages/Page.vue')
 
 const routes = [
-  { 
-    path: '/', 
+  {
+    path: '/',
     redirect: () => {
       const browserLang = navigator.language || navigator.userLanguage
       const lang = browserLang.toLowerCase().startsWith('zh') ? 'cn' : 'en'

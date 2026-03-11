@@ -92,7 +92,7 @@ function enhanceTables() {
 function enhanceLinks() {
   const root = articleEl.value
   if (!root) return
-  
+
   // 处理内部链接，使用 click 事件替代 a 标签的默认行为
   const links = root.querySelectorAll('a[href]')
   links.forEach(link => {
@@ -154,7 +154,7 @@ async function load() {
   // Unmount any previously mounted sliders when source changes
   unmountSliders()
   if (!props.src) return
-  
+
   // Check if content is already in cache
   if (contentCache.has(props.src)) {
     const cached = contentCache.get(props.src)
@@ -170,16 +170,16 @@ async function load() {
     }
     return
   }
-  
+
   // If not in cache, fetch and process
   const res = await fetch(props.src)
   const txt = await res.text()
   const { body, fm } = parseFrontMatter(txt)
   const rendered = md.render(body)
-  
+
   // Cache the processed content
   contentCache.set(props.src, { rendered, fm })
-  
+
   // Emit front matter to parent (for SubNav title override)
   try { emit('frontmatter', fm) } catch {}
   content.value = rendered
@@ -204,4 +204,3 @@ onBeforeUnmount(() => {
   unmountSliders()
 })
 </script>
-<style scoped></style>

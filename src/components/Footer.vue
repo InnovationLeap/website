@@ -58,12 +58,12 @@ const cfg = computed(() => i18n[props.lang] || i18n.en)
 const switchLangUrl = computed(() => {
   const currentPath = route.path
   const isEn = props.lang === 'en'
-  
+
   // 特殊处理：如果在SMWP页面点击中文，跳转到SMWP官网
   if (isEn && currentPath.includes('/super-mario-worker-project')) {
     return 'https://smwp.marioforever.net/'
   }
-  
+
   // 正常路径切换
   const newLang = isEn ? 'cn' : 'en'
   return currentPath.replace(/^\/(en|cn)/, `/${newLang}`)
@@ -80,4 +80,3 @@ const switchLanguage = () => {
   }
 }
 </script>
-<style scoped></style>
