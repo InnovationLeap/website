@@ -43,6 +43,7 @@ export default [
       'quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
       'semi': ['error', 'never'],
       'comma-dangle': ['error', 'never'],
+      'object-curly-spacing': ['error', 'always'],
       'no-unused-vars': ['warn', {
         argsIgnorePattern: '^_',
         varsIgnorePattern: '^_',
