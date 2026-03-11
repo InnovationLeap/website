@@ -1,26 +1,38 @@
 <template>
-  <div v-if="items && items.length" class="sub-nav" :class="{ 'is-sticky': isSticky }" ref="subNavRef">
-    <div v-if="isSticky" class="nav-bar-placeholder" :style="{ height: navBarHeight + 'px' }"></div>
-    <div class="hd nav-bar" ref="navBarRef">
+  <div
+    v-if="items && items.length"
+    ref="subNavRef"
+    class="sub-nav"
+    :class="{ 'is-sticky': isSticky }"
+  >
+    <div v-if="isSticky" class="nav-bar-placeholder" :style="{ height: navBarHeight + 'px' }" />
+    <div ref="navBarRef" class="hd nav-bar">
       <div class="container">
-        <div class="title" v-if="title" ref="titleRef">
+        <div v-if="title" ref="titleRef" class="title">
           <h2>{{ title }}</h2>
           <!-- Mobile dropdown toggle -->
           <button
+            ref="toggleRef"
             class="mobile-nav-toggle"
             type="button"
             aria-haspopup="true"
             :aria-expanded="mobileMenuOpen ? 'true' : 'false'"
-            @click="toggleMobileMenu"
             title="Open section menu"
-            ref="toggleRef"
+            @click="toggleMobileMenu"
           >
-            <i class="fas fa-chevron-down" aria-hidden="true"></i>
+            <i class="fas fa-chevron-down" aria-hidden="true" />
           </button>
           <!-- Mobile dropdown menu -->
-          <ul v-if="mobileMenuOpen" class="mobile-nav-menu" role="menu" ref="menuRef">
+          <ul
+            v-if="mobileMenuOpen"
+            ref="menuRef"
+            class="mobile-nav-menu"
+            role="menu"
+          >
             <li v-for="(item, idx) in items" :key="`m-${idx}-${item.text}`" role="menuitem">
-              <router-link :to="item.href" :class="{ active: !!item.active }">{{ item.text }}</router-link>
+              <router-link :to="item.href" :class="{ active: !!item.active }">
+                {{ item.text }}
+              </router-link>
             </li>
           </ul>
         </div>
@@ -31,7 +43,12 @@
               <span v-if="idx < items.length - 1" class="sep">|</span>
             </template>
           </span>
-          <a v-if="downloadUrl" class="btn btn-small btn-primary" target="_blank" :href="downloadUrl">{{ downloadText || 'Download' }}</a>
+          <a
+            v-if="downloadUrl"
+            class="btn btn-small btn-primary"
+            target="_blank"
+            :href="downloadUrl"
+          >{{ downloadText || 'Download' }}</a>
           <span v-else-if="downloadText" class="btn btn-small btn-gray">{{ downloadText }}</span>
         </div>
       </div>
@@ -41,7 +58,7 @@
 <script setup>
 import { ref, onMounted, onBeforeUnmount, nextTick, watch } from 'vue'
 
-const props = defineProps({ 
+defineProps({
   items: { type: Array, default: () => [] }, 
   title: { type: String, default: '' },
   downloadUrl: { type: String, default: '' },

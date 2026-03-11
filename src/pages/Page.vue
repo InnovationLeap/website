@@ -1,14 +1,20 @@
 <template>
   <Header :lang="lang" />
-  <SubNav v-if="!isHomePage" :items="subnavItems" :title="computedSubnavTitle" :download-url="downloadUrl" :download-text="downloadText" />
+  <SubNav
+    v-if="!isHomePage"
+    :items="subnavItems"
+    :title="computedSubnavTitle"
+    :download-url="downloadUrl"
+    :download-text="downloadText"
+  />
   <div id="main-wrapper" :class="{ 'home-main': isHomePage }">
-     <ImageSlider v-if="isHomePage" :lang="lang" class="home-slider" />
-     <div v-else class="container">
-       <div id="content">
-         <MarkdownContent :src="markdownSrc" @frontmatter="onFrontmatter" />
-       </div>
-     </div>
-   </div>
+    <ImageSlider v-if="isHomePage" :lang="lang" class="home-slider" />
+    <div v-else class="container">
+      <div id="content">
+        <MarkdownContent :src="markdownSrc" @frontmatter="onFrontmatter" />
+      </div>
+    </div>
+  </div>
   <Footer :lang="lang" />
 </template>
 <script setup>
@@ -20,7 +26,10 @@ import MarkdownContent from '../components/MarkdownContent.vue'
 import ImageSlider from '../components/ImageSlider.vue'
 import i18n from '../i18n.js'
 
-const props = defineProps({ lang: String, page: String })
+const props = defineProps({ 
+  lang: { type: String, default: 'en' }, 
+  page: { type: String, default: 'home' } 
+})
 const markdownSrc = computed(() => `/content/${props.lang}/${props.page}.md`)
 
 const isHomePage = computed(() => props.page === 'home')
@@ -32,12 +41,12 @@ function onFrontmatter(fm) {
 
 watch([fmTitle,  () => props.page], () => {
   if (props.page === 'home') {
-    document.title = 'INNOVATION LEAP';
+    document.title = 'INNOVATION LEAP'
   } else {
-    const title = fmTitle.value;
-    document.title = title ? `${title} - INNOVATION LEAP` : 'INNOVATION LEAP';
+    const title = fmTitle.value
+    document.title = title ? `${title} - INNOVATION LEAP` : 'INNOVATION LEAP'
   }
-}, { immediate: true });
+}, { immediate: true })
 
 const baseSubnavTitle = computed(() => {
   if (props.page === 'about' || props.page === 'team') return props.lang === 'cn' ? '关于' : 'About'
@@ -86,9 +95,9 @@ const subnavItems = computed(() => {
   }
   if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') {
     return [
-      { text: 'Overview', href: `/en/super-mario-worker-project/`, active: props.page === 'super-mario-worker-project' },
-      { text: 'Changelog', href: `/en/super-mario-worker-project/changelog`, active: props.page === 'super-mario-worker-project-changelog' },
-      { text: 'Version archive', href: `/en/super-mario-worker-project/version-archive`, active: props.page === 'super-mario-worker-project-version-archive' }
+      { text: 'Overview', href: '/en/super-mario-worker-project/', active: props.page === 'super-mario-worker-project' },
+      { text: 'Changelog', href: '/en/super-mario-worker-project/changelog', active: props.page === 'super-mario-worker-project-changelog' },
+      { text: 'Version archive', href: '/en/super-mario-worker-project/version-archive', active: props.page === 'super-mario-worker-project-version-archive' }
     ]
   }
   return []

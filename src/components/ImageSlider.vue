@@ -8,7 +8,7 @@
               :src="currentImage.src" 
               :alt="currentImage.alt"
               class="slider-image"
-            />
+            >
           </a>
         </template>
         <template v-else>
@@ -17,7 +17,7 @@
               :src="currentImage.src" 
               :alt="currentImage.alt"
               class="slider-image"
-            />
+            >
           </router-link>
         </template>
       </div>
@@ -29,7 +29,10 @@
 import { computed, ref, onMounted, onUnmounted } from 'vue'
 
 const props = defineProps({
-  lang: String
+  lang: {
+    type: String,
+    default: 'en'
+  }
 })
 
 const images = computed(() => [

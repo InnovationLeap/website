@@ -7,7 +7,12 @@
             <h3>{{ section.title }}</h3>
             <ul :class="section.title === 'Social media' ? '' : 'style2'">
               <li v-for="(link, idx) in section.links" :key="idx">
-                <a v-if="link.icon" :href="link.href" :target="link.target || null" :class="`icon brands ${link.icon}`">
+                <a
+                  v-if="link.icon"
+                  :href="link.href"
+                  :target="link.target || null"
+                  :class="`icon brands ${link.icon}`"
+                >
                   <span class="label">{{ link.icon.includes('x-twitter') ? 'X' : link.icon.replace('fa-', '') }}</span>
                 </a>
                 <span v-else-if="!link.href">{{ link.text }}</span>
@@ -15,7 +20,9 @@
                   <a :href="link.href" :target="link.target || null">{{ link.text }}</a>
                 </template>
                 <template v-else>
-                  <router-link :to="link.href">{{ link.text }}</router-link>
+                  <router-link :to="link.href">
+                    {{ link.text }}
+                  </router-link>
                 </template>
               </li>
             </ul>
@@ -26,7 +33,7 @@
         <div class="col-12">
           <div id="copyright">
             <ul class="menu">
-              <li v-html="cfg.footer.copyright"></li>
+              <li v-html="cfg.footer.copyright" />
               <li><a :href="switchLangUrl" @click.prevent="switchLanguage">{{ cfg.footer.switchLang.text }}</a></li>
               <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
               <li><a href="https://github.com/InnovationLeap/website" target="_blank">{{ props.lang === 'cn' ? '网站源码' : 'Source code' }}</a></li>

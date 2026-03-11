@@ -8,7 +8,13 @@ import GallerySlider from './GallerySlider.vue'
 import { createApp } from 'vue'
 
 const md = new MarkdownIt({ html: true, linkify: true, breaks: true })
-const props = defineProps({ src: String })
+const props = defineProps({
+  src: {
+    type: String,
+    required: false,
+    default: ''
+  }
+})
 const emit = defineEmits(['frontmatter'])
 const content = ref('')
 const articleEl = ref(null)
@@ -120,7 +126,7 @@ function parseFrontMatter(text) {
   if (titleLine && titleLine[1]) {
     title = titleLine[1].trim()
     // Remove surrounding quotes if present
-    if ((title.startsWith('"') && title.endsWith('"')) || (title.startsWith("'") && title.endsWith("'"))) {
+    if ((title.startsWith('"') && title.endsWith('"')) || (title.startsWith('\'') && title.endsWith('\''))) {
       title = title.slice(1, -1)
     }
   }
