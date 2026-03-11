@@ -21,7 +21,7 @@ export default [
       sourceType: 'module',
       globals: {
         ...globals.browser,
-        ...globals.es2021
+        ...globals.es2022
       }
     },
     rules: {
@@ -57,7 +57,7 @@ export default [
       'eol-last': ['error', 'always'],
       'prefer-const': 'error',
       'no-var': 'error',
-      'eqeqeq': 'off',
+      'eqeqeq': ['error', 'always', { null: 'ignore' }],
       'curly': ['error', 'multi-line'],
       'vue/multi-word-component-names': 'off',
       'vue/no-v-html': 'off',
@@ -83,7 +83,7 @@ export default [
       'vue/html-closing-bracket-spacing': 'error',
       'vue/mustache-interpolation-spacing': ['error', 'always'],
       'vue/no-multi-spaces': 'error',
-      'vue/prop-name-casing': 'off',
+      'vue/prop-name-casing': ['error', 'camelCase'],
       'vue/require-default-prop': 'warn',
       'vue/require-prop-types': 'warn'
     }
