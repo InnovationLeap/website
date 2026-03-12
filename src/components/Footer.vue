@@ -34,9 +34,10 @@
           <div id="copyright">
             <ul class="menu">
               <li v-html="cfg.footer.copyright" />
-              <li><a :href="switchLangUrl" @click.prevent="switchLanguage">{{ cfg.footer.switchLang.text }}</a></li>
               <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+              <li><a :href="switchLangUrl" @click.prevent="switchLanguage">{{ cfg.footer.switchLang.text }}</a></li>
               <li><a href="https://github.com/InnovationLeap/website" target="_blank">{{ props.lang === 'cn' ? '网站源码' : 'Source code' }}</a></li>
+              <li>{{ props.lang === 'cn' ? '构建时间' : 'Build time' }}: {{ formatBuildTime(buildTime) }}</li>
             </ul>
           </div>
         </div>
@@ -79,4 +80,17 @@ const switchLanguage = () => {
     router.push(targetUrl)
   }
 }
+
+const buildTime = BUILD_TIME
+const formatBuildTime = (isoString) => {
+  const date = new Date(isoString)
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  const hours = String(date.getHours()).padStart(2, '0')
+  const minutes = String(date.getMinutes()).padStart(2, '0')
+  const seconds = String(date.getSeconds()).padStart(2, '0')
+  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`
+}
+
 </script>
