@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import viteCompression from 'vite-plugin-compression'
+import { constants } from 'zlib'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -12,24 +13,35 @@ export default defineConfig({
     viteCompression({
       algorithm: 'gzip',
       ext: '.gz',
-      threshold: 10240
+      threshold: 5120,
+      deleteOriginFile: false,
+      compressionOptions: {
+        level: 9
+      }
     }),
     viteCompression({
       algorithm: 'brotliCompress',
       ext: '.br',
-      threshold: 10240
+      threshold: 5120,
+      deleteOriginFile: false,
+      compressionOptions: {
+        params: {
+          [constants.BROTLI_PARAM_QUALITY]: 11
+        }
+      }
     })
   ],
   build: {
+    target: 'es2022',
     rollupOptions: {
       output: {
-        manualChunks: {
-          vendor: ['vue', 'vue-router'],
-          utils: ['markdown-it']
-        },
         chunkFileNames: 'js/[name]-[hash].js',
         entryFileNames: 'js/[name]-[hash].js',
-        assetFileNames: '[ext]/[name]-[hash].[ext]'
+        assetFileNames: '[ext]/[name]-[hash].[ext]',
+        manualChunks: {
+          vendor: ['vue', 'vue-router', 'vue3-carousel'],
+          utils: ['markdown-it']
+        }
       }
     },
     minify: 'terser',
@@ -39,13 +51,14 @@ export default defineConfig({
         drop_debugger: true
       }
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
     cssCodeSplit: true,
-    assetsInlineLimit: 4096,
-    reportCompressedSize: false
+    assetsInlineLimit: 8192,
+    reportCompressedSize: true,
+    sourcemap: false
   },
   optimizeDeps: {
-    include: ['vue', 'vue-router', 'markdown-it']
+    include: ['vue', 'vue-router', 'markdown-it', 'vue3-carousel']
   },
   server: {
     hmr: true,
