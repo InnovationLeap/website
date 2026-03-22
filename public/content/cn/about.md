@@ -2,7 +2,7 @@
 title: 关于 INL
 ---
 
-INNOVATION LEAP 正式成立于 2016 年 6 月，是由百度永远的玛丽吧和 Marioworker 吧吧友组建的游戏制作工作室。
+INNOVATION LEAP 正式成立于 2016 年 6 月 9 日，是由百度永远的玛丽吧和 Marioworker 吧吧友组建的游戏制作工作室。
 
 ### 项目
 

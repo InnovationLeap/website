@@ -2,7 +2,7 @@
 title: About
 ---
 
-INNOVATION LEAP is a Chinese game studio founded in June 2016.
+INNOVATION LEAP is a Chinese game studio founded in June 9, 2016.
 
 ### Our games
 
