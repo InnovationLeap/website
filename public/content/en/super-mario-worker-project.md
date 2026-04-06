@@ -21,7 +21,7 @@ It enhances and expands upon MW 1.1 by introducing new elements and fixing vario
 
 **--Additional Notes--**
 
-1. All current updates of Super Mario Worker Project v1.x are based on Mario Worker 1.1 (Game Maker ver.).
+1. All current updates of Super Mario Worker Project v1.x are based on Mario Worker 1.1.
 2. SMWP saves levels in the .smwl format by default. This format is not compatible with Mario Worker 1.1 or SMWP v0.x.  
 Levels saved in this format can be loaded by the current or any newer version of SMWP v1.x. However, if you try to load them with an older version of SMWP v1.x, a warning will appear, and some level elements may be lost.  
 You can also open .mfl levels created in Mario Worker 1.1, but SMWP cannot save levels in the .mfl format.
@@ -36,7 +36,7 @@ Therefore, in July 2015, a small development group from this community began wor
 Its goal is to deliver a refined and expanded Mario Worker 1.1, fixing bugs and adding new features to meet the community's expectations.
 
 **Q: Is SMWP developed from scratch?**  
-**A:** No. We obtained the source code of Mario Worker (GM ver.), the version bundled with Mario Forever 4.1 (which is basically the same as 4.4), and we have been improving it by fixing bugs and adding new features.
+**A:** No. We obtained the source code of Mario Worker 1.1, the version bundled with Mario Forever 4.1 (which is basically the same as 4.4), and we have been improving it by fixing bugs and adding new features.
 
 **Q: I encountered a grey screen when opening a level.**  
 **A:** Make sure .NET Framework 4.0 or newer is installed on your system.
