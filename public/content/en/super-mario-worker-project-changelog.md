@@ -50,11 +50,11 @@ title: Super Mario Worker Project
 - Fixed a bug where selecting No when asked whether to apply Weather Settings in Scene Controllers had no effect.
 - Fixed an issue where it was possible to press `Ctrl+S` to save while editing parameters for roto-discs, Yellow Paratroopas, Blue Paratroopas, Cheep Cheep Areas, View Controllers, or Fluid Controllers.
 - Adjusted the spotlight position for Super Mario and in Camera Mode.
-- Fixed an issue in God Mode where pressing the Up key before entering Camera Mode caused the view to shift upward by 8 pixels.
+- Fixed an issue in God Mode where pressing the `Up` key before entering Camera Mode caused the view to shift upward by 8 pixels.
 
 #### v1.7.12-beta1 (2025-07-20)
 ##### Editor
-- The WORLD line in the level name can now be customized.
+- The `WORLD` line in the level name can now be customized.
 - Updated the Enemy Selector graphics.
 - In Camera Mode, Mario's coordinates are now displayed.
 - When placing Blocks, user can press the Sub Menu key to toggle whether a solid is placed simultaneously.
@@ -738,7 +738,7 @@ title: Super Mario Worker Project
 - Fixed issue where touching the goal after death still triggered level clear. (2016-06-27)
 ##### Other
 - Added error log autosaving when the game occurs errors. (2015-12-30)
-- Removed the original Mario Worker loading screen and replaced it with the `INNOVATION LEAP` logo. (2016-06-27)
+- Removed the original Mario Worker loading screen and replaced it with the INNOVATION LEAP logo. (2016-06-27)
 
 #### v0.1.0 (Closed Beta) (2015-07-18)
 ##### Editor
