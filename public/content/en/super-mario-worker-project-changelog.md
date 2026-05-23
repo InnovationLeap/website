@@ -3,57 +3,8 @@ title: Super Mario Worker Project
 ---
 
 ### Changelog
-#### v1.7.12-beta5 (2026-01-14)
-##### Editor
-- The editor now supports loading levels with `Ctrl+L`.
-- Added a luminate toggle for global fluid lava.
-- The luminate toggle for Solid/Transparent Color Blocks has been separated from that of other blocks.
-##### Level Features
-- Spotlights are no longer rendered when Dark Level is set to 0.
-##### Bug Fixes
-- Fixed a bug where Mario could automatically perform a small hop when exiting a pipe.
-- Fixed a bug where hitting hidden ?-blocks would play a duplicate sound effect.
-- Fixed a bug where the level clear sound effect would play after returning to the title screen and waiting for a while.
-- Fixed an issue where enabling luminate on Goombas would also force most enemies to have luminate enabled.
-- Fixed a bug where, if the level music was set to No Music, the Starman music would never stop once it started playing.
-- Fixed an issue where Scene Controllers would override the invincibility music before the Starman state expired.
-##### Other
-- Updated main menu links: Home now points to the SMWP official website, Help points to SMWP's MF Wiki page, and Upload Download now links to `download.marioforever.net`.
-- Removed Softendo logo from the Title Screen.
-
-#### v1.7.12-beta4 (2025-09-23)
-##### Editor
-- When setting a new group of weather parameters in Scene Controllers after testing a level with `F3` / `F4`, the previous values will now be remembered.
-- After loading a level, the Scene Controler's stored weather parameters will be cleared; when selecting "Reset weather" in the Scene Controller submenu, the object's current weather parameters can now be reloaded.
-##### Bug Fixes
-- Fixed an issue where passage exits could not be moved by 16 pixels using the `R`, `F`, `D`, and `G` keys.
-- Fixed a bug where the luminate toggle for certain objects did not work.
-- Fixed an issue where Weather Settings in Scene Controller, which linked to View Controller or Bowser, were ineffective.
-- Fixed a bug where enemies could still be placed in the music/background/weather setting screens.
-- Fixed a text alignment issue in the Custom Music settings.
-
-#### v1.7.12-beta3 (2025-08-02)
-##### Bug Fixes
-- Fixed an issue where, on some computers, spotlight in levels with illumination could appear misaligned or distorted.
-##### Known Issues
-- Since v1.7.12 replaced `keyboard_check` with `keyboard_check_direct` in gameplay code, the game may still detect keyboard input while the window is unfocused.
-
-#### v1.7.12-beta2 (2025-07-26)
-##### Editor
-- Luminate settings are now displayed automatically, without the need to click the middle mouse button.
-##### Bug Fixes
-- Fixed an issue where, after placing several Scene Controllers, new ones could no longer be placed.
-- Fixed a bug where the Thwomp would only trigger one of two bricks when hitting both simultaneously.
-- Fixed an issue where the luminate effect setting in Scene Controllers had no effect.
-- Fixed a bug where Weather Settings in Scene Controllers were reset after saving and reloading the level.
-- Fixed an issue where pressing the Sub Menu key would still play a sound even when not placing blocks.
-- Fixed a bug where selecting No when asked whether to apply Weather Settings in Scene Controllers had no effect.
-- Fixed an issue where it was possible to press `Ctrl+S` to save while editing parameters for roto-discs, Yellow Paratroopas, Blue Paratroopas, Cheep Cheep Areas, View Controllers, or Fluid Controllers.
-- Adjusted the spotlight position for Super Mario and in Camera Mode.
-- Fixed an issue in God Mode where pressing the `Up` key before entering Camera Mode caused the view to shift upward by 8 pixels.
-
-#### v1.7.12-beta1 (2025-07-20)
-##### Editor
+## v1.7.12 (2026-05-24)
+### Editor
 - The `WORLD` line in the level name can now be customized.
 - Updated the Enemy Selector graphics.
 - In Camera Mode, Mario's coordinates are now displayed.
@@ -62,7 +13,13 @@ title: Super Mario Worker Project
 - Increased the transparency of hidden ?-blocks in the editor for better distinction.
 - The editor now supports `Ctrl+S` for quick saving.
 - Added a restriction preventing Blue Paratroopas from being placed on the topmost row of a level, to avoid cases where their jump height cannot be set, which could block other operations.
-##### Level Features
+- Luminate settings are now displayed automatically, without the need to click the middle mouse button.
+- When setting a new group of weather parameters in Scene Controllers after testing a level with `F3` / `F4`, the previous values will now be remembered.
+- After loading a level, the Scene Controler's stored weather parameters will be cleared; when selecting "Reset weather" in the Scene Controller submenu, the object's current weather parameters can now be reloaded.
+- The editor now supports loading levels with `Ctrl+L`.
+- Added a luminate toggle for global fluid lava.
+- The luminate toggle for Solid/Transparent Color Blocks has been separated from that of other blocks.
+### Level Features
 - Weather System: supports Rain, Meteor Showers, Snow, Lightning, and Wind, along with a darkness overlay and a corresponding luminate system. Objects that support lumination can be individually configured by right-clicking them in the selectors. Scene Controllers can also control weather.
 - Added new enemies: 4-direction Piranha Heads and 4-direction Spikes.
 - When playing a single level, the number of lives can now be customized in the options.
@@ -72,8 +29,24 @@ title: Super Mario Worker Project
     - Faster Level Pass
     - Thwomp Activate Blocks
 - The Restart Level key can now be customly assigned.
-##### Other
+- Spotlights are no longer rendered when Dark Level is set to 0.
+### Bug Fixes
+- Fixed an issue where, after placing several Scene Controllers, new ones could no longer be placed.
+- Fixed an issue in God Mode where pressing the `Up` key before entering Camera Mode caused the view to shift upward by 8 pixels.
+- Fixed an issue where passage exits could not be moved by 16 pixels using the `R`, `F`, `D`, and `G` keys.
+- Fixed a bug where enemies could still be placed in the music/background/weather setting screens.
+- Fixed a text alignment issue in the Custom Music settings.
+- Fixed a bug where Mario could automatically perform a small hop when exiting a pipe.
+- Fixed a bug where hitting hidden ?-blocks would play a duplicate sound effect.
+- Fixed a bug where the level clear sound effect would play after returning to the title screen and waiting for a while.
+- Fixed a bug where, if the level music was set to No Music, the Starman music would never stop once it started playing.
+- Fixed an issue where Scene Controllers would override the invincibility music before the Starman state expired.
+### Other
 - Updated INNOVATION LEAP Logo animation.
+- Updated main menu links: Home now points to the SMWP official website, Help points to SMWP's MF Wiki page, and Upload Download now links to `download.marioforever.net`.
+- Removed Softendo logo from the Title Screen.
+### Known Issues
+- Since v1.7.12 replaced `keyboard_check` with `keyboard_check_direct` in gameplay code, the game may still detect keyboard input while the window is unfocused.
 
 #### v1.7.11 (2025-07-18)
 ##### Editor

@@ -5,7 +5,7 @@ title: Super Mario Worker Project
 Super Mario Worker Project (SMWP) is an unofficial Mario level editor based on Softendo's Mario Worker 1.1 (aka Game Maker ver.).  
 It enhances and expands upon MW 1.1 by introducing new elements and fixing various bugs, while preserving its original physics behavior and level format structure.
 
-**Latest stable version:** v1.7.11  
+**Latest stable version:** v1.7.12  
 **Latest pre-release version:** v1.7.12-beta5
 
 ### Video
@@ -52,15 +52,15 @@ We plan to rebuild the editor from the ground up in the next major version (v2.0
 ### Gallery
 
 <div class="image-gallery">
-   <img src="/images/smwp-title.webp" />
-   <img src="/images/smwp-editor.webp" />
-   <img src="/images/smwp-blocks.webp" />
-   <img src="/images/smwp-musicselector.webp" />
-   <img src="/images/smwp-additional.webp" />
-   <img src="/images/smwp-decade.webp" />
-   <img src="/images/smwp-nightsand.webp" />
-   <img src="/images/smwp-classicepic.webp" />
-   <img src="/images/smwp-muitfaceted.webp" />
+  <img src="/images/smwp-title.webp" />
+  <img src="/images/smwp-editor.webp" />
+  <img src="/images/smwp-blocks.webp" />
+  <img src="/images/smwp-musicselector.webp" />
+  <img src="/images/smwp-additional.webp" />
+  <img src="/images/smwp-decade.webp" />
+  <img src="/images/smwp-nightsand.webp" />
+  <img src="/images/smwp-classicepic.webp" />
+  <img src="/images/smwp-muitfaceted.webp" />
 </div>
 
 ### Disclaimer
