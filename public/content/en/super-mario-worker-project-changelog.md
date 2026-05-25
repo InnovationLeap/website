@@ -3,8 +3,8 @@ title: Super Mario Worker Project
 ---
 
 ### Changelog
-## v1.7.12 (2026-05-24)
-### Editor
+#### v1.7.12 (2026-05-24)
+##### Editor
 - The `WORLD` line in the level name can now be customized.
 - Updated the Enemy Selector graphics.
 - In Camera Mode, Mario's coordinates are now displayed.
@@ -19,7 +19,7 @@ title: Super Mario Worker Project
 - The editor now supports loading levels with `Ctrl+L`.
 - Added a luminate toggle for global fluid lava.
 - The luminate toggle for Solid/Transparent Color Blocks has been separated from that of other blocks.
-### Level Features
+##### Level Features
 - Weather System: supports Rain, Meteor Showers, Snow, Lightning, and Wind, along with a darkness overlay and a corresponding luminate system. Objects that support lumination can be individually configured by right-clicking them in the selectors. Scene Controllers can also control weather.
 - Added new enemies: 4-direction Piranha Heads and 4-direction Spikes.
 - When playing a single level, the number of lives can now be customized in the options.
@@ -30,7 +30,7 @@ title: Super Mario Worker Project
     - Thwomp Activate Blocks
 - The Restart Level key can now be customly assigned.
 - Spotlights are no longer rendered when Dark Level is set to 0.
-### Bug Fixes
+##### Bug Fixes
 - Fixed an issue where, after placing several Scene Controllers, new ones could no longer be placed.
 - Fixed an issue in God Mode where pressing the `Up` key before entering Camera Mode caused the view to shift upward by 8 pixels.
 - Fixed an issue where passage exits could not be moved by 16 pixels using the `R`, `F`, `D`, and `G` keys.
@@ -41,11 +41,11 @@ title: Super Mario Worker Project
 - Fixed a bug where the level clear sound effect would play after returning to the title screen and waiting for a while.
 - Fixed a bug where, if the level music was set to No Music, the Starman music would never stop once it started playing.
 - Fixed an issue where Scene Controllers would override the invincibility music before the Starman state expired.
-### Other
+##### Other
 - Updated INNOVATION LEAP Logo animation.
 - Updated main menu links: Home now points to the SMWP official website, Help points to SMWP's MF Wiki page, and Upload Download now links to `download.marioforever.net`.
 - Removed Softendo logo from the Title Screen.
-### Known Issues
+##### Known Issues
 - Since v1.7.12 replaced `keyboard_check` with `keyboard_check_direct` in gameplay code, the game may still detect keyboard input while the window is unfocused.
 
 #### v1.7.11 (2025-07-18)
