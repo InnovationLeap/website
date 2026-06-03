@@ -25,6 +25,13 @@
     <meta property="og:image" content="/images/inleap2022.png">
   </head>
   <body class="is-preload">
+    <script>
+      // Root path language redirect — runs before Vue to avoid blank flash
+      if (location.pathname === '/' || location.pathname === '') {
+        var lang = (navigator.language || navigator.userLanguage || '').toLowerCase().startsWith('zh') ? 'cn' : 'en';
+        location.replace('/' + lang + '/');
+      }
+    </script>
     <div id="page-wrapper">
       <div id="app"></div>
     </div>

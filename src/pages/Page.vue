@@ -8,8 +8,10 @@
     :download-text="downloadText"
   />
   <div id="main-wrapper" :class="{ 'home-main': isHomePage }">
-    <ImageSlider v-if="isHomePage" :lang="lang" class="home-slider" />
-    <div v-else class="container">
+    <ClientOnly v-if="isHomePage">
+      <ImageSlider :lang="lang" class="home-slider" />
+    </ClientOnly>
+    <div v-if="!isHomePage" class="container">
       <div id="content">
         <MarkdownContent :src="markdownSrc" @frontmatter="onFrontmatter" />
       </div>
@@ -40,6 +42,7 @@ function onFrontmatter(fm) {
 }
 
 watch([fmTitle,  () => props.page], () => {
+  if (typeof document === 'undefined') return
   if (props.page === 'home') {
     document.title = 'INNOVATION LEAP'
   } else {

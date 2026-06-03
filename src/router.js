@@ -1,8 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'
-
 const Page = () => import('./pages/Page.vue')
 
-const routes = [
+export const routes = [
   {
     path: '/',
     redirect: () => {
@@ -22,5 +20,3 @@ const routes = [
   { path: '/en/super-mario-worker-project/version-archive', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project-version-archive' }) },
   { path: '/en/super-mario-worker-project/changelog', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project-changelog' }) }
 ]
-
-export default createRouter({ history: createWebHistory(), routes })

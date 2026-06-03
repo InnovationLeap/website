@@ -10,6 +10,7 @@
 import { onMounted, onBeforeUnmount, nextTick } from 'vue'
 // 16:9 媒体自适应逻辑
 function adjustMediaAspect() {
+  if (typeof document === 'undefined') return
   const ratio = 1.777777777777777
   document.querySelectorAll('iframe').forEach(el => {
     el.style.height = (el.offsetWidth / ratio) + 'px'
@@ -19,9 +20,12 @@ function adjustMediaAspect() {
   })
 }
 // 暴露到全局
-window.adjustMediaAspect = adjustMediaAspect
+if (typeof window !== 'undefined') {
+  window.adjustMediaAspect = adjustMediaAspect
+}
 
 function observeContent() {
+  if (typeof document === 'undefined') return null
   const contentEl = document.getElementById('content')
   if (contentEl && 'MutationObserver' in window) {
     const mo = new MutationObserver(() => {

@@ -38,9 +38,13 @@ export default defineConfig({
         chunkFileNames: 'js/[name]-[hash].js',
         entryFileNames: 'js/[name]-[hash].js',
         assetFileNames: '[ext]/[name]-[hash].[ext]',
-        manualChunks: {
-          vendor: ['vue', 'vue-router', 'vue3-carousel'],
-          utils: ['markdown-it']
+        manualChunks(id) {
+          if (id.includes('node_modules/vue/') || id.includes('node_modules/@vue/') || id.includes('node_modules/vue-router/') || id.includes('node_modules/vue3-carousel/')) {
+            return 'vendor'
+          }
+          if (id.includes('node_modules/markdown-it/')) {
+            return 'utils'
+          }
         }
       }
     },
@@ -63,5 +67,32 @@ export default defineConfig({
   server: {
     hmr: true,
     host: '0.0.0.0'
+  },
+  ssgOptions: {
+    script: 'async',
+    formatting: 'minify',
+    crittersOptions: {
+      reduceInlineStyles: false
+    },
+    // 预渲染的路由列表
+    includedRoutes: () => [
+      '/cn/',
+      '/cn/about/',
+      '/cn/about/team',
+      '/cn/team/',
+      '/cn/legend-world-remake/',
+      '/cn/legend-world-remake/legend-world-on-mario-worker',
+      '/cn/legend-world-remake/changelog',
+      '/en/',
+      '/en/about/',
+      '/en/about/team',
+      '/en/team/',
+      '/en/legend-world-remake/',
+      '/en/legend-world-remake/legend-world-on-mario-worker',
+      '/en/legend-world-remake/changelog',
+      '/en/super-mario-worker-project/',
+      '/en/super-mario-worker-project/version-archive',
+      '/en/super-mario-worker-project/changelog'
+    ]
   }
 })

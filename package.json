@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "bunx --bun vite",
-    "build": "vite build",
+    "build": "vite-ssg build",
     "preview": "vite preview",
     "deploy": "bash deploy.sh",
     "lint": "eslint . --fix"
@@ -25,7 +25,8 @@
     "sass": "^1.99.0",
     "terser": "^5.46.2",
     "vite": "^6.4.2",
-    "vite-plugin-compression": "^0.5.1"
+    "vite-plugin-compression": "^0.5.1",
+    "vite-ssg": "^28.3.0"
   },
   "trustedDependencies": [
     "@parcel/watcher"

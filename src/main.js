@@ -1,10 +1,16 @@
-import { createApp } from 'vue'
+import { ViteSSG } from 'vite-ssg'
 import App from './App.vue'
-import router from './router'
+import { routes } from './router'
 
-const app = createApp(App)
-app.use(router)
-app.mount('#app')
-
-// 将 router 实例挂载到 window 对象上，以便在其他地方可以访问
-window.router = router
+export const createApp = ViteSSG(
+  App,
+  { routes },
+  ({ router }) => {
+    // 将 router 实例挂载到 window 对象上，以便在其他地方可以访问
+    if (typeof window !== 'undefined') {
+      router.isReady().then(() => {
+        window.router = router
+      })
+    }
+  }
+)
