@@ -27,7 +27,7 @@ export default {
           title: '了解',
           links: [
             { text: 'Legend World 重制 v2.0', href: '/cn/legend-world-remake/' },
-            { text: 'Mario Worker 上的 Legend World', href: '/cn/legend-world-remake/legend-world-on-mario-worker' },
+            { text: 'Mario Worker 上的 Legend World', href: '/cn/legend-world-remake/legend-world-on-mario-worker/' },
             { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/' }
           ]
         },
@@ -35,7 +35,7 @@ export default {
           title: '关于我们',
           links: [
             { text: '关于 INNOVATION LEAP', href: '/cn/about/' },
-            { text: 'INNOVATION LEAP 团队', href: '/cn/about/team' }
+            { text: 'INNOVATION LEAP 团队', href: '/cn/about/team/' }
           ]
         },
         {
@@ -87,7 +87,7 @@ export default {
           title: 'Explore',
           links: [
             { text: 'Legend World Remake v2.0', href: '/en/legend-world-remake/' },
-            { text: 'Legend World on Mario Worker', href: '/en/legend-world-remake/legend-world-on-mario-worker' },
+            { text: 'Legend World on Mario Worker', href: '/en/legend-world-remake/legend-world-on-mario-worker/' },
             { text: 'Super Mario Worker Project', href: '/en/super-mario-worker-project/' }
           ]
         },
@@ -95,7 +95,7 @@ export default {
           title: 'About',
           links: [
             { text: 'About INNOVATION LEAP', href: '/en/about/' },
-            { text: 'Our team', href: '/en/about/team' }
+            { text: 'Our team', href: '/en/about/team/' }
           ]
         },
         {

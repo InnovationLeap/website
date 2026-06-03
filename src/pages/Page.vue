@@ -80,27 +80,27 @@ const subnavItems = computed(() => {
   if (props.page === 'about' || props.page === 'team') {
     return [
       { text: props.lang === 'cn' ? '简介' : 'About us', href: `/${props.lang}/about/`, active: props.page === 'about' },
-      { text: props.lang === 'cn' ? '团队' : 'Our team', href: `/${props.lang}/about/team`, active: props.page === 'team' }
+      { text: props.lang === 'cn' ? '团队' : 'Our team', href: `/${props.lang}/about/team/`, active: props.page === 'team' }
     ]
   }
   if (props.page === 'legend-world-remake' || props.page === 'changelog') {
     return [
       { text: props.lang === 'cn' ? '概述' : 'Overview', href: `/${props.lang}/legend-world-remake/`, active: props.page === 'legend-world-remake' },
-      { text: props.lang === 'cn' ? '更新日志' : 'Changelog', href: `/${props.lang}/legend-world-remake/changelog`, active: props.page === 'changelog' },
-      { text: props.lang === 'cn' ? '了解原版' : 'MW 1.1 edition', href: `/${props.lang}/legend-world-remake/legend-world-on-mario-worker`, active: props.page === 'legend-world-on-mario-worker' }
+      { text: props.lang === 'cn' ? '更新日志' : 'Changelog', href: `/${props.lang}/legend-world-remake/changelog/`, active: props.page === 'changelog' },
+      { text: props.lang === 'cn' ? '了解原版' : 'MW 1.1 edition', href: `/${props.lang}/legend-world-remake/legend-world-on-mario-worker/`, active: props.page === 'legend-world-on-mario-worker' }
     ]
   }
   if (props.page === 'legend-world-on-mario-worker') {
     return [
-      { text: props.lang === 'cn' ? '概述' : 'Overview', href: `/${props.lang}/legend-world-remake/legend-world-on-mario-worker`, active: props.page === 'legend-world-on-mario-worker' },
+      { text: props.lang === 'cn' ? '概述' : 'Overview', href: `/${props.lang}/legend-world-remake/legend-world-on-mario-worker/`, active: props.page === 'legend-world-on-mario-worker' },
       { text: props.lang === 'cn' ? '了解重制版' : 'Remake', href: `/${props.lang}/legend-world-remake/`, active: props.page === 'legend-world-remake' }
     ]
   }
   if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') {
     return [
       { text: 'Overview', href: '/en/super-mario-worker-project/', active: props.page === 'super-mario-worker-project' },
-      { text: 'Changelog', href: '/en/super-mario-worker-project/changelog', active: props.page === 'super-mario-worker-project-changelog' },
-      { text: 'Version archive', href: '/en/super-mario-worker-project/version-archive', active: props.page === 'super-mario-worker-project-version-archive' }
+      { text: 'Changelog', href: '/en/super-mario-worker-project/changelog/', active: props.page === 'super-mario-worker-project-changelog' },
+      { text: 'Version archive', href: '/en/super-mario-worker-project/version-archive/', active: props.page === 'super-mario-worker-project-version-archive' }
     ]
   }
   return []

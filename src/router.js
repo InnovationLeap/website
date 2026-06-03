@@ -11,12 +11,12 @@ export const routes = [
   },
   { path: '/:lang(en|cn)/', component: Page, props: r => ({ lang: r.params.lang, page: 'home' }) },
   { path: '/:lang(en|cn)/about/', component: Page, props: r => ({ lang: r.params.lang, page: 'about' }) },
-  { path: '/:lang(en|cn)/about/team', component: Page, props: r => ({ lang: r.params.lang, page: 'team' }) },
+  { path: '/:lang(en|cn)/about/team/', component: Page, props: r => ({ lang: r.params.lang, page: 'team' }) },
   { path: '/:lang(en|cn)/team/', component: Page, props: r => ({ lang: r.params.lang, page: 'team' }) },
   { path: '/:lang(en|cn)/legend-world-remake/', component: Page, props: r => ({ lang: r.params.lang, page: 'legend-world-remake' }) },
-  { path: '/:lang(en|cn)/legend-world-remake/legend-world-on-mario-worker', component: Page, props: r => ({ lang: r.params.lang, page: 'legend-world-on-mario-worker' }) },
-  { path: '/:lang(en|cn)/legend-world-remake/changelog', component: Page, props: r => ({ lang: r.params.lang, page: 'changelog' }) },
+  { path: '/:lang(en|cn)/legend-world-remake/legend-world-on-mario-worker/', component: Page, props: r => ({ lang: r.params.lang, page: 'legend-world-on-mario-worker' }) },
+  { path: '/:lang(en|cn)/legend-world-remake/changelog/', component: Page, props: r => ({ lang: r.params.lang, page: 'changelog' }) },
   { path: '/en/super-mario-worker-project/', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project' }) },
-  { path: '/en/super-mario-worker-project/version-archive', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project-version-archive' }) },
-  { path: '/en/super-mario-worker-project/changelog', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project-changelog' }) }
+  { path: '/en/super-mario-worker-project/version-archive/', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project-version-archive' }) },
+  { path: '/en/super-mario-worker-project/changelog/', component: Page, props: _r => ({ lang: 'en', page: 'super-mario-worker-project-changelog' }) }
 ]

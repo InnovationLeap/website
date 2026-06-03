@@ -78,21 +78,21 @@ export default defineConfig({
     includedRoutes: () => [
       '/cn/',
       '/cn/about/',
-      '/cn/about/team',
+      '/cn/about/team/',
       '/cn/team/',
       '/cn/legend-world-remake/',
-      '/cn/legend-world-remake/legend-world-on-mario-worker',
-      '/cn/legend-world-remake/changelog',
+      '/cn/legend-world-remake/legend-world-on-mario-worker/',
+      '/cn/legend-world-remake/changelog/',
       '/en/',
       '/en/about/',
-      '/en/about/team',
+      '/en/about/team/',
       '/en/team/',
       '/en/legend-world-remake/',
-      '/en/legend-world-remake/legend-world-on-mario-worker',
-      '/en/legend-world-remake/changelog',
+      '/en/legend-world-remake/legend-world-on-mario-worker/',
+      '/en/legend-world-remake/changelog/',
       '/en/super-mario-worker-project/',
-      '/en/super-mario-worker-project/version-archive',
-      '/en/super-mario-worker-project/changelog'
+      '/en/super-mario-worker-project/version-archive/',
+      '/en/super-mario-worker-project/changelog/'
     ]
   }
 })
