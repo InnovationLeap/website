@@ -50,8 +50,4 @@ onBeforeUnmount(() => {
 </script>
 
 <style>
-@import url('/assets/css/main.css');
-@import url('/assets/css/markpro.css');
-@import url('/assets/css/puhuiti.css');
-@import url('/assets/css/fontawesome-all.min.css');
 </style>

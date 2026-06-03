@@ -20,7 +20,7 @@ const content = ref('')
 const articleEl = ref(null)
 
 // 构建时通过 import.meta.glob 导入所有 markdown 文件
-const markdownModules = import.meta.glob('/public/content/**/*.md', { query: '?raw', import: 'default', eager: true })
+const markdownModules = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default', eager: true })
 
 // Keep references to dynamically mounted slider apps to unmount on updates
 let mountedSliderApps = []
@@ -108,8 +108,8 @@ function parseFrontMatter(text) {
 // 从构建时导入的模块中获取 markdown 内容
 function getMarkdownContent(src) {
   // src 格式如 /content/en/about.md
-  // import.meta.glob 的 key 格式为 /public/content/en/about.md
-  const key = `/public${src}`
+  // import.meta.glob 的 key 格式为 /src/content/en/about.md
+  const key = `/src${src}`
   return markdownModules[key] || null
 }
 
