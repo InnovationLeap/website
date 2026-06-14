@@ -26,6 +26,19 @@ defineProps({
 </script>
 
 <style scoped>
+.gallery-slider :deep(.carousel__pagination) {
+  position: relative;
+  margin-top: 24px;
+}
+.gallery-slider :deep(.carousel__pagination-button) {
+  width: 12px;
+}
+.gallery-slider :deep(.carousel__prev) {
+  margin-left: 8px;
+}
+.gallery-slider :deep(.carousel__next) {
+  margin-right: 8px;
+}
 .gallery-slider ol li {
   padding-left: 0;
 }
