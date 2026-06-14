@@ -95,7 +95,7 @@
     }, userConfig)
 
     // Expand "target" if it's not a jQuery object already.
-    if (typeof config.target != 'jQuery')
+    if (typeof config.target !== 'jQuery')
     {config.target = $(config.target)}
 
     // Panel.
@@ -303,7 +303,7 @@
   $.fn.placeholder = function() {
 
     // Browser natively supports placeholders? Bail.
-    if (typeof (document.createElement('input')).placeholder != 'undefined')
+    if (typeof (document.createElement('input')).placeholder !== 'undefined')
     {return $(this)}
 
     // No elements?
@@ -528,7 +528,7 @@
     const key = '__prioritize'
 
     // Expand $elements if it's not already a jQuery object.
-    if (typeof $elements != 'jQuery')
+    if (typeof $elements !== 'jQuery')
     {$elements = $($elements)}
 
     // Step through elements.

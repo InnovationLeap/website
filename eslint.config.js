@@ -9,7 +9,8 @@ export default [
       'node_modules/**',
       'public/**',
       '*.config.js',
-      'scripts/**'
+      'scripts/**',
+      'src/lib/**'
     ]
   },
   js.configs.recommended,
@@ -89,13 +90,4 @@ export default [
       'vue/require-prop-types': 'warn'
     }
   },
-  {
-    files: ['src/assets/js/main.js'],
-    languageOptions: {
-      globals: {
-        jQuery: 'readonly',
-        breakpoints: 'readonly'
-      }
-    }
-  }
 ]
