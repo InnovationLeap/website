@@ -7,8 +7,8 @@
   $.fn.navList = function() {
 
     const $this = $(this)
-    $a = $this.find('a'),
-    b = []
+    const $a = $this.find('a')
+    const b = []
 
     $a.each(function() {
 
