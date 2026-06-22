@@ -202,6 +202,10 @@ onBeforeUnmount(() => {
 }
 
 @media screen and (max-width: 736px) {
+  /* Reduce font size for mobile */
+  .sub-nav .nav-bar .title h2 {
+    font-size: 16px;
+  }
   /* Keep existing float-based layout from main.css; only add positioning */
   .sub-nav .nav-bar .title {
     position: relative;
