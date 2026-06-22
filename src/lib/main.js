@@ -17,8 +17,16 @@
     small:   [ null,      '736px'  ]
   })
 
-  // Initialize after window load to ensure SPA header is rendered
-  $window.on('load', function() {
+  // Run immediately if load already fired, otherwise wait for load event
+  function onReady(fn) {
+    if (document.readyState === 'complete') {
+      fn()
+    } else {
+      $window.on('load', fn)
+    }
+  }
+
+  onReady(function() {
     // Play initial animations on page load.
     window.setTimeout(function() {
       $body.removeClass('is-preload')

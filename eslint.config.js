@@ -10,7 +10,8 @@ export default [
       'public/**',
       '*.config.js',
       'scripts/**',
-      'src/lib/**'
+      'src/lib/**',
+      '.vite-ssg-temp/**'
     ]
   },
   js.configs.recommended,
