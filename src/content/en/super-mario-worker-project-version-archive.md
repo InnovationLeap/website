@@ -6,6 +6,8 @@ title: Super Mario Worker Project
 
 | Version | Release date | Game | Data |
 |---|---|---|---|
+| v1.7.12f2 | 2026-07-08 | [Download game](https://file.marioforever.net/smwp/smwp-1.7.12f2.7z) | [Download data](https://file.marioforever.net/smwp/Data.7z) |
+| v1.7.12f | 2026-06-05 | [Download game](https://file.marioforever.net/smwp/smwp-1.7.12f.7z) | [Download data](https://file.marioforever.net/smwp/Data.7z) |
 | v1.7.12 | 2026-05-24 | [Download game](https://file.marioforever.net/smwp/smwp-1.7.12.7z) | [Download data](https://file.marioforever.net/smwp/Data.7z) |
 | v1.7.11 | 2025-07-18 | [Download game](https://file.marioforever.net/smwp/smwp-1.7.11.7z) | [Download data](https://file.marioforever.net/smwp/Data.7z) |
 | v1.7.11a | 2025-07-18 | [Download game](https://file.marioforever.net/smwp/smwp-1.7.11a.7z) | [Download data](https://file.marioforever.net/smwp/Data.7z) |
