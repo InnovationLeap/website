@@ -89,10 +89,7 @@ export default defineConfig({
       '/en/team/',
       '/en/legend-world-remake/',
       '/en/legend-world-remake/legend-world-on-mario-worker/',
-      '/en/legend-world-remake/changelog/',
-      '/en/super-mario-worker-project/',
-      '/en/super-mario-worker-project/version-archive/',
-      '/en/super-mario-worker-project/changelog/'
+      '/en/legend-world-remake/changelog/'
     ]
   }
 })

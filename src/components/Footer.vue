@@ -60,25 +60,13 @@ const switchLangUrl = computed(() => {
   const currentPath = route.path
   const isEn = props.lang === 'en'
 
-  // 特殊处理：如果在SMWP页面点击中文，跳转到SMWP官网
-  if (isEn && currentPath.includes('/super-mario-worker-project')) {
-    return 'https://smwp.marioforever.net/'
-  }
-
   // 正常路径切换
   const newLang = isEn ? 'cn' : 'en'
   return currentPath.replace(/^\/(en|cn)/, `/${newLang}`)
 })
 
 const switchLanguage = () => {
-  const targetUrl = switchLangUrl.value
-  // 如果是外部链接（如SMWP官网），直接跳转
-  if (targetUrl.startsWith('http')) {
-    window.location.href = targetUrl
-  } else {
-    // 使用 router.push 进行页面切换，避免刷新页面
-    router.push(targetUrl)
-  }
+  router.push(switchLangUrl.value)
 }
 
 const buildTime = BUILD_TIME

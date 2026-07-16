@@ -46,8 +46,8 @@ const images = computed(() => [
     src: props.lang === 'cn' ? '/images/smwp-slider.webp' : '/images/smwp-slider-en.webp',
     srcMobile: props.lang === 'cn' ? '/images/smwp-sliderm.webp' : '/images/smwp-sliderm-en.webp',
     alt: 'Super Mario Worker Project',
-    link: props.lang === 'cn' ? 'https://smwp.marioforever.net/' : `/${props.lang}/super-mario-worker-project/`,
-    target: props.lang === 'cn' ? '_blank' : '_self'
+    link: 'https://smwp.marioforever.net/',
+    target: '_blank'
   }
 ])
 

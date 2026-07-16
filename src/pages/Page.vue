@@ -54,7 +54,6 @@ watch([fmTitle,  () => props.page], () => {
 const baseSubnavTitle = computed(() => {
   if (props.page === 'about' || props.page === 'team') return props.lang === 'cn' ? '关于' : 'About'
   if (props.page === 'legend-world-remake' || props.page === 'changelog' || props.page === 'legend-world-on-mario-worker') return props.lang === 'cn' ? 'Legend World 重制' : 'Legend World Remake'
-  if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') return 'Super Mario Worker Project'
   return ''
 })
 
@@ -64,7 +63,6 @@ const downloadUrl = computed(() => {
   const langData = i18n[props.lang]
   if (props.page === 'legend-world-remake' || props.page === 'changelog') return langData.legendWorldRemake?.downloadUrl
   if (props.page === 'legend-world-on-mario-worker') return langData.legendWorldMW?.downloadUrl
-  if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') return langData.smwp?.downloadUrl
   return ''
 })
 
@@ -72,7 +70,6 @@ const downloadText = computed(() => {
   const langData = i18n[props.lang]
   if (props.page === 'legend-world-remake' || props.page === 'changelog') return langData.legendWorldRemake?.downloadText
   if (props.page === 'legend-world-on-mario-worker') return langData.legendWorldMW?.downloadText
-  if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') return langData.smwp?.downloadText
   return ''
 })
 
@@ -94,13 +91,6 @@ const subnavItems = computed(() => {
     return [
       { text: props.lang === 'cn' ? '概述' : 'Overview', href: `/${props.lang}/legend-world-remake/legend-world-on-mario-worker/`, active: props.page === 'legend-world-on-mario-worker' },
       { text: props.lang === 'cn' ? '了解重制版' : 'Remake', href: `/${props.lang}/legend-world-remake/`, active: props.page === 'legend-world-remake' }
-    ]
-  }
-  if (props.page === 'super-mario-worker-project' || props.page === 'super-mario-worker-project-version-archive' || props.page === 'super-mario-worker-project-changelog') {
-    return [
-      { text: 'Overview', href: '/en/super-mario-worker-project/', active: props.page === 'super-mario-worker-project' },
-      { text: 'Changelog', href: '/en/super-mario-worker-project/changelog/', active: props.page === 'super-mario-worker-project-changelog' },
-      { text: 'Version archive', href: '/en/super-mario-worker-project/version-archive/', active: props.page === 'super-mario-worker-project-version-archive' }
     ]
   }
   return []

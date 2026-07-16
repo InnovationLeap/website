@@ -28,8 +28,7 @@ export default {
           links: [
             { text: 'Legend World 重制 v2.0', href: '/cn/legend-world-remake/' },
             { text: 'Mario Worker 上的 Legend World', href: '/cn/legend-world-remake/legend-world-on-mario-worker/' },
-            { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/' },
-            { text: 'SMWP 2', href: 'https://smwp2.marioforever.net/', target: '_blank' }
+            { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/' }
           ]
         },
         {
@@ -67,7 +66,7 @@ export default {
     nav: [
       { text: 'Home', href: '/en/' },
       { text: 'Legend World Remake v2.0', href: '/en/legend-world-remake/' },
-      { text: 'Super Mario Worker Project', href: '/en/super-mario-worker-project/' },
+      { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/', target: '_blank' },
       { text: 'About', href: '/en/about/' }
     ],
     legendWorldRemake: {
@@ -89,7 +88,7 @@ export default {
           links: [
             { text: 'Legend World Remake v2.0', href: '/en/legend-world-remake/' },
             { text: 'Legend World on Mario Worker', href: '/en/legend-world-remake/legend-world-on-mario-worker/' },
-            { text: 'Super Mario Worker Project', href: '/en/super-mario-worker-project/' }
+            { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/', target: '_blank' }
           ]
         },
         {
