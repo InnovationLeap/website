@@ -55,7 +55,7 @@ title: 关于 INL
   <h3>绿色的糖果</h3>
   <p class="flow-text">制作人员</p>
   <br>
-  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.11 之后版本的开发工作。他还为 Legend World 重制 v2.0 提供了部分素材和技术支持。</p>
+  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.11 之后版本的开发工作，是 SMWP 2 的主要开发者。他还为 Legend World 重制 v2.0 提供了部分素材和技术支持。</p>
   <br>
 </div>
 <div><img src="/images/avatars/koopa4.jpg" class="avatar-right"></div>
@@ -63,7 +63,7 @@ title: 关于 INL
   <h3>koopa4</h3>
   <p class="flow-text">制作人员，测试人员</p>
   <br>
-  <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试和部分优化工作，制作了 Legend World 重制的结局场景。</p>
+  <p class="flow-text">参与了 Legend World 重制和 SMWP 2 的开发工作，制作了 Legend World 重制的结局场景。</p>
   <br>
 </div>
 <div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>

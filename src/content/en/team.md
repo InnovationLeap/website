@@ -55,7 +55,7 @@ title: About
   <h3>Green Sweet</h3>
   <p class="flow-text">Programmer</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11. He also provided some graphics for Legend World Remake v2.0.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11. He is one of the main developers of SMWP 2, and has provided some graphics and technical support for Legend World Remake v2.0.</p>
   <br>
 </div>
 <div><img src="/images/avatars/koopa4.jpg" class="avatar-right"></div>
@@ -63,7 +63,7 @@ title: About
   <h3>koopa4</h3>
   <p class="flow-text">Programmer, tester</p>
   <br>
-  <p class="flow-text">He is a tester for Legend World Remake and Super Mario Worker Project, and has made the ending scene for Legend World Remake.</p>
+  <p class="flow-text">He is one of the main developers of SMWP 2, and has made the ending scene for Legend World Remake.</p>
   <br>
 </div>
 <div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>
