@@ -50,36 +50,20 @@ title: About
   <p class="flow-text">He is the creator of Mario Forever Dream Escape and Mario Forever Save ZQH. He is a tester for Legend World Remake and Super Mario Worker Project, and has made an extra challenge level for Legend World Remake.</p>
   <br>
 </div>
-<div><img src="/images/avatars/koopa4.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/greensweet.jpg" class="avatar-left"></div>
 <div class="text-left">
+  <h3>Green Sweet</h3>
+  <p class="flow-text">Programmer</p>
+  <br>
+  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11. He also provided some graphics for Legend World Remake v2.0.</p>
+  <br>
+</div>
+<div><img src="/images/avatars/koopa4.jpg" class="avatar-right"></div>
+<div class="text-right">
   <h3>koopa4</h3>
   <p class="flow-text">Programmer, tester</p>
   <br>
   <p class="flow-text">He is a tester for Legend World Remake and Super Mario Worker Project, and has made the ending scene for Legend World Remake.</p>
-  <br>
-</div>
-<div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>Poison mushroom vn</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a tester for Legend World Remake.</p>
-  <br>
-</div>
-<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>Daye</h3>
-  <p class="flow-text">Programmer, tester</p>
-  <br>
-  <p class="flow-text">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
-  <br>
-</div>
-<div><img src="/images/avatars/sfds.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>SFDS</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
   <br>
 </div>
 <div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>
@@ -114,25 +98,33 @@ title: About
   <p class="flow-text">He is a tester for Super Mario Worker Project.</p>
   <br>
 </div>
-<div><img src="/images/avatars/greensweet.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
 <div class="text-left">
-  <h3>Green Sweet</h3>
-  <p class="flow-text">Programmer</p>
+  <h3>Daye</h3>
+  <p class="flow-text">Programmer, tester</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11. He also provided some graphics for Legend World Remake v2.0.</p>
+  <p class="flow-text">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
   <br>
 </div>
-<div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>
+<div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
 <div class="text-right">
-  <h3>2333ty</h3>
+  <h3>Poison mushroom vn</h3>
+  <p class="flow-text">Tester</p>
+  <br>
+  <p class="flow-text">He is a tester for Legend World Remake.</p>
+  <br>
+</div>
+<div><img src="/images/avatars/sfds.jpg" class="avatar-left"></div>
+<div class="text-left">
+  <h3>SFDS</h3>
   <p class="flow-text">Tester</p>
   <br>
   <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
   <br>
 </div>
-<div><img src="/images/avatars/xfx.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>xfx</h3>
+<div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>
+<div class="text-right">
+  <h3>2333ty</h3>
   <p class="flow-text">Tester</p>
   <br>
   <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
@@ -146,3 +138,4 @@ title: About
 - **835743384**: He had remade some levels in Legend World Remake.
 - **w1194600239**: He is the creator of Mysterious Islands. He was a tester for Legend World Remake.
 - **123568024**: He had remade a few levels in Legend World Remake.
+- **xfx**: He was a tester for Legend World Remake v2.0.

@@ -50,36 +50,20 @@ title: 关于 INL
   <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试工作，制作了 Legend World 重制的附加挑战关卡。曾任百度永远的玛丽吧吧主。</p>
   <br>
 </div>
-<div><img src="/images/avatars/koopa4.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/greensweet.jpg" class="avatar-left"></div>
 <div class="text-left">
+  <h3>绿色的糖果</h3>
+  <p class="flow-text">制作人员</p>
+  <br>
+  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.11 之后版本的开发工作。他还为 Legend World 重制 v2.0 提供了部分素材和技术支持。</p>
+  <br>
+</div>
+<div><img src="/images/avatars/koopa4.jpg" class="avatar-right"></div>
+<div class="text-right">
   <h3>koopa4</h3>
   <p class="flow-text">制作人员，测试人员</p>
   <br>
   <p class="flow-text">参与了 Legend World 重制和 Super Mario Worker Project 的测试和部分优化工作，制作了 Legend World 重制的结局场景。</p>
-  <br>
-</div>
-<div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>毒蘑菇vn</h3>
-  <p class="flow-text">测试人员</p>
-  <br>
-  <p class="flow-text">参与了 Legend World 重制的测试工作。</p>
-  <br>
-</div>
-<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>大爷</h3>
-  <p class="flow-text">制作人员，测试人员</p>
-  <br>
-  <p class="flow-text">参与了 Legend World 重制早期版本的关卡优化工作，并制作了早期版本的部分大地图；参与了 Legend World 重制 v2.0 的测试工作。</p>
-  <br>
-</div>
-<div><img src="/images/avatars/sfds.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>色粉堵塞</h3>
-  <p class="flow-text">测试人员</p>
-  <br>
-  <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作。</p>
   <br>
 </div>
 <div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>
@@ -114,12 +98,28 @@ title: 关于 INL
   <p class="flow-text">参与了 Super Mario Worker Project 的测试工作。</p>
   <br>
 </div>
-<div><img src="/images/avatars/greensweet.jpg" class="avatar-left"></div>
+<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
 <div class="text-left">
-  <h3>绿色的糖果</h3>
-  <p class="flow-text">制作人员</p>
+  <h3>大爷</h3>
+  <p class="flow-text">制作人员，测试人员</p>
   <br>
-  <p class="flow-text">Super Mario Worker Project 制作组成员，参与了 v1.7.11 之后版本的开发工作。他还为 Legend World 重制 v2.0 提供了部分素材和技术支持。</p>
+  <p class="flow-text">参与了 Legend World 重制早期版本的关卡优化工作，并制作了早期版本的部分大地图；参与了 Legend World 重制 v2.0 的测试工作。</p>
+  <br>
+</div>
+<div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
+<div class="text-right">
+  <h3>毒蘑菇vn</h3>
+  <p class="flow-text">测试人员</p>
+  <br>
+  <p class="flow-text">参与了 Legend World 重制的测试工作。</p>
+  <br>
+</div>
+<div><img src="/images/avatars/sfds.jpg" class="avatar-left"></div>
+<div class="text-left">
+  <h3>色粉堵塞</h3>
+  <p class="flow-text">测试人员</p>
+  <br>
+  <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作。</p>
   <br>
 </div>
 <div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>
@@ -128,14 +128,6 @@ title: 关于 INL
   <p class="flow-text">测试人员</p>
   <br>
   <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作。</p>
-  <br>
-</div>
-<div><img src="/images/avatars/xfx.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>s小s飞s侠s</h3>
-  <p class="flow-text">测试人员</p>
-  <br>
-  <p class="flow-text">参与了 Legend World 重制 v2.0 的测试工作，也是 Super Mario Worker Project 制作组成员。</p>
   <br>
 </div>
 
@@ -148,3 +140,4 @@ title: 关于 INL
 - **冥の归**：Legend World 重制组早期成员，参与过 Legend World 重制的部分关卡的复刻。
 - **w1194600239**：Legend World 重制组前成员，参与过 Legend World 重制的测试工作。
 - **123568024**：Legend World 重制组早期成员，参与过早期 Legend World 重制的部分关卡复刻工作。
+- **s小s飞s侠s**：Legend World 重制组和 Super Mario Worker Project 制作组前成员，参与过 Legend World 重制的测试工作。
