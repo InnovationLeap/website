@@ -55,7 +55,7 @@ title: About
   <h3>Green Sweet</h3>
   <p class="flow-text">Programmer</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the production of Super Mario Worker Project since v1.7.11. He is one of the main developers of SMWP 2, and has provided some graphics and technical support for Legend World Remake v2.0.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member and has participated in the production of Super Mario Worker Project since v1.7.11. He is one of the main developers of SMWP 2, and has provided some graphics and technical support for Legend World Remake v2.0.</p>
   <br>
 </div>
 <div><img src="/images/avatars/koopa4.jpg" class="avatar-right"></div>
@@ -71,7 +71,7 @@ title: About
   <h3>Bluesun</h3>
   <p class="flow-text">Tester</p>
   <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and has participated in the testing of Super Mario Worker Project since v1.7.10. He also composed 6 tracks for Super Mario Worker Project.</p>
+  <p class="flow-text">He is a Super Mario Worker Project Group member and has participated in the testing of Super Mario Worker Project since v1.7.10. He also composed 6 tracks for Super Mario Worker Project.</p>
   <br>
 </div>
 <div><img src="/images/avatars/116.jpg" class="avatar-right"></div>
