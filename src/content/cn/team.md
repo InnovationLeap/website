@@ -69,8 +69,8 @@ title: 关于 INL
 
 <div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
   <div class="flex flex-col items-center p-6 text-center">
-    <img src="/images/avatars/koopa4.jpg" alt="koopa4" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
-    <h3 class="text-xl font-semibold mb-1">koopa4</h3>
+    <img src="/images/avatars/koopa4.jpg" alt="ChloePrime" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">克洛伊Prime</h3>
     <p class="text-sm font-medium text-primary-500 mb-3">制作人员，测试人员</p>
     <p class="text-sm text-text-muted leading-relaxed">参与了 Legend World Remake 和 SMWP 2 的开发工作，制作了 Legend World Remake 的结局场景。</p>
   </div>
