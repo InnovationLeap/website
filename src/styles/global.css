@@ -1,8 +1,8 @@
+/* 导入字体（@import 必须在所有规则之前） */
+@import url("/assets/css/markpro.css");
+
 /* 导入 Tailwind CSS v4 */
 @import "tailwindcss";
-
-/* 导入字体 */
-@import url("/assets/css/markpro.css");
 
 /* 配置深色模式变体 - 基于 data-theme 属性手动切换 */
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
