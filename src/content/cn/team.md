@@ -155,8 +155,8 @@ title: 关于 INL
 以下为 INNOVATION LEAP 的前成员，感谢他们在 INL 期间的贡献！
 
 - **dasasdhba**：参与过 Legend World Remake 和 Super Mario Worker Project 的制作，并提供了一些素材。
-- **gaere54**：Legend World Remake 组前成员，参与过 Legend World Remake 的关卡复刻、大地图制作、优化和测试工作。
-- **冥の归**：Legend World Remake 组早期成员，参与过 Legend World Remake 的部分关卡的复刻。
-- **w1194600239**：Legend World Remake 组前成员，参与过 Legend World Remake 的测试工作。
-- **123568024**：Legend World Remake 组早期成员，参与过早期 Legend World Remake 的部分关卡复刻工作。
-- **s小s飞s侠s**：Legend World Remake 组和 Super Mario Worker Project 制作组前成员，参与过 Legend World Remake 的测试工作。
+- **gaere54**：Legend World Remake 制作组前成员，参与过 Legend World Remake 的关卡复刻、大地图制作、优化和测试工作。
+- **冥の归**：Legend World Remake 制作组早期成员，参与过 Legend World Remake 的部分关卡的复刻。
+- **w1194600239**：Legend World Remake 制作组前成员，参与过 Legend World Remake 的测试工作。
+- **123568024**：Legend World Remake 制作组早期成员，参与过早期 Legend World Remake 的部分关卡复刻工作。
+- **s小s飞s侠s**：Legend World Remake 制作组和 Super Mario Worker Project 制作组前成员，参与过 Legend World Remake 的测试工作。
