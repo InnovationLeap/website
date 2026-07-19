@@ -10,20 +10,24 @@ title: Legend World Remake
 Legend World Remake v2.0 features three layers of content:
 
 #### Main Worlds
-The game contains 8 main worlds around 100 levels, including:  
-- Numbered stages (7–8 per world)  
-- Lettered stages (2–3 per world)  
-- Mini games (1–2 per world)  
+The game contains 8 main worlds around 100 levels, including:
+- Numbered stages (7–8 per world)
+- Lettered stages (2–3 per world)
+- Mini games (1–2 per world)
 - Boss battles
 
 #### The Purple Coin System
-A total of 120 optional challenges are added to the stages, covering objectives such as collection, restrictions, and exploration.  
-Each completed challenge awards a Purple Coin, which can unlock additional content.  
-Difficulty ranges from easy to extremely hard, often exceeding the challenge of the original stages.  
+A total of 120 optional challenges are added to the stages, covering objectives such as collection, restrictions, and exploration.
+
+Each completed challenge awards a Purple Coin, which can unlock additional content.
+
+Difficulty ranges from easy to extremely hard, often exceeding the challenge of the original stages.
+
 The Purple Coin system is intended to provide meaningful side objectives rather than artificial padding. Each challenge is designed to suit its stage, aiming for variety and depth instead of repetition.
 
 #### Extra Levels
-By collecting Purple Coins, players can unlock a set of additional levels.  
+By collecting Purple Coins, players can unlock a set of additional levels.
+
 These include both reimagined stages from other Mario Worker 1.1 episodes and entirely original designs.
 
 ---
@@ -31,13 +35,17 @@ These include both reimagined stages from other Mario Worker 1.1 episodes and en
 Achieving 100% completion requires finishing all three layers of content.
 
 #### Redesigned World Maps
-All World Maps have been completely rebuilt. Levels can now be freely chosen and replayed, with auto-saving whenever the player return to the map after completing a level.  
-The World Map also supports manual save/load from the menu bar, with the option to save to another slot (Note: saving will overwrite existing data in that slot, so make backups!).  
-Click a challenge icon to enter Challenge Mode. Challenges with blue text and red text descriptions are both clickable, but red challenges only unlock after clearing their original level.  
+All World Maps have been completely rebuilt. Levels can now be freely chosen and replayed, with auto-saving whenever the player return to the map after completing a level.
+
+The World Map also supports manual save/load from the menu bar, with the option to save to another slot (Note: saving will overwrite existing data in that slot, so make backups!).
+
+Click a challenge icon to enter Challenge Mode. Challenges with blue text and red text descriptions are both clickable, but red challenges only unlock after clearing their original level.
+
 Press Fire key to freely view the World Map, and while in this mode, press Jump key to select a world.
 
 #### The Final Chapter: World 8
-World 8 is more than a continuation: it is the conclusion of the entire remake.  
+World 8 is more than a continuation: it is the conclusion of the entire remake.
+
 Through both reinterpretation and original design, it delivers the definitive "Final World, Final Level, and Final Boss" experience.
 
 ### Story
