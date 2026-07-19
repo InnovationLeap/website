@@ -1,0 +1,131 @@
+/* 导入 Tailwind CSS v4 */
+@import "tailwindcss";
+
+/* 导入字体 */
+@import url("/assets/css/markpro.css");
+
+/* 配置深色模式变体 - 基于 data-theme 属性手动切换 */
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* 设计 token 定义 */
+@theme {
+  /* 字体族 */
+  --font-display: "MarkPro", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --font-body: "MarkPro", "PingFang SC", "Microsoft YaHei", sans-serif;
+
+  /* 主色 - 蓝色系（evolved from #006eff）*/
+  --color-primary-50: #e6f0ff;
+  --color-primary-100: #cce0ff;
+  --color-primary-200: #99c2ff;
+  --color-primary-300: #66a3ff;
+  --color-primary-400: #3385ff;
+  --color-primary-500: #006eff;
+  --color-primary-600: #0052cc;
+  --color-primary-700: #003d99;
+  --color-primary-800: #002966;
+  --color-primary-900: #001433;
+
+  /* 强调色 - 暖橙色（用于按钮、高亮）*/
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+
+  /* 圆角 */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+  --radius-full: 9999px;
+
+  /* 过渡 */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* 浅色模式（默认）- 语义化颜色变量 */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-subtle: #f8fafc;
+  --color-bg-muted: #f1f5f9;
+  --color-surface: #ffffff;
+  --color-border: #e2e8f0;
+  --color-text: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-subtle: #94a3b8;
+  --color-shadow: rgba(0, 0, 0, 0.08);
+  --color-shadow-lg: rgba(0, 0, 0, 0.12);
+  --color-overlay: rgba(255, 255, 255, 0.8);
+}
+
+/* 深色模式 */
+[data-theme="dark"] {
+  --color-bg: #0a0e1a;
+  --color-bg-subtle: #0f1623;
+  --color-bg-muted: #1a2332;
+  --color-surface: #131c2e;
+  --color-border: #1e293b;
+  --color-text: #f1f5f9;
+  --color-text-muted: #94a3b8;
+  --color-text-subtle: #64748b;
+  --color-shadow: rgba(0, 0, 0, 0.3);
+  --color-shadow-lg: rgba(0, 0, 0, 0.5);
+  --color-overlay: rgba(10, 14, 26, 0.8);
+}
+
+/* 将语义化颜色映射到 Tailwind 主题 */
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-bg-subtle: var(--color-bg-subtle);
+  --color-bg-muted: var(--color-bg-muted);
+  --color-surface: var(--color-surface);
+  --color-border: var(--color-border);
+  --color-text: var(--color-text);
+  --color-text-muted: var(--color-text-muted);
+  --color-text-subtle: var(--color-text-subtle);
+}
+
+/* 全局基础样式 */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* 主题切换平滑过渡（放入 base 层，确保 Tailwind utility 类可覆盖） */
+@layer base {
+  *, *::before, *::after {
+    transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+  }
+}
+
+/* 选中文本样式 */
+::selection {
+  background-color: var(--color-primary-500);
+  color: white;
+}
+
+/* 滚动条样式（WebKit）*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg-muted);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-subtle);
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+/* 焦点可见样式 */
+:focus-visible {
+  outline: 2px solid var(--color-primary-500);
+  outline-offset: 2px;
+}

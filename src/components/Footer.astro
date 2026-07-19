@@ -1,0 +1,110 @@
+---
+import type { Lang } from '../i18n/ui'
+import { ui } from '../i18n/ui'
+
+interface Props {
+  lang: Lang
+}
+
+const { lang } = Astro.props
+const cfg = ui[lang].footer
+
+const currentPath = Astro.url.pathname
+const switchLangUrl = currentPath.replace(/^\/(en|cn)/, `/${lang === 'en' ? 'cn' : 'en'}`)
+
+const buildTime = new Date()
+const formatBuildTime = (date: Date) => {
+  const year = date.getFullYear()
+  const month = String(date.getMonth() + 1).padStart(2, '0')
+  const day = String(date.getDate()).padStart(2, '0')
+  const hours = String(date.getHours()).padStart(2, '0')
+  const minutes = String(date.getMinutes()).padStart(2, '0')
+  const seconds = String(date.getSeconds()).padStart(2, '0')
+  return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`
+}
+
+const isExternal = (href?: string) => Boolean(href?.startsWith('http'))
+
+const iconMap: Record<string, { svg: string; label: string }> = {
+  'fa-twitter': {
+    svg: '<svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>',
+    label: 'X'
+  },
+  'fa-youtube': {
+    svg: '<svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>',
+    label: 'YouTube'
+  }
+}
+
+const githubText = lang === 'cn' ? '网站源码' : 'Source code'
+const buildTimeLabel = lang === 'cn' ? '构建时间' : 'Build time'
+---
+
+<footer class="bg-bg-subtle border-t border-border">
+  <div class="max-w-7xl mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+      {cfg.sections.map((section) => (
+        <div>
+          <h3 class="text-sm font-display font-semibold uppercase tracking-wider text-text-muted mb-4">
+            {section.title}
+          </h3>
+          {section.links.some((link) => link.icon) ? (
+            <div class="flex gap-3">
+              {section.links.filter((link) => link.icon).map((link) => {
+                const icon = link.icon
+                if (!icon) return null
+                const iconInfo = iconMap[icon]
+                if (!iconInfo) return null
+                return (
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener"
+                    aria-label={iconInfo.label}
+                    class="text-text-muted hover:text-primary-500 transition-colors"
+                    set:html={iconInfo.svg}
+                  />
+                )
+              })}
+            </div>
+          ) : (
+            <ul class="list-none p-0 space-y-2">
+              {section.links.map((link) => (
+                <li>
+                  {link.href ? (
+                    <a
+                      href={link.href}
+                      target={isExternal(link.href) ? '_blank' : undefined}
+                      rel={isExternal(link.href) ? 'noopener' : undefined}
+                      class="text-sm text-text-muted hover:text-primary-500 transition-colors"
+                    >
+                      {link.text}
+                    </a>
+                  ) : (
+                    <span class="text-sm text-text-muted">{link.text}</span>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+    </div>
+
+    <div class="border-t border-border mt-8 pt-6 flex flex-wrap gap-4 text-xs text-text-subtle">
+      <span set:html={cfg.copyright} />
+      <a href={switchLangUrl} class="hover:text-primary-500 transition-colors">
+        {cfg.switchLang.text}
+      </a>
+      <a
+        href="https://github.com/InnovationLeap/website"
+        target="_blank"
+        rel="noopener"
+        class="hover:text-primary-500 transition-colors"
+      >
+        {githubText}
+      </a>
+      <span>{buildTimeLabel}: {formatBuildTime(buildTime)}</span>
+    </div>
+  </div>
+</footer>

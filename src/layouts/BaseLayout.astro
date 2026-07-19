@@ -1,0 +1,45 @@
+---
+import { type Lang } from '../i18n/ui'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import ThemeToggle from '../components/ThemeToggle.astro'
+import '../styles/global.css'
+
+interface Props {
+  lang: Lang
+  title: string
+  description?: string
+  headerSticky?: boolean
+}
+
+const { lang, title, description = 'INNOVATION LEAP - Game Development Studio', headerSticky = true } = Astro.props
+const htmlLang = lang === 'cn' ? 'zh-CN' : 'en'
+---
+<!doctype html>
+<html lang={htmlLang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.ico" />
+    <!-- 主题初始化脚本 - 防止 FOUC（必须在页面渲染前执行）-->
+    <script is:inline>
+      (function() {
+        const saved = localStorage.getItem('theme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        const theme = saved || (prefersDark ? 'dark' : 'light')
+        document.documentElement.setAttribute('data-theme', theme)
+      })()
+    </script>
+  </head>
+  <body class="min-h-screen flex flex-col bg-bg text-text font-body antialiased">
+    <Header lang={lang} sticky={headerSticky}>
+      <ThemeToggle />
+    </Header>
+    <main class="flex-1">
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

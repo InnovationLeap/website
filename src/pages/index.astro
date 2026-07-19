@@ -1,0 +1,20 @@
+---
+// 根路径根据浏览器语言重定向
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>INNOVATION LEAP</title>
+    <meta http-equiv="refresh" content="0; url=/en/">
+    <script is:inline>
+    (function() {
+      const lang = (navigator.language || navigator.userLanguage || '').toLowerCase().startsWith('zh') ? 'cn' : 'en'
+      window.location.replace('/' + lang + '/')
+    })()
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>

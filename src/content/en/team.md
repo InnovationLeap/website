@@ -2,133 +2,152 @@
 title: About
 ---
 
-<div><img src="/images/avatars/newlife2017.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>newlife2017</h3>
-  <p class="flow-text">Founder, responsible for overall planning and promotion</p>
-  <br>
-  <p class="flow-text">He launched Legend World Remake in June 2014 and participated in the remake of some levels. He is mainly responsible for project coordination, release, and promotion.</p>
-  <br>
+<div class="team-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/nmnmoooh.jpg" alt="nmnmoooh" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">nmnmoooh</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Founder, leader of Super Mario Worker Project group</p>
+    <p class="text-sm text-text-muted leading-relaxed">He promoted the founding of INNOVATION LEAP in June 2016, and is now mainly responsible for the production of Super Mario Worker Project and the post-production of Legend World Remake.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/nmnmoooh.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>nmnmoooh</h3>
-  <p class="flow-text">Co-founder, leader of Super Mario Worker Project group</p>
-  <br>
-  <p class="flow-text">He promoted the founding of INNOVATION LEAP in June 2016, and is now mainly responsible for the production of Super Mario Worker Project and the post-production of Legend World Remake.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/newlife2017.jpg" alt="newlife2017" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">newlife2017</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Co-founder, responsible for overall planning and promotion</p>
+    <p class="text-sm text-text-muted leading-relaxed">He launched Legend World Remake in June 2014 and participated in the remake of some levels. He is mainly responsible for project coordination, release, and promotion.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/wsw.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>WSW</h3>
-  <p class="flow-text">Co-founder, programmer</p>
-  <br>
-  <p class="flow-text">He is mainly involved in the improvement of Legend World Remake, and has participated in the production of Super Mario Worker Project until v1.6.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/wsw.jpg" alt="WSW" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">WSW</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Co-founder, programmer</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is mainly involved in the improvement of Legend World Remake, and has participated in the production of Super Mario Worker Project until v1.6.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/yuyangmiau.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>Yuyangmiau</h3>
-  <p class="flow-text">Co-founder</p>
-  <br>
-  <p class="flow-text">He participated in the production of Super Mario Worker Project and provided some valuable suggestions for it.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/yuyangmiau.jpg" alt="Yuyangmiau" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">Yuyangmiau</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Co-founder</p>
+    <p class="text-sm text-text-muted leading-relaxed">He participated in the production of Super Mario Worker Project and provided some valuable suggestions for it.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/longzongkuiyan.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>LongZongKuiYan</h3>
-  <p class="flow-text">Programmer, tester, spriter</p>
-  <br>
-  <p class="flow-text">He is involved in the production and testing of Legend World Remake and Super Mario Worker Project, and provided some graphics. He is also a major member of Mario Forever Remake Group (China).</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/longzongkuiyan.jpg" alt="LongZongKuiYan" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">LongZongKuiYan</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Programmer, tester, spriter</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is involved in the production and testing of Legend World Remake and Super Mario Worker Project, and provided some graphics. He is also a major member of Mario Forever Remake Group (China).</p>
+  </div>
 </div>
-<div><img src="/images/avatars/zqh.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>zqh——123</h3>
-  <p class="flow-text">Programmer, tester</p>
-  <br>
-  <p class="flow-text">He is the creator of Mario Forever Dream Escape and Mario Forever Save ZQH. He is a tester for Legend World Remake and Super Mario Worker Project, and has made an extra challenge level for Legend World Remake.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/zqh.jpg" alt="zqh——123" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">zqh——123</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Programmer, tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is the creator of Mario Forever Dream Escape and Mario Forever Save ZQH. He is a tester for Legend World Remake and Super Mario Worker Project, and has made an extra challenge level for Legend World Remake.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/greensweet.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>Green Sweet</h3>
-  <p class="flow-text">Programmer</p>
-  <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member and has participated in the production of Super Mario Worker Project since v1.7.11. He is one of the main developers of SMWP 2, and has provided some graphics and technical support for Legend World Remake v2.0.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/greensweet.jpg" alt="Green Sweet" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">Green Sweet</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Programmer</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a Super Mario Worker Project Group member and has participated in the production of Super Mario Worker Project since v1.7.11. He is one of the main developers of SMWP 2, and has provided some graphics and technical support for Legend World Remake v2.0.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/koopa4.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>koopa4</h3>
-  <p class="flow-text">Programmer, tester</p>
-  <br>
-  <p class="flow-text">He is one of the main developers of SMWP 2, and has made the ending scene for Legend World Remake.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/koopa4.jpg" alt="koopa4" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">koopa4</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Programmer, tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is one of the main developers of SMWP 2, and has made the ending scene for Legend World Remake.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/bluesun.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>Bluesun</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member and has participated in the testing of Super Mario Worker Project since v1.7.10. He also composed 6 tracks for Super Mario Worker Project.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/bluesun.jpg" alt="Bluesun" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">Bluesun</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a Super Mario Worker Project Group member and has participated in the testing of Super Mario Worker Project since v1.7.10. He also composed 6 tracks for Super Mario Worker Project.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/116.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>1168438795</h3>
-  <p class="flow-text">Member</p>
-  <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member, and he composed 7 tracks for Super Mario Worker Project.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/116.jpg" alt="1168438795" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">1168438795</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Member</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a Super Mario Worker Project Group member, and he composed 7 tracks for Super Mario Worker Project.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/fahlee.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>Fahlee</h3>
-  <p class="flow-text">Member</p>
-  <br>
-  <p class="flow-text">He is a Super Mario Worker Project Group member.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/fahlee.jpg" alt="Fahlee" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">Fahlee</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Member</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a Super Mario Worker Project Group member.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/baibu.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>BaiBuChuanYangYouFeiJian</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a tester for Super Mario Worker Project.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/baibu.jpg" alt="BaiBuChuanYangYouFeiJian" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">BaiBuChuanYangYouFeiJian</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a tester for Super Mario Worker Project.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/daye.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>Daye</h3>
-  <p class="flow-text">Programmer, tester</p>
-  <br>
-  <p class="flow-text">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/daye.jpg" alt="Daye" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">Daye</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Programmer, tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is the creator of Mario Forever Magic Land. He is a tester for Legend World Remake v2.0, and participated in the level improvements and made some World Maps.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/dmgvn.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>Poison mushroom vn</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a tester for Legend World Remake.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/dmgvn.jpg" alt="Poison mushroom vn" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">Poison mushroom vn</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a tester for Legend World Remake.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/sfds.jpg" class="avatar-left"></div>
-<div class="text-left">
-  <h3>SFDS</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/sfds.jpg" alt="SFDS" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">SFDS</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a tester for Legend World Remake v2.0.</p>
+  </div>
 </div>
-<div><img src="/images/avatars/2333ty.jpg" class="avatar-right"></div>
-<div class="text-right">
-  <h3>2333ty</h3>
-  <p class="flow-text">Tester</p>
-  <br>
-  <p class="flow-text">He is a tester for Legend World Remake v2.0.</p>
-  <br>
+
+<div class="team-card bg-surface rounded-xl border border-border shadow-sm overflow-hidden hover:shadow-lg transition-all duration-300">
+  <div class="flex flex-col items-center p-6 text-center">
+    <img src="/images/avatars/2333ty.jpg" alt="2333ty" class="w-24 h-24 rounded-full object-cover mb-4 ring-2 ring-primary-200 dark:ring-primary-800">
+    <h3 class="text-xl font-semibold mb-1">2333ty</h3>
+    <p class="text-sm font-medium text-primary-500 mb-3">Tester</p>
+    <p class="text-sm text-text-muted leading-relaxed">He is a tester for Legend World Remake v2.0.</p>
+  </div>
+</div>
+
 </div>
 
 ### Past members

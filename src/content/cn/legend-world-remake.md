@@ -1,8 +1,8 @@
 ---
-title: Legend World 重制
+title: Legend World Remake
 ---
 
-「**Legend World 重制**」是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎），以 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 为蓝本进行再创作。本作使用 Clickteam Fusion Developer 2.5+ 开发。
+**Legend World Remake** 是由 **INNOVATION LEAP** 制作的同人游戏，基于永远的马里奥（Rainbow Engine 引擎），以 [Mario Worker 上的 Legend World](/cn/legend-world-remake/legend-world-on-mario-worker) 为蓝本进行再创作。本作使用 Clickteam Fusion Developer 2.5+ 开发。
 
 **最新版本**：v2.0.6.1
 
@@ -10,7 +10,7 @@ title: Legend World 重制
 Legend World Remake v2.0 包含三层内容：
 
 #### 主线关卡
-Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：  
+Legend World Remake v2.0 包含八大世界、约 100 个主线关卡：  
 - 数字关（每世界 7–8 个）  
 - 字母关（每世界 2–3 个）  
 - 迷你游戏（每世界 1–2 个）  
@@ -36,7 +36,7 @@ Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：
 按加速键可自由查看大地图，在自由查看模式下按跳跃键可选择其他世界。
 
 #### 最终章：第八世界
-第八世界不仅是对 Legend World 重制的补完，更是一次完整的收束。  
+第八世界不仅是对 Legend World Remake 的补完，更是一次完整的收束。  
 通过融合与创新的设计，展现了「最终世界、最终关卡、最终 BOSS」的独特构想。
 
 ### 游戏剧情
@@ -96,8 +96,8 @@ Legend World 重制 v2.0 包含八大世界、约 100 个主线关卡：
 <iframe style="width: 100%;" src="//player.bilibili.com/player.html?isOutside=true&aid=115112488798956&bvid=BV1J7hRzEEPi&cid=32032951466&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ### 免责声明
-马力欧及其版权归属任天堂。Mario Forever、「Legend World 重制」以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。「Legend World 重制」是非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
+马力欧及其版权归属任天堂。Mario Forever、Legend World Remake 以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。Legend World Remake 是一个非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
 
-「Legend World 重制」为免费游戏，严禁倒卖或用于营利，违者必究！
+Legend World Remake 为免费游戏，严禁倒卖或用于营利，违者必究！
 
-「Legend World 重制」的主要制作人员拥有 Clickteam Fusion Developer 2.5+ 的正版副本。
+Legend World Remake 的主要制作人员拥有 Clickteam Fusion Developer 2.5+ 的正版副本。

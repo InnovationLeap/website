@@ -1,0 +1,173 @@
+---
+import { ui, type Lang } from '../i18n/ui'
+import InleapLogo from './InleapLogo.astro'
+
+interface Props {
+  lang: Lang
+  sticky?: boolean
+}
+
+const { lang, sticky = true } = Astro.props
+const { logoAlt, nav: navItems } = ui[lang]
+
+const currentPath = Astro.url.pathname.replace(/\/$/, '')
+
+function isCurrent(href: string): boolean {
+  const cleanHref = href.replace(/\/$/, '')
+  // 主页特殊处理：精确匹配，避免所有子页面都激活
+  if (href === `/${lang}/`) return currentPath === `/${lang}`
+  return currentPath.startsWith(cleanHref)
+}
+
+function isExternal(href: string): boolean {
+  return href.startsWith('http')
+}
+
+const navAriaLabel = lang === 'cn' ? '主导航' : 'Main navigation'
+const toggleAriaLabel = lang === 'cn' ? '切换导航菜单' : 'Toggle navigation'
+---
+
+<header class:list={[
+  sticky ? 'sticky top-0 z-50' : 'relative z-50',
+  'border-b border-border bg-bg/80 backdrop-blur-sm'
+]}>
+  <div class="relative mx-auto max-w-7xl px-6">
+    <div class="relative flex h-20 items-center justify-between">
+      <!-- 移动端菜单按钮（左侧） -->
+      <button
+        type="button"
+        data-nav-toggle
+        class="md:hidden relative inline-flex items-center justify-center rounded-md p-2 text-text-muted transition-colors hover:text-primary-500"
+        aria-label={toggleAriaLabel}
+        aria-expanded="false"
+      >
+        <svg data-icon-menu class="h-6 w-6" style="transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg data-icon-close class="absolute h-6 w-6" style="transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; transform: rotate(-90deg); opacity: 0" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <!-- Logo（移动端居中，桌面端靠左） -->
+      <a
+        href={`/${lang}/`}
+        class="flex shrink-0 items-center font-display md:static max-md:absolute max-md:left-1/2 max-md:-translate-x-1/2"
+      >
+        <InleapLogo class="h-12 w-auto" alt={logoAlt} />
+      </a>
+
+      <!-- 右侧：桌面导航 + 深色模式切换 -->
+      <div class="flex items-center gap-4">
+        <nav class="hidden items-center gap-6 md:flex" aria-label={navAriaLabel}>
+          {navItems.map(item => (
+            <a
+              href={item.href}
+              class:list={[
+                'text-sm transition-colors',
+                isCurrent(item.href)
+                  ? 'font-medium text-primary-500'
+                  : 'text-text-muted hover:text-primary-500'
+              ]}
+              {...(isExternal(item.href) ? { target: item.target || '_blank', rel: 'noopener' } : {})}
+            >
+              {item.text}
+            </a>
+          ))}
+        </nav>
+
+        <slot />
+      </div>
+    </div>
+
+    <!-- 移动端菜单（absolute 定位，脱离文档流避免推动内容） -->
+    <nav
+      data-nav-menu
+      class="absolute left-0 right-0 top-full z-50 grid grid-rows-[0fr] md:hidden data-[open]:grid-rows-[1fr] transition-[grid-template-rows] duration-300 ease-in-out bg-bg/95 backdrop-blur-sm border-b border-border"
+      aria-label={navAriaLabel}
+    >
+      <div class="overflow-hidden">
+        <div class="px-6 py-3">
+          <div class="flex flex-col gap-1">
+            {navItems.map(item => (
+              <a
+                href={item.href}
+                class:list={[
+                  'rounded-md px-3 py-2 text-sm transition-colors',
+                  isCurrent(item.href)
+                    ? 'bg-primary-500/10 font-medium text-primary-500'
+                    : 'text-text-muted hover:bg-bg-muted hover:text-primary-500'
+                ]}
+                {...(isExternal(item.href) ? { target: item.target || '_blank', rel: 'noopener' } : {})}
+              >
+                {item.text}
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector('[data-nav-toggle]')
+  const menu = document.querySelector('[data-nav-menu]')
+
+  if (toggle && menu) {
+    const iconMenu = toggle.querySelector('[data-icon-menu]') as HTMLElement | null
+    const iconClose = toggle.querySelector('[data-icon-close]') as HTMLElement | null
+
+    const closeMenu = () => {
+      toggle.setAttribute('aria-expanded', 'false')
+      menu.removeAttribute('data-open')
+      if (iconMenu) {
+        iconMenu.style.transform = 'rotate(0deg)'
+        iconMenu.style.opacity = '1'
+      }
+      if (iconClose) {
+        iconClose.style.transform = 'rotate(-90deg)'
+        iconClose.style.opacity = '0'
+      }
+    }
+    const openMenu = () => {
+      toggle.setAttribute('aria-expanded', 'true')
+      menu.setAttribute('data-open', '')
+      if (iconMenu) {
+        iconMenu.style.transform = 'rotate(90deg)'
+        iconMenu.style.opacity = '0'
+      }
+      if (iconClose) {
+        iconClose.style.transform = 'rotate(0deg)'
+        iconClose.style.opacity = '1'
+      }
+    }
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation()
+      const expanded = toggle.getAttribute('aria-expanded') === 'true'
+      if (expanded) closeMenu()
+      else openMenu()
+    })
+
+    // 点击菜单外部关闭
+    document.addEventListener('click', (e) => {
+      const target = e.target as Node
+      if (!toggle.contains(target) && !menu.contains(target)) {
+        closeMenu()
+      }
+    })
+
+    // Escape 键关闭
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu()
+    })
+
+    // 点击导航链接后关闭
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu()
+      })
+    })
+  }
+</script>

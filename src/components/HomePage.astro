@@ -1,0 +1,276 @@
+---
+import { type Lang } from '../i18n/ui'
+
+interface Props {
+  lang: Lang
+}
+
+const { lang } = Astro.props
+
+const isCn = lang === 'cn'
+
+const t = {
+  cn: {
+    heroSubtitle: '',
+    h1Title: 'INNOVATION LEAP 官网焕新上线',
+    heroDescription: '全新设计，焕然一新',
+    ctaExplore: '探索项目',
+    ctaAbout: '关于我们',
+    projectsTitle: '我们的项目',
+    projectsSubtitle: '探索我们制作的游戏作品',
+    learnMore: '了解更多',
+    aboutTitle: '关于 INNOVATION LEAP',
+    aboutSummary: 'INNOVATION LEAP 成立于 2016 年，是由百度永远的玛丽吧和 Marioworker 吧吧友组建的游戏制作工作室。',
+    project1: {
+      title: 'Legend World Remake',
+      description: '以 Mario Worker 上的 Legend World 为蓝本进行再创作的同人作品'
+    },
+    project2: {
+      title: 'Super Mario Worker Project',
+      description: 'Mario Worker 二十载，SMWP 新突破'
+    }
+  },
+  en: {
+    heroSubtitle: '',
+    h1Title: 'Redesigned website now live',
+    heroDescription: '',
+    ctaExplore: 'Explore Projects',
+    ctaAbout: 'About Us',
+    projectsTitle: 'Our Projects',
+    projectsSubtitle: 'Discover the games we crafted',
+    learnMore: 'Learn More',
+    aboutTitle: 'About INNOVATION LEAP',
+    aboutSummary: 'INNOVATION LEAP, founded in June 2016, is a game development studio formed by members from the Chinese Mario Forever community.',
+    project1: {
+      title: 'Legend World Remake',
+      description: 'A Mario Forever fan game, reimagining the classic Legend World from Mario Worker'
+    },
+    project2: {
+      title: 'Super Mario Worker Project',
+      description: 'Official website now live'
+    }
+  }
+}
+
+const tr = isCn ? t.cn : t.en
+
+const project1Image = '/images/lgr-banner.webp'
+const project2Image = '/images/smwp-banner.webp'
+const project1Link = `/${lang}/legend-world-remake/`
+const project2Link = 'https://smwp.marioforever.net/'
+const aboutLink = `/${lang}/about/`
+---
+
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-gradient-to-br from-primary-600 via-primary-500 to-primary-700 dark:from-primary-800 dark:via-primary-700 dark:to-primary-900">
+  <!-- 背景贴图 -->
+  <img
+    src="/images/inl-logo-pattern.webp"
+    alt=""
+    class="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-25"
+    aria-hidden="true"
+  />
+  <!-- 装饰性浮动光晕 -->
+  <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+    <div class="float-1 absolute -left-20 top-10 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+    <div class="float-2 absolute right-0 top-20 h-96 w-96 rounded-full bg-primary-300/20 blur-3xl"></div>
+    <div class="float-3 absolute bottom-0 left-1/3 h-64 w-64 rounded-full bg-accent-400/10 blur-3xl"></div>
+  </div>
+
+  <div class="relative mx-auto flex min-h-[60vh] max-w-7xl flex-col justify-center px-6 py-24 md:min-h-[70vh]">
+    <div class="reveal max-w-3xl">
+      <p class="reveal-delay-1 mb-4 text-sm font-medium uppercase tracking-widest text-primary-100/80">
+        {tr.heroSubtitle}
+      </p>
+      <h1 class="reveal-delay-2 font-display text-5xl font-bold leading-tight text-white md:text-7xl">
+        {tr.h1Title}
+      </h1>
+      <p class="reveal-delay-3 mt-6 max-w-2xl text-lg text-primary-50/90 md:text-xl">
+        {tr.heroDescription}
+      </p>
+      <div class="reveal-delay-3 mt-8 flex flex-wrap gap-4">
+        <a
+          href="#projects"
+          class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-primary-700 shadow-lg transition-all hover:bg-primary-50 hover:shadow-xl"
+        >
+          {tr.ctaExplore}
+        </a>
+        <a
+          href={aboutLink}
+          class="inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20"
+        >
+          {tr.ctaAbout}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="mx-auto max-w-7xl px-6 py-20 md:py-28">
+  <div class="reveal mb-12">
+    <h2 class="reveal-delay-1 font-display text-3xl font-bold text-text md:text-4xl">
+      {tr.projectsTitle}
+    </h2>
+    <p class="reveal-delay-2 mt-3 text-text-muted">
+      {tr.projectsSubtitle}
+    </p>
+  </div>
+
+  <div class="grid gap-6 md:grid-cols-2">
+    <!-- Project 1: Legend World Remake -->
+    <a
+      href={project1Link}
+      class="reveal reveal-delay-2 group overflow-hidden rounded-xl border border-border bg-surface shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-primary-200 hover:shadow-xl dark:hover:border-primary-800"
+    >
+      <div class="relative aspect-[16/9] overflow-hidden">
+        <img
+          src={project1Image}
+          alt={tr.project1.title}
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="font-display text-xl font-semibold text-text">
+          {tr.project1.title}
+        </h3>
+        <p class="mt-2 text-sm text-text-muted">
+          {tr.project1.description}
+        </p>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary-500">
+          {tr.learnMore}
+          <svg class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+      </div>
+    </a>
+
+    <!-- Project 2: Super Mario Worker Project -->
+    <a
+      href={project2Link}
+      target="_blank"
+      rel="noopener"
+      class="reveal reveal-delay-3 group overflow-hidden rounded-xl border border-border bg-surface shadow-sm transition-[border-color,box-shadow] duration-300 hover:border-primary-200 hover:shadow-xl dark:hover:border-primary-800"
+    >
+      <div class="relative aspect-[16/9] overflow-hidden">
+        <img
+          src={project2Image}
+          alt={tr.project2.title}
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
+      <div class="p-6">
+        <h3 class="font-display text-xl font-semibold text-text">
+          {tr.project2.title}
+        </h3>
+        <p class="mt-2 text-sm text-text-muted">
+          {tr.project2.description}
+        </p>
+        <span class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary-500">
+          {tr.learnMore}
+          <svg class="h-4 w-4 transition-transform" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- About Summary Section -->
+<section class="border-t border-border bg-bg-subtle">
+  <div class="mx-auto max-w-7xl px-6 py-20 md:py-24">
+    <div class="reveal grid items-center gap-8 md:grid-cols-3">
+      <div class="reveal-delay-1 md:col-span-2">
+        <h2 class="font-display text-2xl font-bold text-text md:text-3xl">
+          {tr.aboutTitle}
+        </h2>
+        <p class="mt-4 text-text-muted md:text-lg">
+          {tr.aboutSummary}
+        </p>
+      </div>
+      <div class="reveal-delay-2 md:text-right">
+        <a
+          href={aboutLink}
+          class="inline-flex items-center gap-1.5 rounded-full bg-primary-500 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-primary-600"
+        >
+          {tr.learnMore}
+          <svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -20px) scale(1.05);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.95);
+    }
+  }
+
+  .reveal {
+    opacity: 0;
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .reveal-delay-1 {
+    animation-delay: 0.1s;
+  }
+
+  .reveal-delay-2 {
+    animation-delay: 0.2s;
+  }
+
+  .reveal-delay-3 {
+    animation-delay: 0.3s;
+  }
+
+  .float-1 {
+    animation: float 12s ease-in-out infinite;
+  }
+
+  .float-2 {
+    animation: float 15s ease-in-out infinite reverse;
+  }
+
+  .float-3 {
+    animation: float 18s ease-in-out infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      animation: none;
+    }
+    .float-1,
+    .float-2,
+    .float-3 {
+      animation: none;
+    }
+  }
+</style>

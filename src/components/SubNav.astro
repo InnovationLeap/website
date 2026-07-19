@@ -1,0 +1,214 @@
+---
+interface SubNavItem {
+  text: string
+  href: string
+  active?: boolean
+}
+
+interface Props {
+  items: SubNavItem[]
+  title: string
+  downloadUrl?: string
+  downloadText?: string
+}
+
+const {
+  items = [],
+  title = '',
+  downloadUrl = '',
+  downloadText = ''
+} = Astro.props
+---
+
+{items && items.length > 0 && (
+  <div class="sticky top-0 z-40 bg-bg/80 backdrop-blur-sm border-b border-border transition-colors">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-14">
+        <!-- 标题区域（左侧） -->
+        <div class="relative flex items-center">
+          <h2 class="font-display text-lg font-semibold text-text whitespace-nowrap">{title}</h2>
+
+          <!-- 移动端下拉切换按钮 -->
+          <button
+            type="button"
+            class="md:hidden inline-flex items-center justify-center p-1 text-text-muted hover:text-primary-500 transition-colors"
+            aria-label="Toggle section menu"
+            aria-expanded="false"
+            aria-haspopup="true"
+            data-subnav-toggle
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="w-4 h-4 transition-transform duration-300"
+              aria-hidden="true"
+            >
+              <path d="M6 9l6 6 6-6" />
+            </svg>
+          </button>
+
+          <!-- 移动端下拉菜单 -->
+          <ul
+            class="md:hidden absolute top-full mt-2 min-w-[160px] max-w-[calc(100vw-2rem)] bg-surface border border-border rounded-md shadow-md py-1 z-50 max-h-[60vh] overflow-y-auto opacity-0 scale-95 pointer-events-none data-[open]:opacity-100 data-[open]:scale-100 data-[open]:pointer-events-auto transition-all duration-300 ease-in-out"
+            data-subnav-menu
+            role="menu"
+          >
+            {items.map((item) => (
+              <li role="menuitem">
+                <a
+                  href={item.href}
+                  class:list={[
+                    'block px-3 py-2 text-sm transition-colors whitespace-normal break-words',
+                    item.active
+                      ? 'text-primary-500 font-semibold bg-primary-500/10 border-primary-500'
+                      : 'text-text-muted border-transparent hover:text-primary-500 hover:bg-bg-subtle hover:border-primary-500/50'
+                  ]}
+                  role="menuitem"
+                  aria-current={item.active ? 'page' : undefined}
+                >
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- 导航区域 + 下载按钮（右侧） -->
+        <div class="flex items-center gap-1">
+          <nav class="hidden md:flex items-center">
+            {items.map((item, idx) => (
+              <>
+                <a
+                  href={item.href}
+                  class:list={[
+                    'text-sm text-text-muted hover:text-primary-500 transition-colors px-2 py-1',
+                    { 'text-primary-500 font-bold': !!item.active }
+                  ]}
+                >
+                  {item.text}
+                </a>
+                {idx < items.length - 1 && (
+                  <span class="text-text-subtle select-none" aria-hidden="true">|</span>
+                )}
+              </>
+            ))}
+          </nav>
+
+          {downloadUrl ? (
+            <a
+              href={downloadUrl}
+              target="_blank"
+              rel="noopener"
+              class="inline-flex items-center gap-2 rounded-full bg-primary-500 px-4 py-1.5 ml-1 text-sm font-medium text-white hover:bg-primary-600 transition-colors"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-4 h-4"
+                aria-hidden="true"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
+              </svg>
+              {downloadText || 'Download'}
+            </a>
+          ) : downloadText ? (
+            <span class="inline-flex items-center gap-2 rounded-full bg-bg-muted px-4 py-1.5 text-sm font-medium text-text-muted ml-3">
+              {downloadText}
+            </span>
+          ) : null}
+        </div>
+      </div>
+    </div>
+  </div>
+)}
+
+<script>
+  const subnavToggles = document.querySelectorAll('[data-subnav-toggle]')
+  subnavToggles.forEach(toggle => {
+    const parent = toggle.parentElement
+    const menu = parent?.querySelector('[data-subnav-menu]') as HTMLElement | null
+    if (!menu) return
+
+    const positionMenu = () => {
+      // 重置定位与宽度以获取真实尺寸
+      menu.style.left = ''
+      menu.style.right = ''
+      menu.style.width = ''
+      menu.style.maxWidth = ''
+
+      const toggleRect = toggle.getBoundingClientRect()
+      const menuRect = menu.getBoundingClientRect()
+      const parentRect = parent!.getBoundingClientRect()
+      const vw = window.innerWidth
+      const margin = 8
+
+      // 期望：菜单中心对齐按钮中心
+      let desiredLeft = toggleRect.left + toggleRect.width / 2 - menuRect.width / 2
+
+      // 视口宽度不够时，限制菜单宽度
+      if (menuRect.width > vw - 2 * margin) {
+        menu.style.width = (vw - 2 * margin) + 'px'
+        desiredLeft = margin
+      } else {
+        // 边界约束：确保不超出视口
+        if (desiredLeft < margin) desiredLeft = margin
+        if (desiredLeft + menuRect.width > vw - margin) {
+          desiredLeft = vw - margin - menuRect.width
+        }
+      }
+
+      // 转换为相对父元素的坐标（菜单的 absolute 定位上下文是父元素）
+      const leftRelativeToParent = desiredLeft - parentRect.left
+      menu.style.left = leftRelativeToParent + 'px'
+      menu.style.right = 'auto'
+    }
+    const closeMenu = () => {
+      toggle.setAttribute('aria-expanded', 'false')
+      menu.removeAttribute('data-open')
+      const icon = toggle.querySelector('svg')
+      if (icon) icon.style.transform = ''
+    }
+    const openMenu = () => {
+      toggle.setAttribute('aria-expanded', 'true')
+      menu.setAttribute('data-open', '')
+      const icon = toggle.querySelector('svg')
+      if (icon) icon.style.transform = 'rotate(180deg)'
+      // 下一帧计算位置，确保菜单已渲染
+      requestAnimationFrame(positionMenu)
+    }
+
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation()
+      const expanded = toggle.getAttribute('aria-expanded') === 'true'
+      if (expanded) closeMenu()
+      else openMenu()
+    })
+
+    // 点击外部关闭
+    document.addEventListener('click', (e) => {
+      if (parent && !parent.contains(e.target as Node)) {
+        closeMenu()
+      }
+    })
+
+    // ESC 键关闭菜单
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu()
+    })
+
+    // 窗口大小变化时重新定位菜单
+    window.addEventListener('resize', () => {
+      if (menu.hasAttribute('data-open')) {
+        positionMenu()
+      }
+    })
+  })
+</script>

@@ -1,30 +1,36 @@
 import js from '@eslint/js'
-import pluginVue from 'eslint-plugin-vue'
+import astro from 'eslint-plugin-astro'
+import * as astroParser from 'astro-eslint-parser'
+import tseslint from 'typescript-eslint'
 import globals from 'globals'
 
 export default [
   {
     ignores: [
       'dist/**',
+      '.astro/**',
+      '.vite-ssg-temp/**',
       'node_modules/**',
       'public/**',
-      '*.config.js',
+      'src/content/**',
       'scripts/**',
-      'src/lib/**',
-      '.vite-ssg-temp/**'
+      'deploy.sh',
+      'bunfig.toml',
+      'bun.lock'
     ]
   },
   js.configs.recommended,
-  ...pluginVue.configs['flat/recommended'],
+  ...astro.configs.recommended,
+  ...tseslint.configs.recommended,
   {
-    files: ['**/*.{js,mjs,cjs,jsx,vue}'],
+    files: ['**/*.{js,mjs,cjs,ts,astro}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
       globals: {
         ...globals.browser,
-        ...globals.es2022,
-        BUILD_TIME: 'readonly'
+        ...globals.node,
+        ...globals.es2022
       }
     },
     rules: {
@@ -61,34 +67,23 @@ export default [
       'prefer-const': 'error',
       'no-var': 'error',
       'eqeqeq': ['error', 'always', { null: 'ignore' }],
-      'curly': ['error', 'multi-line'],
-      'vue/multi-word-component-names': 'off',
-      'vue/no-v-html': 'off',
-      'vue/max-attributes-per-line': ['error', {
-        singleline: { max: 3 },
-        multiline: { max: 1 }
-      }],
-      'vue/first-attribute-linebreak': ['error', {
-        singleline: 'ignore',
-        multiline: 'below'
-      }],
-      'vue/html-indent': ['error', 2, {
-        attribute: 1,
-        baseIndent: 1,
-        closeBracket: 0,
-        alignAttributesVertically: true,
-        ignores: []
-      }],
-      'vue/html-closing-bracket-newline': ['error', {
-        singleline: 'never',
-        multiline: 'always'
-      }],
-      'vue/html-closing-bracket-spacing': 'error',
-      'vue/mustache-interpolation-spacing': ['error', 'always'],
-      'vue/no-multi-spaces': 'error',
-      'vue/prop-name-casing': ['error', 'camelCase'],
-      'vue/require-default-prop': 'warn',
-      'vue/require-prop-types': 'warn'
+      'curly': ['error', 'multi-line']
     }
   },
+  {
+    files: ['**/*.astro'],
+    languageOptions: {
+      parser: astroParser
+    },
+    rules: {
+      'astro/no-set-html-directive': 'off',
+      'astro/no-unused-css-selector': 'warn'
+    }
+  },
+  {
+    files: ['**/*.ts'],
+    languageOptions: {
+      parser: tseslint.parser
+    }
+  }
 ]

@@ -1,0 +1,88 @@
+---
+interface Props {
+  class?: string
+  alt?: string
+}
+
+const { class: className, alt } = Astro.props
+---
+
+<svg class={className} width="720" height="350" viewBox="0 0 720 350" xmlns="http://www.w3.org/2000/svg" role="img" aria-label={alt} data-inleap-logo>
+  <defs>
+    <linearGradient
+      id="logoGradient"
+      gradientUnits="userSpaceOnUse"
+      x1="170"
+      y1="-10"
+      x2="550"
+      y2="370">
+      <stop offset="0%" stop-color="#a541ff"></stop>
+      <stop offset="100%" stop-color="#3fbbfe"></stop>
+    </linearGradient>
+    <pattern id="flowPattern" patternUnits="userSpaceOnUse" width="1440" height="350" x="0" y="0">
+      <image href="/images/gradient.png" width="1440" height="350" />
+    </pattern>
+  </defs>
+  <path id="logoPath" fill="url(#logoGradient)" d="M 1,175 V -0.00275476 L 360.25,0.24862262 719.5,0.5 V 175 349.5 L 360.25,349.75138 1,350.00275 Z M 706,328.5 V 324 H 637.5 569 V 175 26 h 60.5 60.5 v 89.5 89.5 h 8 8 V 111 17 H 359.5 13 V 175 333 H 359.5 706 Z M 380.4123,279.70133 349.5,234.40265 349.23981,279.20133 348.97962,324 H 282.98981 217 V 174.99021 l 0,-149.009793 47.16412,0.259791 47.16413,0.259792 33.72119,48.835312 c 18.54665,26.859418 34.22279,49.336918 34.83587,49.949998 C 380.7049,126.1049 381,113.10998 381,76.2 V 26 h 66 66 V 175.5 325 H 462.1623 411.32461 Z M 29,175 V 26 H 94.5 160 V 175 324 H 94.5 29 Z"/>
+</svg>
+
+<script>
+  const svg = document.querySelector('[data-inleap-logo]') as SVGSVGElement | null
+  const path = document.getElementById('logoPath') as SVGPathElement | null
+  const pattern = document.getElementById('flowPattern') as SVGPatternElement | null
+  if (!svg || !path || !pattern) throw new Error('InleapLogo elements not found')
+  const s = svg!
+  const el = path!
+  const p = pattern!
+
+  const IMG_WIDTH = 1440
+  const SPEED = 1       // px/ms
+
+  let rafId: number | null = null
+  let prevTimestamp: DOMHighResTimeStamp | null = null
+  let accumulatedOffset = 0
+  let isAnimating = false
+
+  function animate(timestamp: DOMHighResTimeStamp): void {
+    if (prevTimestamp === null) {
+      prevTimestamp = timestamp
+    }
+
+    const delta = timestamp - prevTimestamp
+    prevTimestamp = timestamp
+
+    if (isAnimating) {
+      // hover 状态下持续向左循环流动
+      accumulatedOffset = (accumulatedOffset + delta * SPEED) % IMG_WIDTH
+      p.setAttribute('x', String(-accumulatedOffset))
+      rafId = requestAnimationFrame(animate)
+    } else {
+      // 鼠标移出后继续流动，直到回到初始位置
+      accumulatedOffset += delta * SPEED
+      if (accumulatedOffset >= IMG_WIDTH) {
+        // 到达初始位置，停止动画并恢复原始渐变
+        rafId = null
+        accumulatedOffset = 0
+        p.setAttribute('x', '0')
+        el.setAttribute('fill', 'url(#logoGradient)')
+      } else {
+        p.setAttribute('x', String(-accumulatedOffset))
+        rafId = requestAnimationFrame(animate)
+      }
+    }
+  }
+
+  s.addEventListener('mouseenter', () => {
+    isAnimating = true
+    el.setAttribute('fill', 'url(#flowPattern)')
+    prevTimestamp = null
+    if (!rafId) {
+      rafId = requestAnimationFrame(animate)
+    }
+  })
+
+  s.addEventListener('mouseleave', () => {
+    isAnimating = false
+    // 不取消动画，让 animate 继续执行直到回到初始位置
+  })
+</script>

@@ -1,5 +1,5 @@
 ---
-title: Legend World 重制
+title: Legend World Remake
 ---
 
 ### 更新日志
@@ -159,4 +159,4 @@ title: Legend World 重制
 - 修复了 4-3 的起点问题
 
 #### v1.0 (2015-09-04)
-- Legend World 重制的第一个正式版本，包括原始 Legend World 前四个世界的重制
+- Legend World Remake 的第一个正式版本，包括原始 Legend World 前四个世界的重制
