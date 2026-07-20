@@ -148,8 +148,9 @@ export const ui: Record<Lang, LangConfig> = {
         {
           title: 'Social media',
           links: [
-            { icon: 'fa-twitter', href: 'https://x.com/innovation_leap', target: '_blank' },
-            { icon: 'fa-youtube', href: 'https://www.youtube.com/@InnovationLeap', target: '_blank' }
+            { icon: 'fa-youtube', href: 'https://www.youtube.com/@InnovationLeap', target: '_blank' },
+            { icon: 'fa-github', href: 'https://github.com/InnovationLeap', target: '_blank' },
+            { icon: 'fa-twitter', href: 'https://x.com/innovation_leap', target: '_blank' }
           ]
         }
       ],
