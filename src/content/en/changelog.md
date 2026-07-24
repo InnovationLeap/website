@@ -73,11 +73,11 @@ title: Legend World Remake
 - Fixed a timer bug after clearing a level of World of Lens, with preventive adjustments to other extra levels.
 - Fixed Legend Minix coin count not resetting.
 - Legend Minix adjustments:
-    - Added a sunglasses Toad in Peach's Castle, hinting at a 500,000 score achievement.
-    - Significantly increased coins from pipes.
-    - When already at max lives, collecting 100 coins now grants 200,000 points.
-    - Adjusted Big Buzzy Beetle Shell mechanics: now moves at Big Green Shell speed, breaks after 3 wall hits (1 fewer than Big Blue Shell).
-    - Fixed multiple "Big Spiny" spawning (only 1 Big Spiny and 1 Big Gray Spiny can exist).
+  - Added a sunglasses Toad in Peach's Castle, hinting at a 500,000 score achievement.
+  - Significantly increased coins from pipes.
+  - When already at max lives, collecting 100 coins now grants 200,000 points.
+  - Adjusted Big Buzzy Beetle Shell mechanics: now moves at Big Green Shell speed, breaks after 3 wall hits (1 fewer than Big Blue Shell).
+  - Fixed multiple "Big Spiny" spawning (only 1 Big Spiny and 1 Big Gray Spiny can exist).
 - Fixed 8-A and 8-B being impossible to clear in v2.0.2.
 - Fixed HARDESTEST level not saving progress after completion.
 
@@ -113,8 +113,8 @@ title: Legend World Remake
 
 #### v1.5.1 (February 27, 2019)
 - Bugfix:
-    - Game crashes when pressing F3 in Save Game Room
-    - Mario jumps automatically in 6-Mini Game
+  - Game crashes when pressing F3 in Save Game Room
+  - Mario jumps automatically in 6-Mini Game
 - 6-2 is revamped.
 - Improved some levels.
 - Graphics update.
@@ -146,11 +146,11 @@ title: Legend World Remake
 
 #### v1.0.2 (November 4, 2015)
 - Bugfix:
-    - 4-6's starting position issue
-    - No sound while hitting bricks in 2-5
-    - No music is playing in some World Map scenes
-    - The energy tank of Boss #4 isn't shown correctly
-    - The timer counts from 360 in 1-Mini Game 1 sometimes
+  - 4-6's starting position issue
+  - No sound while hitting bricks in 2-5
+  - No music is playing in some World Map scenes
+  - The energy tank of Boss #4 isn't shown correctly
+  - The timer counts from 360 in 1-Mini Game 1 sometimes
 - Add Special Mini Games.
 
 #### v1.0.1 (September 7, 2015)
