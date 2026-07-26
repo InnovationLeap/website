@@ -1,5 +1,26 @@
 # INNOVATION LEAP 官网
 
-这是新版 INNOVATION LEAP 官网，基于 Vue 3 + Vite 构建。
+这是新版 INNOVATION LEAP 官网，使用 [bun](https://bun.com/) + [Astro](https://astro.build/) + [Tailwind CSS](https://tailwindcss.com/) 构建。
 
-本站使用了 [HTML5 UP](https://html5up.net/) 的 [Verti](https://html5up.net/verti) 模板，模板采用 [CCA 3.0](https://html5up.net/license) 协议授权个人和商业使用。
+## 快速开始
+
+### 安装依赖
+```bash
+bun install
+```
+
+### 开发环境
+```bash
+bun run dev
+```
+
+### 构建
+```bash
+bun run build
+```
+
+### 预览构建结果
+```bash
+bun run preview
+```
+
