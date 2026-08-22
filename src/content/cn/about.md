@@ -6,7 +6,7 @@ INNOVATION LEAP 正式成立于 2016 年 6 月 9 日，是由百度永远的玛�
 
 ### 项目
 
-目前我们有两大项目——[Legend World 重制](/cn/legend-world-remake/) 和 [Super Mario Worker Project](https://smwp.marioforever.net/)。
+目前我们有两大项目——[Legend World 重制](/cn/legend-world-remake/) 和 [Super Mario Worker Project](/cn/super-mario-worker-project/)。
 
 Legend World 重制由 newlife2017 于 2014 年 6 月发起，是最早使用 Rainbow Engine 制作的 Mario Forever 自制作品之一。INNOVATION LEAP 成立后，该工程以 INNOVATION LEAP 工作室的名义对外发布。
 

@@ -33,7 +33,6 @@ bun run deploy     # 运行 deploy.sh
 - 根路径 `/` 根据浏览器语言（`navigator.language`）重定向至 `/cn/` 或 `/en/`
 - 所有路由格式为 `/{lang}/{page}/`（`trailingSlash: 'always'`）
 - `/{lang}/team/` 重定向至 `/{lang}/about/team/`
-- `/en/super-mario-worker-project/*` 外部重定向至 `https://smwp.marioforever.net/`
 - 路由通过 `redirects` 在 `astro.config.mjs` 中配置
 
 ## 设计系统

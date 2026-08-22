@@ -18,9 +18,12 @@ const {
   downloadUrl = '',
   downloadText = ''
 } = Astro.props
+
+// 判断是否为外链（http/https 开头的绝对地址），外链需要新窗口打开
+const isExternal = (href: string) => /^https?:\/\//.test(href)
 ---
 
-{items && items.length > 0 && (
+{(items.length > 0 || title || downloadUrl || downloadText) && (
   <div class="sticky top-0 z-40 bg-bg/80 backdrop-blur-sm border-b border-border transition-colors">
     <div class="max-w-7xl mx-auto px-6">
       <div class="flex items-center justify-between h-14">
@@ -29,74 +32,84 @@ const {
           <h2 class="font-display text-lg font-semibold text-text whitespace-nowrap">{title}</h2>
 
           <!-- 移动端下拉切换按钮 -->
-          <button
-            type="button"
-            class="md:hidden inline-flex items-center justify-center p-1 text-text-muted hover:text-primary-500 transition-colors"
-            aria-label="Toggle section menu"
-            aria-expanded="false"
-            aria-haspopup="true"
-            data-subnav-toggle
-          >
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="w-4 h-4 transition-transform duration-300"
-              aria-hidden="true"
+          {items.length > 0 && (
+            <button
+              type="button"
+              class="md:hidden inline-flex items-center justify-center p-1 text-text-muted hover:text-primary-500 transition-colors"
+              aria-label="Toggle section menu"
+              aria-expanded="false"
+              aria-haspopup="true"
+              data-subnav-toggle
             >
-              <path d="M6 9l6 6 6-6" />
-            </svg>
-          </button>
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="w-4 h-4 transition-transform duration-300"
+                aria-hidden="true"
+              >
+                <path d="M6 9l6 6 6-6" />
+              </svg>
+            </button>
+          )}
 
           <!-- 移动端下拉菜单 -->
-          <ul
-            class="md:hidden absolute top-full mt-2 min-w-[160px] max-w-[calc(100vw-2rem)] bg-surface border border-border rounded-md shadow-md py-1 z-50 max-h-[60vh] overflow-y-auto opacity-0 scale-95 pointer-events-none data-[open]:opacity-100 data-[open]:scale-100 data-[open]:pointer-events-auto transition-all duration-300 ease-in-out"
-            data-subnav-menu
-            role="menu"
-          >
-            {items.map((item) => (
-              <li role="menuitem">
-                <a
-                  href={item.href}
-                  class:list={[
-                    'block px-3 py-2 text-sm transition-colors whitespace-normal break-words',
-                    item.active
-                      ? 'text-primary-500 font-semibold bg-primary-500/10 border-primary-500'
-                      : 'text-text-muted border-transparent hover:text-primary-500 hover:bg-bg-subtle hover:border-primary-500/50'
-                  ]}
-                  role="menuitem"
-                  aria-current={item.active ? 'page' : undefined}
-                >
-                  {item.text}
-                </a>
-              </li>
-            ))}
-          </ul>
+          {items.length > 0 && (
+            <ul
+              class="md:hidden absolute top-full mt-2 min-w-[160px] max-w-[calc(100vw-2rem)] bg-surface border border-border rounded-md shadow-md py-1 z-50 max-h-[60vh] overflow-y-auto opacity-0 scale-95 pointer-events-none data-[open]:opacity-100 data-[open]:scale-100 data-[open]:pointer-events-auto transition-all duration-300 ease-in-out"
+              data-subnav-menu
+              role="menu"
+            >
+              {items.map((item) => (
+                <li role="menuitem">
+                  <a
+                    href={item.href}
+                    target={isExternal(item.href) ? '_blank' : undefined}
+                    rel={isExternal(item.href) ? 'noopener' : undefined}
+                    class:list={[
+                      'block px-3 py-2 text-sm transition-colors whitespace-normal break-words',
+                      item.active
+                        ? 'text-primary-500 font-semibold bg-primary-500/10 border-primary-500'
+                        : 'text-text-muted border-transparent hover:text-primary-500 hover:bg-bg-subtle hover:border-primary-500/50'
+                    ]}
+                    role="menuitem"
+                    aria-current={item.active ? 'page' : undefined}
+                  >
+                    {item.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
 
         <!-- 导航区域 + 下载按钮（右侧） -->
         <div class="flex items-center gap-1">
-          <nav class="hidden md:flex items-center">
-            {items.map((item, idx) => (
-              <>
-                <a
-                  href={item.href}
-                  class:list={[
-                    'text-sm text-text-muted hover:text-primary-500 transition-colors px-2 py-1',
-                    { 'text-primary-500 font-bold': !!item.active }
-                  ]}
-                >
-                  {item.text}
-                </a>
-                {idx < items.length - 1 && (
-                  <span class="text-text-subtle select-none" aria-hidden="true">|</span>
-                )}
-              </>
-            ))}
-          </nav>
+          {items.length > 0 && (
+            <nav class="hidden md:flex items-center">
+              {items.map((item, idx) => (
+                <>
+                  <a
+                    href={item.href}
+                    target={isExternal(item.href) ? '_blank' : undefined}
+                    rel={isExternal(item.href) ? 'noopener' : undefined}
+                    class:list={[
+                      'text-sm text-text-muted hover:text-primary-500 transition-colors px-2 py-1',
+                      { 'text-primary-500 font-bold': !!item.active }
+                    ]}
+                  >
+                    {item.text}
+                  </a>
+                  {idx < items.length - 1 && (
+                    <span class="text-text-subtle select-none" aria-hidden="true">|</span>
+                  )}
+                </>
+              ))}
+            </nav>
+          )}
 
           {downloadUrl ? (
             <a
@@ -117,7 +130,7 @@ const {
               >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" />
               </svg>
-              {downloadText || 'Download'}
+              <span class="hidden sm:inline">{downloadText || 'Download'}</span>
             </a>
           ) : downloadText ? (
             <span class="inline-flex items-center gap-2 rounded-full bg-bg-muted px-4 py-1.5 text-sm font-medium text-text-muted ml-3">

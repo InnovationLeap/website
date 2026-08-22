@@ -18,9 +18,8 @@ export default defineConfig({
   redirects: {
     '/cn/team': '/cn/about/team/',
     '/en/team': '/en/about/team/',
-    '/en/super-mario-worker-project': 'https://smwp.marioforever.net/',
-    '/en/super-mario-worker-project/version-archive': 'https://smwp.marioforever.net/',
-    '/en/super-mario-worker-project/changelog': 'https://smwp.marioforever.net/'
+    '/en/super-mario-worker-project/version-archive': 'https://smwp.marioforever.net/downloads/',
+    '/en/super-mario-worker-project/changelog': 'https://smwp.marioforever.net/downloads/'
   },
   vite: {
     plugins: [tailwindcss()]

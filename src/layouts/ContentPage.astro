@@ -46,6 +46,12 @@ function getSubnavItems(lang: Lang, page: string): SubNavItem[] {
       { text: lang === 'cn' ? '了解重制版' : 'Remake', href: `/${lang}/legend-world-remake/`, active: false }
     ]
   }
+  if (page === 'super-mario-worker-project') {
+    return [
+      { text: lang === 'cn' ? '概述' : 'Overview', href: `/${lang}/super-mario-worker-project/`, active: true },
+      { text: lang === 'cn' ? 'v1.8' : 'v1.8', href: `https://smwp.marioforever.net/1.8/`, active: false }
+    ]
+  }
   return []
 }
 
@@ -53,6 +59,7 @@ function getSubnavItems(lang: Lang, page: string): SubNavItem[] {
 function getSubnavTitle(lang: Lang, page: string): string {
   if (page === 'about' || page === 'team') return lang === 'cn' ? '关于' : 'About'
   if (page === 'legend-world-remake' || page === 'changelog' || page === 'legend-world-on-mario-worker') return lang === 'cn' ? 'Legend World Remake' : 'Legend World Remake'
+  if (page === 'super-mario-worker-project') return 'Super Mario Worker Project'
   return ''
 }
 
@@ -61,6 +68,7 @@ function getDownloadConfig(lang: Lang, page: string) {
   const langData = ui[lang]
   if (page === 'legend-world-remake' || page === 'changelog') return langData.legendWorldRemake
   if (page === 'legend-world-on-mario-worker') return langData.legendWorldMW
+  if (page === 'super-mario-worker-project') return langData.smwp
   return { downloadUrl: '', downloadText: '' }
 }
 
@@ -393,7 +401,19 @@ const pageTitle = `${title} - INNOVATION LEAP`
     })
   }
 
+  // 4. 外链新窗口打开
+  function enhanceExternalLinks() {
+    document.querySelectorAll('.prose-content a[href]').forEach((a) => {
+      const href = a.getAttribute('href') || ''
+      if (/^https?:\/\//.test(href)) {
+        a.setAttribute('target', '_blank')
+        a.setAttribute('rel', 'noopener')
+      }
+    })
+  }
+
   // 执行增强
   enhanceGalleries()
   enhanceTables()
+  enhanceExternalLinks()
 </script>

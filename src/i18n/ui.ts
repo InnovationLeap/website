@@ -46,7 +46,7 @@ export const ui: Record<Lang, LangConfig> = {
     nav: [
       { text: '首页', href: '/cn/' },
       { text: 'Legend World Remake', href: '/cn/legend-world-remake/' },
-      { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/', target: '_blank' },
+      { text: 'Super Mario Worker Project', href: '/cn/super-mario-worker-project/' },
       { text: '关于 INL', href: '/cn/about/' }
     ],
     legendWorldRemake: {
@@ -58,7 +58,7 @@ export const ui: Record<Lang, LangConfig> = {
       downloadText: '下载'
     },
     smwp: {
-      downloadUrl: 'https://file.marioforever.net/smwp/',
+      downloadUrl: 'https://smwp.marioforever.net/downloads/',
       downloadText: '下载'
     },
     footer: {
@@ -68,7 +68,7 @@ export const ui: Record<Lang, LangConfig> = {
           links: [
             { text: 'Legend World Remake', href: '/cn/legend-world-remake/' },
             { text: 'Mario Worker 上的 Legend World', href: '/cn/legend-world-remake/legend-world-on-mario-worker/' },
-            { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/' }
+            { text: 'Super Mario Worker Project', href: '/cn/super-mario-worker-project/' }
           ]
         },
         {
@@ -106,7 +106,7 @@ export const ui: Record<Lang, LangConfig> = {
     nav: [
       { text: 'Home', href: '/en/' },
       { text: 'Legend World Remake', href: '/en/legend-world-remake/' },
-      { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/', target: '_blank' },
+      { text: 'Super Mario Worker Project', href: '/en/super-mario-worker-project/' },
       { text: 'About', href: '/en/about/' }
     ],
     legendWorldRemake: {
@@ -118,7 +118,7 @@ export const ui: Record<Lang, LangConfig> = {
       downloadText: 'Download'
     },
     smwp: {
-      downloadUrl: 'https://file.marioforever.net/smwp/',
+      downloadUrl: 'https://smwp.marioforever.net/downloads/',
       downloadText: 'Download'
     },
     footer: {
@@ -128,7 +128,7 @@ export const ui: Record<Lang, LangConfig> = {
           links: [
             { text: 'Legend World Remake', href: '/en/legend-world-remake/' },
             { text: 'Legend World on Mario Worker', href: '/en/legend-world-remake/legend-world-on-mario-worker/' },
-            { text: 'Super Mario Worker Project', href: 'https://smwp.marioforever.net/', target: '_blank' }
+            { text: 'Super Mario Worker Project', href: '/en/super-mario-worker-project/' }
           ]
         },
         {
