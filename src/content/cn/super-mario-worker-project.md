@@ -25,6 +25,6 @@ Super Mario Worker Project（SMWP）是由 INNOVATION LEAP 基于 Mario Worker 1
   <img src="/images/smwp/smwp-muitfaceted.webp" />
 </div>
 
-## 免责声明
+### 免责声明
 
 马力欧及其版权归属任天堂。Mario Worker、Super Mario Worker Project 以及 INNOVATION LEAP 与任天堂没有任何关联或从属关系。Super Mario Worker Project 是非盈利的同人游戏，INNOVATION LEAP 从中不获取任何收益。
